@@ -22,6 +22,13 @@ body {
   direction: rtl;
   text-align: right;
 }
+.link {
+  color: black;
+}
+.link:hover {
+  color: var(--MainColor);
+  text-decoration: none;
+}
 a {
   text-decoration: none;
 }
@@ -34,21 +41,23 @@ a img {
 }
 :root {
   --transitionDuration: 0.5s;
-  --logoheight: 72px;
-  --headerHeight: 95px;
+  /* --logoheight: 72px; */
+  --MainColor: #2f90a8;
+  --link-color: #fff;
+  --headerHeight: 100px;
   --footerHeight: 146px;
 }
-.innerHeader {
-  /* display: flex; */
-  /* justify-content: center; */
-  height: var(--headerHeight);
-  /* background-color: gray; */
-  max-width: 100% !important;
-}
-header {
-  /* position: absolute; */
+
+#header {
+  position: relative;
   width: 100%;
-  /* display: none; */
+  height: var(--headerHeight);
+  display: none;
+  display: flex;
+  background-color: rgb(222 222 222);
+  /* order: 2; */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
 }
 
 iframe {
@@ -57,19 +66,19 @@ iframe {
 }
 
 #logo {
-  /* position: absolute; */
-  /* top: 15px; */
-  height: var(--logoheight);
-  max-width: 80% !important;
-  /* right: 11px; */
-  /* background-color: black; */
-  z-index: -3;
+  position: absolute;
+  top: 15px;
+  height: calc(var(--headerHeight) * 0.7);
+  max-width: 19% !important;
+  right: 11px;
+  background-color: rgb(222 222 222);
+  /* z-index: -3; */
 }
 #MenuList {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 93%;
+  /* width: 93%; */
   height: 100%;
   margin-left: 3%;
   align-items: center;
@@ -81,20 +90,19 @@ iframe {
   background-color: rgb(222 222 222);
   padding-top: 6px;
   position: absolute;
-  width: 100%;
+  width: 79%;
+  left: 0px;
   top: 46px;
   color: black;
   direction: rtl;
   text-align: right;
   padding-right: 9px;
-  z-index: -1;
+  /* z-index: -1; */
 }
 .mainMenuIcons {
   width: 16px;
 }
-#mainMenu ul :hover {
-  color: blue;
-}
+
 #wrap {
   margin-right: 9px;
   float: right;
@@ -119,7 +127,7 @@ footer {
   bottom: -1px;
   height: var(--footerHeight);
   width: 100%;
-  /* display: none; */
+  display: none;
 }
 
 footer {
