@@ -1,0 +1,248 @@
+body {
+    width: 100%;
+    /* height: 58vh; */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /* background: url("contact.jpg") no-repeat center; */
+    background-size: 29% -21%;
+    /* display: flex; */
+}
+#header_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-section {
+    margin: 50px;
+    color: white;
+    width: 50%;
+}
+.left-section p {
+    width: 80%;
+}
+
+form {
+    background-color: white;
+    width: 30%;
+    margin-top: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+}
+#message {
+    margin-bottom: -25px;
+}
+#submit {
+    height: 40px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.radio-btns-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+.radio-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    min-height: 75.7vh !important;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    display: inline-table;
+}
+a {
+    text-decoration: none;
+}
+a img {
+    margin: 5px;
+    width: 37px;
+}
+:root {
+    --logoheight: 76px;
+    --headerHeight: 162px;
+    --footerHeight: 150px;
+}
+#iframe_header {
+    display: flex;
+    justify-content: center;
+    height: var(--headerHeight);
+    background-color: gray;
+    position: relative;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    top: 15px;
+    height: var(--logoheight);
+}
+#MenuList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 93%;
+    height: 100%;
+    margin-left: 3%;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#mainMenu {
+    height: 56px;
+    margin-top: -46px;
+    background-color: rgb(180, 180, 180);
+    padding-top: 1px;
+    position: absolute;
+    width: 100%;
+    top: 152px;
+}
+.mainMenuIcons {
+    width: 16px;
+    /* border-radius: 25px; */
+}
+#mainMenu ul :hover {
+    color: blue;
+}
+#wrap {
+    margin-right: 9px;
+    float: right;
+    display: none;
+}
+
+@media screen and (max-width: 935px) {
+    #mainMenu {
+        display: none;
+    }
+    #logo {
+        top: 22%;
+    }
+    /*:root {
+    --logoheight: 90%;
+    --headerHeight: var(--headerHeight)-56px /*calc((13 / 100) * 100vw);
+  }
+  #iframe_header {
+    height: 107px;
+  }*/
+    #wrap {
+        display: block;
+        position: absolute;
+        right: 11px;
+        top: 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        /* --headerHeight: calc((17 / 100) * 100vw);*/
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        /* --logoheight: 70%;
+    /* --headerHeight: calc((25 / 100) * 100vw);*/
+    }
+    #logo {
+        /*top: 20%;*/
+    }
+}
+
+@media screen and (max-width: 280px) {
+    :root {
+        /*--logoheight: 50%;*/
+        /* --headerHeight: calc((40 / 100) * 100vw);*/
+    }
+    #logo {
+        /* top: 20%;*/
+    }
+    #contant {
+        /* height: calc(100% - (var(--headerHeight) + var(--footerHeight)));*/
+    }
+}
+
+.menuIcon {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+#iframe_footer {
+    padding-top: 35px;
+    margin-left: 0px;
+    position: absolute;
+    bottom: -160px;
+    background-color: gray;
+    width: 100%;
+    height: var(--footerHeight);
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#footerInfo {
+    position: absolute;
+    right: 30px;
+    direction: rtl;
+}
+#share {
+    position: absolute;
+    left: 30px;
+}
+
+#contant {
+}
+
+#innerFooter {
+    position: absolute;
+    width: 100%;
+    background-color: inherit;
+    padding-top: 35px;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        /* display: flex;*/
+    }
+
+    #footerInfo {
+        position: relative;
+        right: -3%;
+        text-align: center;
+        top: -17px;
+    }
+    #share {
+        position: relative;
+        left: 0%;
+        text-align: center;
+    }
+    /* #iframe_footer {
+        display: block;
+        width: 100%;
+        height: 3%;
+    }*/
+}

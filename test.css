@@ -1,0 +1,50 @@
+#face-art {
+  display: block;
+  margin: 110px;
+}
+
+.PageTitle {
+  display: block;
+}
+
+.section_wrap {
+  display: flex;
+  flex-direction: column;
+}
+.section_wrap :checked + .section .section-lable img {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.section_wrap :checked + .section {
+  transition-duration: 0.5s;
+}
+.section_wrap :checked + .section .section_discription {
+  transition-duration: 0.5s;
+  /* transition-delay: 1.5s;*/
+  visibility: visible;
+}
+
+.section {
+  width: 400px;
+  background-color: aquamarine;
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  min-height: 40px;
+  transition-duration: 0.5s;
+  padding: 20px;
+}
+
+.section_lable {
+  display: block;
+}
+
+.section_discription {
+  visibility: hidden;
+  transition-duration: 0.5s;
+}
+
+#postInList + #postInList {
+  border-bottom: red;
+}
