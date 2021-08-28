@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MainStyle.css">
 
     <!-- include libraries(jQuery, bootstrap) -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -19,50 +18,51 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="MainStyle.css">
 
     <title>عيادات الموج | افضل عيادات تجميلية في السعودية</title>
 
 
 </head>
 
-<body onload="getheight()" style="direction: rtl;
-  text-align: right;">
+<body id="body">
 
 
-    <header style="z-index: 2;">
+    <header style="z-index: 2; position: relative;">
         <!--div class=" innerHeader">-->
         <nav id="header">
-            <img id="logo" src="https://static1.s123-cdn-static-a.com/uploads/4858436/400_60319e2e9da0e.png"
-                alt=" عيادات الموج ">
-
+            <a href="#body">
+                <img id="logo" src="https://static1.s123-cdn-static-a.com/uploads/4858436/400_60319e2e9da0e.png"
+                    alt=" عيادات الموج ">
+            </a>
             <div id="mainMenu">
                 <ul id="MenuList">
                     <li>
                         <a class="link" href="index.html">الرئيسية</a>
                     </li>
+
                     <li>
-                        <a href="lap1My.html">حول موج</a>
+                        <a class="link" href="index.html">حول موج </a>
                     </li>
+
                     <li>
-                        <a href="index.html">خدماتنا</a>
+                        <a class="link" href="index.html">خدماتنا</a>
                     </li>
+
                     <li>
-                        <a href="lap1My.html">العروض الشهرية</a>
+                        <a class="link" href="index.html">العروض </a>
                     </li>
+
                     <li>
-                        <a href="index.html">صفقات الجمال</a>
+                        <a class="link" href="index.html">صفقات الجمال</a>
                     </li>
+
                     <li>
-                        <a href="lap1My.html">بطاقات الولاء</a>
+                        <a class="link" href="index.html">بطاقات الولاء</a>
                     </li>
+
                     <li>
-                        <a href="index.html">جواز سفر الجمال</a>
-                    </li>
-                    <li>
-                        <a href="index.html">الصيدلية</a>
-                    </li>
-                    <li>
-                        <a href="index.html">المزيد</a>
+                        <a class="link" href="index.html">المزيد</a>
                     </li>
 
                     <li>
@@ -91,14 +91,64 @@
             </div>
             <!--  </!-div>-->
         </nav>
+        <div style="background-color: black; height: 115.7vh;">
+            <video class="backgroundVideo" autoplay="" loop="" muted="" playsinline=""
+                poster="https://static.s123-cdn-static-d.com/uploads/4858436/normal_611cd814bdcee-thumbnail.jpg">
+                <source type="video/mp4" src="https://cdn-media.f-static.net/uploads/4858436/normal_611cd814bdcee.mp4">
+            </video>
+        </div>
+        <div id="headerTextsWrape">
+            <h1 id="HeaderText">خلي جمالك علينا
+            </h1>
+            <h1 style="text-align: center;"> أكتشف الكثير من العروض المميزة</h1>
+            <a href="#" id="HeaderButton"> الإطلاع على المزيد</a>
+        </div>
     </header>
 
 
 
 
     <div id="contant">
-    </div>
 
+        <div style="display: flex;
+    width: 100%;">
+            <div id="WelcomeTextWrap">
+                <p id="welcomeText">
+
+                <h2>أهلا وسهلا بكم بمجموعة عيادات الموج</h2>
+
+                في عام 2006 تقرر انشاء مجموعة عيادات الموج، بهدف تقديم
+                خدمات طبية تجميلية للمجتمع ، بـ قيم تتمثل بتقديم مستوى
+                خدمة ذو جودة عالية. تهتم عيادات الموج بتقديم الأفضل
+                الى كل عميل, لذلك يتم اختيار فريق العمل بدقة عاليه
+                لتتناسب مع الرسالة المراد ايصالها الى عملائنا .
+                ان ثقة عملائنا هي هدفنا .
+                </p>
+            </div>
+            <div id="welcomImg">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div style=" background-color:red; height:300px;"></div>
 
     <footer>
 
@@ -123,18 +173,13 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
     <script src="header.js"></script>
-
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+            pause: false
+        })
+    </script>
 </body>
 
 </html>

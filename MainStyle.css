@@ -3,6 +3,23 @@
   padding: 0px;
 }
 
+#welcomImg {
+  width: 50%;
+  height: 360px;
+}
+
+#welcomImg img {
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  /* height: 100%; */
+}
+
+#welcomeImg img {
+  width: 20px;
+}
+
 .section_wrap {
   display: flex;
   flex-direction: column;
@@ -13,12 +30,13 @@
   text-align: right;
   /* height: 352px; */
 }
-body {
-  min-height: 100vh !important;
+#body {
+  direction: rtl;
+  font-family: var(--fontFamly);
+  text-align: right;
+  min-height: 120vh !important;
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  max-width: 100vw;
+  /* max-width: 100vw; */
   direction: rtl;
   text-align: right;
 }
@@ -29,35 +47,60 @@ body {
   color: var(--MainColor);
   text-decoration: none;
 }
+#welcomeText {
+}
+#WelcomeTextWrap {
+  width: 40%;
+  background-color: var(--MainColor);
+  height: 360px;
+  padding: 7%;
+  text-align: center;
+  width: 50%;
+  color: white;
+  font-size: 20px;
+}
 a {
   text-decoration: none;
 }
+
+#share a img {
+  max-width: 36px;
+}
 a img {
   margin: 5px;
-  width: 37px;
+  /* width: 37px; */
 }
 #h {
   z-index: 2;
 }
 :root {
+  --fontFamly: Open Sans, Arial, sans-serif;
   --transitionDuration: 0.5s;
   /* --logoheight: 72px; */
   --MainColor: #2f90a8;
-  --link-color: #fff;
+  --headerColor: #fff;
   --headerHeight: 100px;
   --footerHeight: 146px;
 }
-
+.backgroundVideo {
+  position: absolute;
+  width: 100vw;
+  max-width: 100vw;
+  height: 115.7vh;
+  opacity: 0.5;
+  /* background: black; */
+}
 #header {
-  position: relative;
+  transition-duration: calc(var(--transitionDuration) - 0.2s);
+  position: fixed;
   width: 100%;
   height: var(--headerHeight);
-  display: none;
+  /* display: none; */
   display: flex;
-  background-color: rgb(222 222 222);
+  background-color: var(--headerColor);
   /* order: 2; */
-  /* flex-direction: row; */
-  /* justify-content: flex-start; */
+  top: 0;
+  z-index: 2;
 }
 
 iframe {
@@ -66,13 +109,16 @@ iframe {
 }
 
 #logo {
+  transition-duration: calc(var(--transitionDuration) - 0.2s);
   position: absolute;
   top: 15px;
-  height: calc(var(--headerHeight) * 0.7);
-  max-width: 19% !important;
+  height: calc(var(--headerHeight) * 0.8);
+  max-width: 139% !important;
   right: 11px;
-  background-color: rgb(222 222 222);
+  background-color: var(--headerColor);
   /* z-index: -3; */
+  width: calc(var(--headerHeight) + 12%);
+  margin-top: -7px;
 }
 #MenuList {
   list-style: none;
@@ -83,14 +129,16 @@ iframe {
   margin-left: 3%;
   align-items: center;
   /* flex-direction: row-reverse; */
+  font-size: 20px;
 }
 #mainMenu {
-  height: 90px;
+  transition-duration: calc(var(--transitionDuration) - 0.2s);
+  height: calc(var(--headerHeight) - 2px);
   margin-top: -46px;
-  background-color: rgb(222 222 222);
+  background-color: var(--headerColor);
   padding-top: 6px;
   position: absolute;
-  width: 79%;
+  width: 65%;
   left: 0px;
   top: 46px;
   color: black;
@@ -122,16 +170,13 @@ iframe {
 }
 
 footer {
-  /* position: absolute; */
   max-width: 100% !important;
   bottom: -1px;
   height: var(--footerHeight);
   width: 100%;
-  display: none;
+  /* display: none; */
 }
 
-footer {
-}
 #innerFotter {
   width: 100%;
   background-color: gray;
@@ -155,7 +200,7 @@ footer {
 #contant {
   /* position: inherit; */
   /* display: none; */
-  margin-top: 79px;
+  /* margin-top: 79px; */
   /* margin-bottom: 103px; */
   max-width: 100%;
 }
@@ -297,4 +342,38 @@ section {
   width: 60%;
   margin: 0 auto;
   direction: rtl;
+}
+#HeaderButton {
+  right: 47%;
+  /* position: absolute; */
+  width: 150px;
+  background: var(--MainColor);
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+  /* position: absolute; */
+  color: white;
+  text-decoration: none;
+}
+#HeaderText {
+  /* position: absolute; */
+  /* top: 20%; */
+  font-size: 127px;
+  /* right: 16%; */
+  color: white;
+  margin-bottom: -20px;
+}
+#headerTextsWrape {
+  position: absolute;
+  top: 20%;
+  right: 26%;
+  color: white;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.carousel-inner {
+  height: 360px;
 }
