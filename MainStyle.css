@@ -4,7 +4,7 @@
 }
 
 div#blackLayer {
-  background-color: blue;
+  background-color: #1782dd;
   width: 100%;
   height: 130px;
   opacity: 50%;
@@ -18,14 +18,16 @@ div#blackLayer {
 
 div#contanct {
   width: 100%;
-  height: 300px;
+  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   align-content: space-around;
-  background-image: url("https://static1.s123-cdn-static-a.com/uploads/4858436/2000_60319760c70a5.jpg");
+  /* background-image: url("https://static1.s123-cdn-static-a.com/uploads/4858436/2000_60319760c70a5.jpg"); */
   /* background-color: rgb(170 34 34 / 69%); */
+  z-index: 1;
+  position: absolute;
 }
 
 #servecLink {
