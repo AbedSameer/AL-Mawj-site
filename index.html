@@ -299,18 +299,49 @@
 
             </div>
         </div>
-        <div id="contanct">
-            <h2>كيف يمكننا مساعدتك</h2>
-            <p id="contanctUs_p"> نحن في خدمتك للإجابة عن اي سؤال او استفسار يخص العيادة او الخدمات المقدمة
-                ممثلي خدمة العملاء وفريقنا الطبي على أتم الاستعداد للمساعدة </p>
-            <a href="#" id="HeaderButton"> اتصل بنا </a>
+        <div style="margin-top: 100px;">
+            <div id="contanct">
+                <h2>كيف يمكننا مساعدتك</h2>
+                <p id="contanctUs_p"> نحن في خدمتك للإجابة عن اي سؤال او استفسار يخص العيادة او الخدمات المقدمة
+                    ممثلي خدمة العملاء وفريقنا الطبي على أتم الاستعداد للمساعدة </p>
+                <a href="#" id="HeaderButton"> اتصل بنا </a>
+            </div>
+
+            <div id="contactFixedBackgound"></div>
         </div>
-        <div style="background-color: blue;">
-            <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_60319760c70a5.jpg" alt=""
-                style="width: 100%; height: 450px; opacity: 0.5;">
+
+        <div id="offers">
+            <div class="PageTitle">pyty</div>
+            <div id="offersContener">
+                <div id="state"></div>
+                <div id="offersWrap">
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> test Name</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#">test title</a>
+                            </div>
+                            <div class="offerPrice">test 2200</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style=" background-color:red; height:300px;"></div>
+
     </div>
+    <div style="background-color:red; height:300px;"></div>
+
+
+
+
+
+
+
+
     <footer>
 
         <div id="innerFotter">
@@ -331,7 +362,12 @@
                     <img src="img/instagram.png" alt="instagram">
                 </a>
             </div>
+
+
         </div>
+
+
+
     </footer>
 
     <script src="header.js"></script>
@@ -340,6 +376,44 @@
             interval: 2000,
             pause: false
         })
+    </script>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
     </script>
     <!-- Code injected by live-server -->
     <script type="text/javascript">
