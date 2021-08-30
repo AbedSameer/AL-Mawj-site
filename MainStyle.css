@@ -3,6 +3,12 @@
   padding: 0px;
 }
 
+#state {
+  width: 250px;
+  height: 130px;
+  background-color: lightgrey;
+}
+
 .offerTitle {
   width: 89%;
   height: 50px;
