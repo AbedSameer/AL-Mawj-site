@@ -246,7 +246,6 @@ a img {
   /* --logoheight: 72px; */
   --MainColor: #2f90a8;
   --headerColor: #fff;
-  --headerHeight: 100px;
   --footerHeight: 146px;
 }
 .backgroundVideo {
@@ -558,7 +557,13 @@ section {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (min-width: 768px) {
+  :root {
+    --headerHeight: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   #mainMenu {
     display: none;
   }
@@ -581,8 +586,8 @@ section {
     /* font-size: 5vw; */
   }
 
-  root {
-    --headerHeight: 60px;
+  :root {
+    --headerHeight: 80px;
   }
   #mainMenu {
     display: none;
