@@ -25,13 +25,18 @@
 
 </head>
 
-< id="body">
+<body id="body" class="vsc-initialized" cz-shortcut-listen="true">
 
 
     <header style="z-index: 2; position: relative;">
         <!--div class=" innerHeader">-->
         <nav id="header">
-            <a href="#body">
+            <a href="#body" style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+">
                 <img id="logo" src="https://static1.s123-cdn-static-a.com/uploads/4858436/400_60319e2e9da0e.png"
                     alt=" عيادات الموج ">
             </a>
@@ -92,15 +97,16 @@
             <!--  </!-div>-->
         </nav>
         <div style="background-color: black; height: 115.7vh;">
+            <div class="vsc-controller"></div>
             <video class="backgroundVideo" autoplay="" loop="" muted="" playsinline=""
                 poster="https://static.s123-cdn-static-d.com/uploads/4858436/normal_611cd814bdcee-thumbnail.jpg">
                 <source type="video/mp4" src="https://cdn-media.f-static.net/uploads/4858436/normal_611cd814bdcee.mp4">
             </video>
         </div>
         <div id="headerTextsWrape">
-            <h1 id="HeaderText">خلي جمالك علينا
+            <h1 id="HeaderTitle">خلي جمالك علينا
             </h1>
-            <h1 style="text-align: center;"> أكتشف الكثير من العروض المميزة</h1>
+            <h1 id="HeaderText"> أكتشف الكثير من العروض المميزة</h1>
             <a href="#" id="HeaderButton"> الإطلاع على المزيد</a>
         </div>
     </header>
@@ -115,6 +121,7 @@
             <div id="WelcomeTextWrap">
                 <p id="welcomeText">
 
+                </p>
                 <h2>أهلا وسهلا بكم بمجموعة عيادات الموج</h2>
 
                 في عام 2006 تقرر انشاء مجموعة عيادات الموج، بهدف تقديم
@@ -123,16 +130,16 @@
                 الى كل عميل, لذلك يتم اختيار فريق العمل بدقة عاليه
                 لتتناسب مع الرسالة المراد ايصالها الى عملائنا .
                 ان ثقة عملائنا هي هدفنا .
-                </p>
+                <p></p>
             </div>
             <div id="welcomImg">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active carousel-item-left">
                             <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
                                 class="d-block w-100" alt="...">
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item carousel-item-next carousel-item-left">
                             <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
                                 class="d-block w-100" alt="...">
                         </div>
@@ -430,7 +437,7 @@
             <div id="footerInfo">
                 مجموعة عيادات الموج
                 <br>
-                حقوق النشر &copy; 2021 جميع الحقوق محفوظة
+                حقوق النشر © 2021 جميع الحقوق محفوظة
             </div>
             <div id="share">
                 <a href="https://www.twitter.com/" target="_blank">
@@ -497,82 +504,7 @@
         }
 	// ]]>
     </script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
-    </body>
+
+</body>
 
 </html>
