@@ -1,0 +1,26 @@
+.carousel-inner {
+  height: 100vh;
+}
+.custom {
+  height: 100vh;
+}
+.DoctorCarousel .carousel-item {
+  width: 50%;
+}
+
+.customContainer {
+  background-color: white;
+  border-radius: 10px;
+  /* width: 100%; */
+  padding: 30px;
+  margin: 30px auto;
+  border: 1px solid lightgray;
+}
+@media screen and (max-width: 769px) {
+  .carousel-inner {
+    height: 100vh;
+  }
+  .DoctorCarousel .carousel-item {
+    flex-direction: column;
+  }
+}

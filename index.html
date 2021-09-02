@@ -7,20 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- include libraries(jQuery, bootstrap) -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Normalize.css">
-    <link rel="stylesheet" href="CustomBootstrap.css">
-    <link rel="stylesheet" href="MainStyle.css">
+
+
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/CustomBootstrap.css">
+    <link rel="stylesheet" href="css/MainStyle.css">
 
     <title>عيادات الموج | افضل عيادات تجميلية في السعودية</title>
 
@@ -427,14 +422,14 @@
                 medical team
             </div>
             <div id="doctors">
+                <div id="DoctorCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner  ">
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active costemItem">
-                            <img class="d-block w-50 h-100 doctorImg"
-                                src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_60800a66aaeb5.jpg"
-                                alt="First slide">
+                        <div class="carousel-item custom  ">
+                            <div class="w-50 doctorImgWrap ">
+                                <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_crop_6044cc3343576_6044cc1eaaf29.jpg"
+                                    class="d-block doctorImg w-100" alt="...">
+                            </div>
                             <div class="doctorInfo">
                                 <div class="doctorpart">فرع حراء
                                 </div>
@@ -443,25 +438,101 @@
                                 <div class="doctorspas h5">اخصائي تقويم اسنان
                                 </div>
                             </div>
+
                         </div>
+                        <div class="carousel-item custom  ">
+                            <div class="w-50 doctorImgWrap ">
+                                <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_crop_6044cc3343576_6044cc1eaaf29.jpg"
+                                    class="d-block doctorImg w-100" alt="...">
+                            </div>
+                            <div class="doctorInfo">
+                                <div class="doctorpart">فرع حراء
+                                </div>
+                                <div class="DoctorName h2">حسام الدين ربيع
+                                </div>
+                                <div class="doctorspas h5">اخصائي تقويم اسنان
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item custom active ">
+                            <div class="w-50 doctorImgWrap ">
+                                <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_crop_6044cc3343576_6044cc1eaaf29.jpg"
+                                    class="d-block doctorImg w-100" alt="...">
+                            </div>
+                            <div class="doctorInfo">
+                                <div class="doctorpart">فرع حراء
+                                </div>
+                                <div class="DoctorName h2">حسام الدين ربيع
+                                </div>
+                                <div class="doctorspas h5">اخصائي تقويم اسنان
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
-
-
-
-
+                    <a class="carousel-control-prev" href="#DoctorCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#DoctorCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
+        </div>
 
+
+        <div id="Date">
+            <div class="PageTitle">
+                Date
+            </div>
+            <div id="FormWrap" class="container">
+                <form method="post">
+                    <div id="DateNameWrap" class="  customContainer">
+                        <label for="">name <span class="requierd">*</span></label>
+                        <input type="text" name="DateName" id="DateName" required>
+                    </div>
+                    <div id="DatePhoneWrap" class="container  customContainer">
+                        <label for="">رقم الجوال <span class="requierd">*</span></label>
+                        <input type="text" name="DatePhone" id="DatePhone" required>
+                    </div>
+                    <div id="DateEmailWrap" class="container  customContainer">
+                        <label for="">Emil <span class="requierd">*</span></label>
+                        <input type="text" name="DateEmail" id="DateEmile" required>
+                    </div>
+                    <div id="DateFileWrap" class="container  customContainer">
+                        <label for="">File <span class="requierd">*</span></label>
+                        <input type="text" name="DateFile" id="DateFile" required>
+                    </div>
+                    <div id="DateSrcWrap" class="container  customContainer">
+                        <label for="">DateSrcWrap <span class="requierd">*</span></label>
+                        <input type="text" name="DateSrc" id="DateSrc" required>
+                    </div>
+                    <div id="DateTimeWrap" class="container  customContainer">
+                        <label for="">DateTimeWrap <span class="requierd">*</span></label>
+                        <input type="text" name="DateTime" id="DateTime" required>
+                    </div>
+                    <div id="DateTimeDateWrap" class="container  customContainer">
+                        <label for="">DateTimeDateWrap <span class="requierd">*</span></label>
+                        <input type="text" name="DateTimeDate" id="DateTimeDate" required>
+                    </div>
+                    <div id="DatePartWrap" class="container  customContainer">
+                        <label for="">DatePartWrap <span class="requierd">*</span></label>
+                        <input type="text" name="DatePart" id="DatePart" required>
+                    </div>
+                    <div id="DateDescriptionWrap" class="container  customContainer">
+                        <label for="">DateDescriptionWrap <span class="requierd">*</span></label>
+                        <input type="text" name="DateDescription" id="DateDescription" required>
+                    </div>
+                    <input type="submit" value="حجز" class="btn btn-success">
+                </form>
+            </div>
         </div>
     </div>
+
 
     <div style="background-color:red; height:300px;"></div>
 
@@ -499,52 +570,17 @@
 
 
     </footer>
-
-    <script src="header.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script>
         $('.carousel').carousel({
             interval: 2000,
             pause: false
         })
     </script>
-    <!-- Code injected by live-server -->
-    <script type="text/javascript">
-        // <![CDATA[  <-- For SVG support
-        if ('WebSocket' in window) {
-            (function () {
-                function refreshCSS() {
-                    var sheets = [].slice.call(document.getElementsByTagName("link"));
-                    var head = document.getElementsByTagName("head")[0];
-                    for (var i = 0; i < sheets.length; ++i) {
-                        var elem = sheets[i];
-                        var parent = elem.parentElement || head;
-                        parent.removeChild(elem);
-                        var rel = elem.rel;
-                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-                        }
-                        parent.appendChild(elem);
-                    }
-                }
-                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-                var address = protocol + window.location.host + window.location.pathname + '/ws';
-                var socket = new WebSocket(address);
-                socket.onmessage = function (msg) {
-                    if (msg.data == 'reload') window.location.reload();
-                    else if (msg.data == 'refreshcss') refreshCSS();
-                };
-                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-                    console.log('Live reload enabled.');
-                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-                }
-            })();
-        }
-        else {
-            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-        }
-	// ]]>
-    </script>
+
 
 </body>
 

@@ -4,6 +4,35 @@
   direction: rtl;
 }
 
+div#FormWrap {
+  width: 60%;
+}
+
+div#Date {
+  background-color: rgb(246, 246, 246);
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#Date label {
+  display: block;
+}
+
+#Date input[type="submit"] {
+  width: 100%;
+  /* margin: 0 15%; */
+}
+#Date input[type="text"] {
+  width: 50%;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  margin-top: 30px;
+}
+.requierd {
+  color: red;
+  font-family: "Cormorant Garamond", serif;
+}
 .doctorpart {
   color: #1c97c5;
 }
@@ -13,6 +42,7 @@ div#doctors {
   margin: 0 auto;
   /* height: 70vh; */
   position: relative;
+  height: 120vh;
 }
 
 #medicalTeam {
@@ -26,12 +56,16 @@ div#doctors {
 }
 
 .doctorInfo {
-  background-color: rgb(202, 202, 202);
-  width: 100%;
+  transition-duration: 0.3s;
   height: 100%;
-  padding: 180px 87px;
+  background-color: #dfdfdf;
+  /* margin: -620px 620px; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 14% 12%;
+  direction: rtl;
   text-align: right;
-  /* margin: 50px; */
 }
 
 .state {
@@ -647,13 +681,42 @@ section {
   }
 }
 
+.doctorImgWrap {
+  /* width: 100% !important; */
+  height: 100% !important;
+}
+
+.doctorImg {
+  height: 100%;
+  /* width: 60% !important; */
+  object-fit: cover;
+  object-position: bottom;
+  /* top: 176px; */
+  /* position: absolute; */
+}
 @media screen and (max-width: 769px) {
   .doctorInfo {
     background-color: rgb(202, 202, 202);
     width: 100%;
-    height: 25%;
-    padding: 7% 7% 3% 3%;
+    height: 32% !important;
+    padding: 7% 7%;
     text-align: right;
+    /* position: absolute; */
+    /* top: 0; */
+  }
+
+  .doctorImgWrap {
+    width: 100% !important;
+    /* margin-top: 0%; */
+    /* position: relative; */
+  }
+  .doctorImg {
+    height: 68%;
+    width: 100% !important;
+    object-fit: cover;
+    object-position: top;
+    top: 32%;
+    position: absolute;
   }
   #headerTextsWrape {
     height: 270px;
