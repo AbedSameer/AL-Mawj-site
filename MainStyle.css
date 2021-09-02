@@ -1,6 +1,37 @@
 * {
   margin: 0px;
   padding: 0px;
+  direction: rtl;
+}
+
+.doctorpart {
+  color: #1c97c5;
+}
+
+div#doctors {
+  width: 90%;
+  margin: 0 auto;
+  /* height: 70vh; */
+  position: relative;
+}
+
+#medicalTeam {
+  background-color: #dfdfdf;
+  padding: 1px 0px;
+  /* height: 600px; */
+}
+
+.DoctorName {
+  /* color: #38b7eb; */
+}
+
+.doctorInfo {
+  background-color: rgb(202, 202, 202);
+  width: 100%;
+  height: 100%;
+  padding: 180px 87px;
+  text-align: right;
+  /* margin: 50px; */
 }
 
 .state {
@@ -338,6 +369,7 @@ footer {
   bottom: -1px;
   height: var(--footerHeight);
   width: 100%;
+  margin-top: 50px;
 }
 
 #innerFotter {
@@ -496,15 +528,12 @@ section {
   margin: -550px auto;
   font-size: 45px;
 }
-.carousel-inner {
-  height: 360px;
-}
 
 #Welcom {
   display: flex;
   width: 100%;
-}
-@media screen and (max-width: 935px) {
+} /*
+@media screen and (max-width: 992px) {
   root {
     --headerHeight: 60px;
   }
@@ -529,7 +558,7 @@ section {
     margin-left: 0px;
   }
 }
-
+*/
 @media screen and (max-width: 730px) {
   #headerTextsWrape {
     height: 290px;
@@ -599,11 +628,11 @@ section {
     text-align: center;
     margin: 0px 15px;
   }
-
+  /*
   #AboutUsImg {
     width: 100%;
     margin-left: 0px;
-  }
+  }*/
   #wrap {
     display: block;
     position: absolute;
@@ -618,7 +647,14 @@ section {
   }
 }
 
-@media screen and (max-width: 778px) {
+@media screen and (max-width: 769px) {
+  .doctorInfo {
+    background-color: rgb(202, 202, 202);
+    width: 100%;
+    height: 25%;
+    padding: 7% 7% 3% 3%;
+    text-align: right;
+  }
   #headerTextsWrape {
     height: 270px;
   }
@@ -627,7 +663,7 @@ section {
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 576px) {
   #headerTextsWrape {
     height: 258px;
   }
