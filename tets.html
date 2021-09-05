@@ -49,8 +49,6 @@
         <div class="item ">
             <img src="img/8.jpg" class="sliderImg" alt="">
         </div>
-        <div id="lastEle" hidden></div>
-
     </div>
 
 
@@ -70,65 +68,6 @@
     </script>
 
     <script>
-        var ele;
-        const activeEle = [];
-
-        //    window.onload(getEle());
-        function getEle() {
-            for (var i = 0; i <= activeEle.length; i++) {
-                activeEle.splice(0, activeEle.length);
-
-            } ele = document.getElementsByClassName('item');
-            for (var i = 0; i < ele.length; i++) {
-                activeEle.push(ele[i]);
-
-            }
-            console.log(activeEle);
-        }
-
-        var id = 0;
-
-        let elements = [];
-
-
-        window.onload(setInterval(myfunction, 1500));
-        //window.onload(myfunction());
-
-
-
-        function myfunction() {
-            getEle();
-            elements = activeEle;
-            console.log('44444    ' + id);
-            console.log('elements 0');
-            console.log(elements[0]);
-            //elements[0] = (elements[1].outerHTML);
-            document.getElementById('silderWrap').appendChild(elements[0]);
-            setTimeout(function () {
-                // elements[id].style.margin = 0;
-                //elements[id].style.width = 0;
-                elements[id + 6].style.margin = 10;
-                elements[id + 6].style.width = 100;
-                console.log(activeEle);
-                //id++;
-                console.log('elements 5');
-                console.log(elements[id + 6]);
-
-            }, 2)
-
-
-            if (id == 8)
-                id = 0;
-
-
-
-
-
-
-
-
-
-        }
     </script>
 
 </body>

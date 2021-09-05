@@ -4,30 +4,86 @@
   direction: rtl;
 }
 
+.sliderCover {
+  width: 10%;
+  height: 150px;
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+}
+
+.postExcrpt {
+  margin: 10px 0;
+}
+.moreLinkBtn:hover {
+  color: white;
+}
+
+.postTitle,
+.postTitle:hover {
+  color: var(--MainColor);
+  font-size: 24px;
+  font-weight: bold;
+}
+.postInfo {
+  display: flex;
+  height: 100%;
+  padding: 0px 30px;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.moreLinkBtn {
+  background: var(--MainColor);
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.4em;
+}
+
+a#postLink {
+  font-size: 14px;
+}
+
+img.postImg {
+  width: 300px;
+  border-radius: 25px;
+}
+
+.post {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  margin: 30px auto;
+  background-color: #e4e3e3;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+#posts {
+  padding: 3% 4%;
+}
+
 #silderWrap {
-  /* transition-duration: 0.7s; */
   overflow: hidden;
-  background-color: red;
-  height: 270px;
-  /* width: 130% !important; */
+  height: 180px;
   float: right;
   text-align: right;
-  /* display: flex; */
-  /* align-items: center; */
-  /* align-content: center; */
-  /* justify-content: space-around; */
 }
 .sliderImg {
-  /* width: 70px; */
-  /* transition-duration: 0.7s; */
   width: 100%;
 }
 .item {
-  width: 99px;
+  width: 120px;
   transition-duration: 0.1s;
-  /* overflow: hidden; */
-  margin: 100px 61px;
+  margin: 50px 50px;
   display: inline-block;
+  height: 100px;
 }
 
 div#FormWrap {
@@ -277,8 +333,8 @@ div#contanct {
 }
 
 #welcomImg img {
-  width: 100%;
-  max-height: 100%;
+  width: 100% !important;
+  max-height: 360px;
   max-width: 100%;
   object-fit: cover;
 }
@@ -322,6 +378,7 @@ div#contanct {
   width: 50%;
   color: white;
   font-size: 20px;
+  /* margin-top: 100px; */
 }
 a {
   text-decoration: none;
@@ -592,6 +649,7 @@ section {
 #Welcom {
   display: flex;
   width: 100%;
+  margin-top: 100px;
 } /*
 @media screen and (max-width: 992px) {
   root {
