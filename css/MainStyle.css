@@ -4,6 +4,32 @@
   direction: rtl;
 }
 
+#silderWrap {
+  /* transition-duration: 0.7s; */
+  overflow: hidden;
+  background-color: red;
+  height: 270px;
+  /* width: 130% !important; */
+  float: right;
+  text-align: right;
+  /* display: flex; */
+  /* align-items: center; */
+  /* align-content: center; */
+  /* justify-content: space-around; */
+}
+.sliderImg {
+  /* width: 70px; */
+  /* transition-duration: 0.7s; */
+  width: 100%;
+}
+.item {
+  width: 99px;
+  transition-duration: 0.1s;
+  /* overflow: hidden; */
+  margin: 100px 61px;
+  display: inline-block;
+}
+
 div#FormWrap {
   width: 60%;
 }

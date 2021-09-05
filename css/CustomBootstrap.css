@@ -1,4 +1,4 @@
-.carousel-inner {
+.carousel-inner #DoctorCarousel {
   height: 100vh;
 }
 .custom {
@@ -6,6 +6,17 @@
 }
 .DoctorCarousel .carousel-item {
   width: 50%;
+}
+#insuranceCarousel {
+  height: 100px;
+}
+#insuranceCarousel .carousel-item {
+  height: 100px;
+  width: 20%;
+  display: flex;
+  /* margin: 0 0%; */
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .customContainer {
@@ -24,3 +35,5 @@
     flex-direction: column;
   }
 }
+
+/*/////////////////////////*/ /**/

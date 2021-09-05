@@ -131,17 +131,17 @@
             <div id="welcomImg">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active carousel-item-left">
+                        <div class="carousel-item active  ">
                             <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
-                                class="d-block w-100" alt="...">
+                                class="d-block w-100" alt="img/">
                         </div>
-                        <div class="carousel-item carousel-item-next carousel-item-left">
+                        <div class="carousel-item carousel-item-next  ">
                             <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
-                                class="d-block w-100" alt="...">
+                                class="d-block w-100" alt="img/">
                         </div>
                         <div class="carousel-item">
                             <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_603a792fe40f0.jpg"
-                                class="d-block w-100" alt="...">
+                                class="d-block w-100" alt="img/">
                         </div>
                     </div>
 
@@ -423,12 +423,12 @@
             </div>
             <div id="doctors">
                 <div id="DoctorCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner  ">
+                    <div class="carousel-inner" id="DoctorCarousel">
 
                         <div class="carousel-item custom  ">
                             <div class="w-50 doctorImgWrap ">
                                 <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_crop_6044cc3343576_6044cc1eaaf29.jpg"
-                                    class="d-block doctorImg w-100" alt="...">
+                                    class="d-block doctorImg w-100" alt="img/">
                             </div>
                             <div class="doctorInfo">
                                 <div class="doctorpart">فرع حراء
@@ -443,7 +443,7 @@
                         <div class="carousel-item custom  ">
                             <div class="w-50 doctorImgWrap ">
                                 <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_crop_6044cc3343576_6044cc1eaaf29.jpg"
-                                    class="d-block doctorImg w-100" alt="...">
+                                    class="d-block doctorImg w-100" alt="img/">
                             </div>
                             <div class="doctorInfo">
                                 <div class="doctorpart">فرع حراء
@@ -458,7 +458,7 @@
                         <div class="carousel-item custom active ">
                             <div class="w-50 doctorImgWrap ">
                                 <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/2000_crop_6044cc3343576_6044cc1eaaf29.jpg"
-                                    class="d-block doctorImg w-100" alt="...">
+                                    class="d-block doctorImg w-100" alt="img/">
                             </div>
                             <div class="doctorInfo">
                                 <div class="doctorpart">فرع حراء
@@ -531,6 +531,49 @@
                 </form>
             </div>
         </div>
+        <div id="insurances">
+            <div id="PageTitle">التأمين الصحي</div>
+
+            <div id="insuranceCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner col-12">
+                    <div class="carousel-item active col-4">
+                        <img src="img/instagram.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item  col-4">
+                        <img src="img/snapchat.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item col-4">
+                        <img src="img/twitter.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--
+            <div id="insuranceSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner col-lg-12 " role="listbox" id="insuranceCarousel">
+                    <div class="carousel-item active col-lg-2">
+                        <img src="img/instagram.png" class="d-block w-100" alt="img/">
+                    </div>
+                    <div class="carousel-item active col-lg-2">
+                        <img src="img/twitter.png" class="d-block w-100" alt="img/">
+                    </div>
+                    <div class="carousel-item active col-lg-2">
+                        <img src="img/snapchat.png" class="d-block w-100" alt="img/">
+                    </div>
+
+                </div>
+
+            </div>
+-->
+
+
+
+        </div>
     </div>
 
 
@@ -573,7 +616,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
     <script>
         $('.carousel').carousel({
             interval: 2000,
