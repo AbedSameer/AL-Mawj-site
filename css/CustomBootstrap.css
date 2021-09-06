@@ -7,6 +7,10 @@
 .DoctorCarousel .carousel-item {
   width: 50%;
 }
+.carousel-inner.DoctorsSlider {
+  width: 80%;
+  margin: 0 auto;
+}
 #insuranceCarousel {
   height: 100px;
 }

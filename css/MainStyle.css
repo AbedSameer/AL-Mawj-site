@@ -4,6 +4,144 @@
   direction: rtl;
 }
 
+#soialMediaHeaderMobile img {
+  width: 17px;
+  margin: 25px 8px;
+}
+
+div#soialMediaHeaderMobile {
+  width: 89px;
+}
+
+#soialMediaMobile img {
+  width: 11%;
+  margin: 10px;
+  /* height: 45px; */
+}
+
+label#wrap {
+  position: absolute;
+  z-index: 70;
+}
+#innerAside {
+  width: 50vw;
+  /* margin-right: -97px; */
+  background-color: white;
+  position: absolute;
+  transition-duration: 0.3s;
+  z-index: 100;
+  /* right: 0; */
+  /* top: 0; */
+  height: 100vh;
+  min-width: 255px;
+  padding: 30px 50px;
+}
+div#balckBackgroundMobile {
+  width: 50vw;
+  height: 100vh;
+  z-index: 50;
+  position: absolute;
+  background-color: #00000091;
+  top: 0;
+  left: 0;
+  /* display: none; */
+}
+
+.MobileBarItem {
+  height: calc(100% / 15);
+  margin: 10px 0px;
+  font-size: 25px;
+}
+
+aside ul {
+  list-style: none;
+  height: 90%;
+  overflow: scroll;
+}
+
+aside {
+  width: 100vw;
+  margin-right: -101vw;
+  /* background-color: white; */
+  position: fixed;
+  transition-duration: 0.3s;
+  z-index: 9;
+  height: 100vh;
+  /* padding: 60px 100px; */
+  top: 0;
+  right: 0;
+  /* box-shadow: -50vw 0px 0px 0px #00000091; */
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+}
+div#serveces {
+}
+
+#ConnectionWrap {
+  display: flex;
+  padding: 50px;
+}
+
+div#soialMedia {
+  margin: 20px;
+}
+
+.SoialMediaImg {
+  max-width: 40px;
+  margin: 7px;
+}
+#soialMediaMobile {
+  border-top: 1px solid var(--GrayColor);
+  padding-top: 10px;
+  /* display: flex; */
+  /* position: absolute; */
+  width: 200px;
+  /* justify-content: center; */
+}
+div#Connection {
+  background-color: var(--GrayColor);
+}
+
+.ConnectionInpt:focus {
+  box-shadow: 0px 0px 7px 0px var(--MainColor);
+}
+.ConnectionInpt {
+  margin-bottom: 20px;
+  width: 90%;
+  height: 33px;
+  border: none;
+  border: 1px solid var(--GrayColor);
+  border-radius: 3px;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.ConnectionInpt[type="submit"] {
+  background-color: var(--MainColor);
+  color: white;
+}
+
+#NameInpt {
+}
+
+#left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#right {
+  height: 500px;
+  width: 50%;
+  padding: 60px 160px;
+  text-align: center;
+}
+
+#right a {
+  color: var(--MainColor);
+}
+
 .sliderCover {
   width: 10%;
   height: 150px;
@@ -57,7 +195,7 @@ img.postImg {
   height: 250px;
   padding: 20px;
   margin: 30px auto;
-  background-color: #e4e3e3;
+  background-color: var(--GrayColor);
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -88,14 +226,14 @@ img.postImg {
 }
 
 div#FormWrap {
-  width: 60%;
+  width: 50%;
 }
 
 div#Date {
-  background-color: rgb(246, 246, 246);
-  width: 85%;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  background-color: var(--GrayColor);
+  width: 100%;
+  margin: 130px auto;
+  padding: 1px 0px 50px 0px;
 }
 #Date label {
   display: block;
@@ -103,14 +241,20 @@ div#Date {
 
 #Date input[type="submit"] {
   width: 100%;
-  /* margin: 0 15%; */
 }
 #Date input[type="text"] {
   width: 50%;
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid var(--GrayColor);
   outline: none;
   margin-top: 30px;
+}
+
+#Date input[type="text"]:focus {
+  border-bottom: 2px solid var(--MainColor);
+}
+
+input#Date {
 }
 .requierd {
   color: red;
@@ -123,28 +267,22 @@ div#Date {
 div#doctors {
   width: 90%;
   margin: 0 auto;
-  /* height: 70vh; */
   position: relative;
   height: 120vh;
 }
 
 #medicalTeam {
-  background-color: #dfdfdf;
+  background-color: var(--GrayColor);
   padding: 1px 0px;
-  /* height: 600px; */
-}
-
-.DoctorName {
-  /* color: #38b7eb; */
 }
 
 .doctorInfo {
   transition-duration: 0.3s;
   height: 100%;
-  background-color: #dfdfdf;
-  /* margin: -620px 620px; */
+  background-color: white;
   position: absolute;
   left: 0;
+  width: 50%;
   top: 0;
   padding: 14% 12%;
   direction: rtl;
@@ -153,7 +291,6 @@ div#doctors {
 
 .state {
   height: 44%;
-  /* margin: 10px; */
   padding: 13px 27px;
 }
 .state:hover {
@@ -172,13 +309,14 @@ div#doctors {
 #state {
   width: 20%;
   height: 130px;
-  background-color: lightgrey;
+  background-color: var(--GrayColor);
   margin: 60px 50px 0 0;
   display: flex;
   flex-direction: column;
   padding: 10px;
   border: none;
   outline: none;
+  overflow: hidden;
 }
 
 .offerTitle {
@@ -189,6 +327,11 @@ div#doctors {
   direction: rtl;
 }
 
+.offerTitle a {
+  font-size: 1.02rem;
+  color: var(--MainColor);
+}
+
 .offerDetails {
   width: 100%;
   height: 113px;
@@ -197,7 +340,7 @@ div#doctors {
   padding: 9px 11px 9px 0px;
   text-align: right;
   direction: rtl;
-  background-color: #b2b2b229;
+  background-color: var(--GrayColor);
 }
 
 img.offerImg {
@@ -215,10 +358,12 @@ img.offerImg {
   z-index: 1;
   bottom: 136px;
   left: 60px;
-  background-color: #81818185;
+  background-color: #898483a3;
   border-radius: 7px;
-  padding: 6% 12%;
+  padding: 7% 0%;
   color: white;
+  font-size: 1em;
+  text-align: center;
 }
 
 .offerExpDate {
@@ -309,7 +454,7 @@ div#contanct {
 #servecContener {
   width: 40%;
   height: 294px;
-  background-color: #dcdcdc;
+  background-color: var(--GrayColor);
   margin: 20px 20px;
   border-radius: 10px;
   display: flex;
@@ -379,7 +524,6 @@ div#contanct {
   width: 50%;
   color: white;
   font-size: 20px;
-  /* margin-top: 100px; */
 }
 a {
   text-decoration: none;
@@ -400,6 +544,7 @@ a img {
   --MainColor: #2f90a8;
   --headerColor: #fff;
   --footerHeight: 146px;
+  --GrayColor: #ebebeb;
 }
 .backgroundVideo {
   position: absolute;
@@ -464,7 +609,14 @@ iframe {
   width: 16px;
 }
 
-#wrap {
+div#User {
+  width: 40px;
+  background-color: var(--MainColor);
+  height: 40px;
+  border-radius: 50%;
+}
+
+#menu {
   margin-right: 9px;
   float: right;
   display: none;
@@ -476,10 +628,12 @@ iframe {
 }
 
 .menuIcon {
+  border-radius: 5px;
+  transition-duration: 0.3s;
   width: 25px;
   height: 3px;
   background-color: black;
-  margin: 4px 0;
+  margin-bottom: 4px;
 }
 
 footer {
@@ -487,12 +641,11 @@ footer {
   bottom: -1px;
   height: var(--footerHeight);
   width: 100%;
-  margin-top: 50px;
 }
 
 #innerFotter {
   width: 100%;
-  background-color: gray;
+  background-color: white;
   height: 100%;
   text-align: right;
   display: flex;
@@ -543,6 +696,7 @@ footer {
   width: max-content;
   border-bottom: 3px solid rgb(0, 145, 158);
   margin: 70px auto;
+  font-size: 30px;
 }
 
 #AbouText {
@@ -550,7 +704,7 @@ footer {
   margin-left: -98px;
   padding: 40px;
   z-index: 1;
-  background-color: #dadada;
+  background-color: var(--GrayColor);
   height: 360px;
   direction: rtl;
   text-align: center;
@@ -565,7 +719,7 @@ section {
 }
 .section {
   width: 100%;
-  background-color: lightgray;
+  background-color: var(--GrayColor);
   padding-top: 25px;
   flex-direction: column;
   text-align: right;
@@ -584,7 +738,7 @@ section {
 .section_discription {
   width: 100%;
   overflow: hidden;
-  background-color: lightgray;
+  background-color: var(--GrayColor);
   transition-duration: calc(var(--transitionDuration) + 0.3s);
   margin: 0px auto;
   padding: 0px 5%;
@@ -607,7 +761,7 @@ section {
   text-align: right;
 }
 #collapseTwo {
-  background-color: rgb(247 247 247);
+  background-color: var(--GrayColor);
 }
 .card {
   width: 60%;
@@ -650,34 +804,8 @@ section {
 #Welcom {
   display: flex;
   width: 100%;
-  margin-top: 100px;
-} /*
-@media screen and (max-width: 992px) {
-  root {
-    --headerHeight: 60px;
-  }
-
-  .wrap {
-    flex-direction: column-reverse;
-  }
-  #AbouText {
-    width: 100%;
-    margin-left: 0px;
-    padding: 90px 0px;
-    z-index: 1;
-    background-color: #dadada;
-  }
-  #AbouText p {
-    text-align: center;
-    margin: 0px 15px;
-  }
-
-  #AboutUsImg {
-    width: 100%;
-    margin-left: 0px;
-  }
+  margin-top: 225px;
 }
-*/
 @media screen and (max-width: 730px) {
   #headerTextsWrape {
     height: 290px;
@@ -707,20 +835,23 @@ section {
   }
   #Welcom {
     flex-direction: column;
+    margin-top: 100px;
   }
   #WelcomeTextWrap {
     width: 100%;
+    margin-top: 16.5vh;
   }
   #welcomImg {
     width: 100%;
   }
 
-  #wrap {
+  #menu {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 11px;
     top: 30%;
   }
+
   #logo {
     width: 200px;
     margin: -7px auto;
@@ -741,22 +872,19 @@ section {
     margin-left: 0px;
     padding: 90px 0px;
     z-index: 1;
-    background-color: #dadada;
+    background-color: var(--GrayColor);
   }
   #AbouText p {
     text-align: center;
     margin: 0px 15px;
   }
-  /*
-  #AboutUsImg {
-    width: 100%;
-    margin-left: 0px;
-  }*/
-  #wrap {
+
+  #menu {
     display: block;
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     right: 11px;
-    top: 30%;
+    top: 5%;
   }
 
   #headerTextsWrape {
@@ -767,33 +895,75 @@ section {
 }
 
 .doctorImgWrap {
-  /* width: 100% !important; */
   height: 100% !important;
 }
 
 .doctorImg {
   height: 100%;
-  /* width: 60% !important; */
   object-fit: cover;
   object-position: bottom;
-  /* top: 176px; */
-  /* position: absolute; */
 }
 @media screen and (max-width: 769px) {
+  header :checked + #menu + aside {
+    margin-right: 0vw;
+    transition-duration: 0.3s;
+  }
+  header :checked + #menu #menuIcon1 {
+    transform: rotate(-45deg);
+    margin-top: 9px;
+    height: 5px;
+    transition-duration: 0.3s;
+  }
+  header :checked + #menu #menuIcon2 {
+    transform: rotate(45deg);
+    margin-top: -9px;
+    height: 5px;
+    transition-duration: 0.3s;
+  }
+  header :checked + #menu #menuIcon3 {
+    display: none;
+  }
+
+  #balckBackgroundMobile {
+    display: block;
+  }
+
+  #Date input[type="text"] {
+    width: 100%;
+  }
   .doctorInfo {
-    background-color: rgb(202, 202, 202);
+    background-color: white;
     width: 100%;
     height: 32% !important;
     padding: 7% 7%;
     text-align: right;
-    /* position: absolute; */
-    /* top: 0; */
   }
-
+  #ConnectionWrap {
+    flex-direction: column;
+  }
+  .post {
+    flex-direction: column;
+    height: 0%;
+  }
+  a#postLink {
+    width: 100%;
+  }
+  div#FormWrap {
+    width: 90%;
+  }
   .doctorImgWrap {
     width: 100% !important;
-    /* margin-top: 0%; */
-    /* position: relative; */
+  }
+  #right {
+    padding: 0px;
+    height: auto;
+    width: 100%;
+    font-size: 26px;
+  }
+  #left {
+    padding: 0px;
+    width: 100%;
+    font-size: 26px;
   }
   .doctorImg {
     height: 68%;
