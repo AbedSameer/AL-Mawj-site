@@ -74,16 +74,17 @@ img.postImg {
   height: 180px;
   float: right;
   text-align: right;
-}
-.sliderImg {
   width: 100%;
 }
+.sliderImg {
+  height: 100%;
+}
 .item {
-  width: 120px;
-  transition-duration: 0.1s;
+  width: 16.6%;
+  height: 130px;
+  transition-duration: 500ms;
   margin: 50px 50px;
   display: inline-block;
-  height: 100px;
 }
 
 div#FormWrap {
