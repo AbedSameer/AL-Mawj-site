@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- include libraries(jQuery, bootstrap) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 
 
@@ -22,7 +24,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="customNav()">
 
     <header style="z-index: 2; position: relative; height: 664px;">
         <!--div class=" innerHeader">-->
@@ -47,7 +49,26 @@
                     </li>
 
                     <li>
-                        <a class="link" href="index.html">خدماتنا</a>
+                        <div id="more">
+                            <input type="checkbox" id="moreShowServeses" hidden>
+                            <div id="moreSelectServeses">
+                                <label for="moreShowServeses" id="moreLable">
+                                    خدماتنا
+                                </label>
+                                <div id="moreMenuServeses">
+                                    <ul id="moreMenuList">
+                                        <li><input type="submit" value="تجميل لا جراحي" name="non-surgical"></li>
+                                        <li><input type="submit" value="الجلدية" name="dermatology"></li>
+                                        <li><input type="submit" value="ليزر علاج البشرة" name="skinLaser"></li>
+                                        <li><input type="submit" value="ليزرعلاج الشعر" name="hairLaser"></li>
+                                        <li><input type="submit" value="العناية الدورية" name="regularCare"></li>
+                                        <li><input type="submit" value="طب الاسنان" name="dentist"></li>
+                                        <li><input type="submit" value="المختبر الطبي" name="laboratory"></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </li>
 
                     <li>
@@ -63,7 +84,61 @@
                     </li>
 
                     <li>
-                        <a class="link" href="index.html">المزيد</a>
+                        <div id="more">
+                            <input type="checkbox" id="moreShow" hidden>
+                            <div id="moreSelect">
+                                <label for="moreShow" id="moreLable">
+                                    المزيد
+                                </label>
+                                <div id="moreMenu">
+                                    <ul id="moreMenuList">
+                                        <li class="MobileBarItem">
+                                            <a href="#">الرئيسية</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">حول الموج</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">خدماتنا</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">العروض</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">صفقات الجمال</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">بطاقات الولاء</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">جواز سفر الجمال</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">حجز موعد</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">الصيدلية</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">مركز آساج الرياضي</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">المدونة</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">الاتصال</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">جديد عروضنا</a>
+                                        </li>
+                                        <li class="MobileBarItem">
+                                            <a href="#">جديد العروض</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </li>
 
                     <li>
@@ -85,11 +160,12 @@
 
                 </ul>
             </div>
+
+            <!--  </!-div>-->
             <div id="soialMediaHeaderMobile">
                 <img src="img/phone-call.svg" alt="" srcset="">
                 <img src="img/envelope.svg" alt="" srcset="">
             </div>
-            <!--  </!-div>-->
         </nav>
         <input type="checkbox" name="mobileWrap" id="mobileWrap" hidden>
         <label id="menu" for="mobileWrap">
@@ -106,40 +182,43 @@
                         <a href="#">الرئيسية</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">حول الموج</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">خدماتنا</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">العروض</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">صفقات الجمال</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">بطاقات الولاء</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">جواز سفر الجمال</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">حجز موعد</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">الصيدلية</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">مركز آساج الرياضي</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">المدونة</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">الاتصال</a>
                     </li>
                     <li class="MobileBarItem">
-                        <a href="#">الرئيسية</a>
+                        <a href="#">جديد عروضنا</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">جديد العروض</a>
                     </li>
                 </ul>
                 <div id="soialMediaMobile">
@@ -367,7 +446,7 @@
                 <h2>كيف يمكننا مساعدتك</h2>
                 <p id="contanctUs_p"> نحن في خدمتك للإجابة عن اي سؤال او استفسار يخص العيادة او الخدمات المقدمة
                     ممثلي خدمة العملاء وفريقنا الطبي على أتم الاستعداد للمساعدة </p>
-                <a href="#" class="moreLinkBtn" id="HeaderButton"> اتصل بنا </a>
+                <a href="tel:920009125" class="moreLinkBtn" id="contanctButton"> اتصل بنا </a>
             </div>
 
             <div id="contactFixedBackgound"></div>
@@ -596,28 +675,28 @@
             <!-- <div class="sliderCover"></div>-->
             <div id="silderWrap" class="col-lg-12">
                 <div id="linerSlider">
-                    <div class=" item  ">
+                    <div class="item">
                         <img src="img/1.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class=" item  ">
+                    <div class="item">
                         <img src="img/2.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class=" item  ">
+                    <div class="item">
                         <img src="img/3.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class=" item  ">
+                    <div class="item">
                         <img src="img/4.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class="item " style="margin: 0px; width: 0px; height: 0px;">
+                    <div class="item">
                         <img src="img/5.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class="item" style="margin: 0px; width: 0px; height: 0px;">
+                    <div class="item">
                         <img src="img/6.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class="item" style="margin: 0px; width: 0px; height: 0px;">
+                    <div class="item">
                         <img src="img/7.jpg" class="sliderImg" alt="">
                     </div>
-                    <div class="item " style="margin: 0px; width: 0px; height: 0px;">
+                    <div class="item">
                         <img src="img/8.jpg" class="sliderImg" alt="">
                     </div>
                 </div>
@@ -753,11 +832,11 @@
                 <div id="right">
                     <div id="mawj">مجموعة عيادات الموج</div>
                     <div id="phone">
-                        <img src="img/arow_down.png" alt="" width="16px">
+                        <i class="fa fa-phone"></i>
                         <a href="tel:920009125">920009125 - للحجز و الإستفسار</a>
                     </div>
                     <div id="email">
-                        <img src="img/arow_down.png" alt="" width="16px">
+                        <i class="fas fa-envelope"></i>
                         <a href="mailto: info@almawj.net">info@almawj.net</a>
                     </div>
                     <div id="postCode">الرمز البريدي 23523
@@ -837,8 +916,22 @@
 
     <script>
 
+        function customNav() {
+            var memu = document.getElementById("MenuList");
+            if (window.innerWidth <= 1120) {
+                var ele1 = document.getElementById("mainMenu").children[0].children[4];
+                var ele2 = document.getElementById("mainMenu").children[0].children[5];
+                console.log(ele1);
+                console.log(ele2);
+                document.getElementById('moreMenuList').appendChild(ele1);
+                document.getElementById('moreMenuList').appendChild(ele2);
+            }
+        }
+
         var ele;
         const elements = [];
+
+
         window.onload(setInterval(myfunction, 3000));
         function getEle() {
             for (var i = 0; i <= elements.length; i++)
@@ -846,26 +939,50 @@
 
             ele = document.getElementsByClassName('item');
 
-            for (var i = 0; i < ele.length; i++)
+            for (var i = 0; i < ele.length; i++) {
                 elements.push(ele[i]);
 
+            }
         }
-
         function myfunction() {
+
             getEle();
-            console.log(window.innerWidth);
+            //console.log(window.innerWidth);
             elements[0].style.width = '0px';
             elements[0].style.height = '0px';
-            elements[0].style.margin = '0px';
-            elements[4].style.margin = '50px 50px';
-            elements[4].style.width = '16.6%';
-            elements[4].style.height = '130px';
+            elements[0].style.padding = '0px';
+
+            if (window.innerWidth >= 769) {
+                elements[7].style.width = '0px';
+                elements[7].style.height = '0px';
+                elements[7].style.padding = '0px';
+                elements[6].style.padding = '30px 30px';
+                elements[6].style.width = 'calc(100% / 6.2)';
+                elements[6].style.height = '160px';
+            }
+
+
+
+            else {
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.width = '0px';
+                    elements[i].style.height = '0px';
+                    elements[i].style.padding = '0px';
+                    elements[i].style.margin = '0px';
+                }
+
+                elements[1].style.padding = '30px 30px';
+                elements[1].style.width = 'calc(100% / 1.2)';
+                elements[1].style.height = '160px';
+                elements[1].style.margin = '0px 20px 0px 0px';
+                ;
+            }
 
 
             setTimeout(function () {
                 document.getElementById('linerSlider').appendChild(elements[0]);
 
-            }, 500);
+            }, 1500);
         }
     </script>
 
