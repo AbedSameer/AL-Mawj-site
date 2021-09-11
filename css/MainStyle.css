@@ -14,20 +14,47 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
-input#UserFullName {
-  margin: 40px 0px 40px 110px;
+input#sendEmail {
+  width: 100%;
+  height: 35px;
+  border-radius: 10px;
+  background-color: var(--MainColor);
+  color: white;
 }
 
-div#sendEmailPage {
+textarea#EmailContant {
+  resize: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+input#UserEmail {
+  width: 47%;
+  height: 35px;
+  border-radius: 7px;
+}
+
+#sendEmailPage form {
+  width: 100%;
+}
+
+input#UserFullName {
+  margin: 40px 0px 40px 5%;
+  width: 47%;
+  height: 35px;
+  border-radius: 7px;
+}
+
+#sendEmailPage {
   transition-duration: 0.3s;
   background-color: #000000;
   height: 99.9vh;
-  position: relative;
+  position: fixed;
   top: 0px;
   left: 0;
   width: 98.75vw;
   z-index: 108;
-  padding: 10.5% 21%;
+  padding: 4.5% 19%;
   font-size: 4em;
   color: white;
   margin-top: -100vh;
@@ -46,7 +73,7 @@ div#sendEmailPage {
   cursor: pointer;
 }
 
-div#callUsAlertPage {
+#callUsAlertPage {
   transition-duration: 0.3s;
   background-color: #000000;
   height: 99.9vh;
@@ -158,7 +185,7 @@ input#subscribeEmail {
   padding: 0px;
 }
 
-div#subscribeFotter {
+#subscribeFotter {
   width: 254px;
   left: 93px;
   position: absolute;
@@ -176,7 +203,7 @@ div#subscribeFotter {
   border-bottom-right-radius: 7px;
 }
 
-div#moreSelectFotter {
+#moreSelectFotter {
   position: relative;
   height: 20px;
   width: 100%;
@@ -184,7 +211,7 @@ div#moreSelectFotter {
   margin: auto 0px;
 }
 
-div#moreMenuServesesFotter {
+#moreMenuServesesFotter {
   transition-duration: 0.3s;
   /* display: none; */
   position: absolute;
@@ -197,7 +224,7 @@ div#moreMenuServesesFotter {
   border-radius: 10px;
 }
 
-div#moreSelectServesesFotter {
+#moreSelectServesesFotter {
   position: relative;
   height: 20px;
   width: 100%;
@@ -205,7 +232,7 @@ div#moreSelectServesesFotter {
   margin: auto 0px;
 }
 
-div#moreFotter {
+#moreFotter {
   width: 40px;
   height: 15px;
 }
@@ -220,20 +247,21 @@ ul#MenuListFotter {
   font-size: 13px;
 }
 
-div#FotterMenu {
+#FotterMenu {
   width: 400px;
   font-size: 13px;
-  position: absolute;
+  /* position: absolute; */
 }
 
-div#leftFotter {
+#leftFotter {
   display: flex;
   flex-direction: column;
   /* padding: 30px; */
-  align-items: flex-end;
   position: relative;
   height: 80%;
-  width: 34%;
+  width: 60%;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 input[type="date"]#DateTimeDate {
@@ -257,7 +285,7 @@ input[type="date"]#DateTimeDate {
   pointer-events: none;
 }
 
-div#customSelect {
+#customSelect {
   position: relative;
 }
 
@@ -306,7 +334,7 @@ header a {
   left: -2px;
 }
 
-div#more {
+#more {
   width: 57px;
 }
 
@@ -406,7 +434,7 @@ div#more {
   border: 1px solid var(--MainColor);
   top: -263px;
 }
-div#linerSlider {
+#linerSlider {
   /* position: absolute; */
   width: 100%;
   height: 130px;
@@ -415,7 +443,7 @@ div#linerSlider {
   width: 17px;
   margin: 25px 5px;
 }
-div#soialMediaHeaderMobile {
+#soialMediaHeaderMobile {
   width: 59px;
   position: absolute;
   z-index: 11;
@@ -440,7 +468,7 @@ label#wrap {
   min-width: 255px;
   padding: 30px 50px;
 }
-div#balckBackgroundMobile {
+#balckBackgroundMobile {
   width: 50vw;
   height: 100vh;
   z-index: 50;
@@ -474,13 +502,13 @@ aside {
   top: 0px;
   right: 0px;
 }
-div#serveces {
+#serveces {
 }
 #ConnectionWrap {
   display: flex;
   padding: 50px;
 }
-div#soialMedia {
+#soialMedia {
   margin: 20px;
 }
 .SoialMediaImg {
@@ -494,7 +522,7 @@ div#soialMedia {
   display: flex;
   margin: 0 -40px;
 }
-div#Connection {
+#Connection {
   background-color: var(--GrayColor);
 }
 .ConnectionInpt:focus {
@@ -524,7 +552,7 @@ div#Connection {
 #right {
   height: 500px;
   width: 50%;
-  padding: 60px 160px;
+  padding: 60px 0%;
   text-align: center;
 }
 #right a {
@@ -630,10 +658,10 @@ img.postImg {
   justify-content: center;
   align-items: baseline;
 }
-div#FormWrap {
+#FormWrap {
   width: 50%;
 }
-div#Date {
+#Date {
   background-color: var(--GrayColor);
   width: 100%;
   margin: 130px auto;
@@ -671,7 +699,7 @@ input#Date {
 .doctorpart {
   color: rgb(28, 151, 197);
 }
-div#doctors {
+#doctors {
   width: 90%;
   margin: 0px auto;
   position: relative;
@@ -784,7 +812,7 @@ img.offerImg {
   margin: 50px auto;
   width: 70%;
 }
-div#blackLayer {
+#blackLayer {
   background-color: rgb(23, 130, 221);
   width: 100%;
   height: 130px;
@@ -810,7 +838,7 @@ div#blackLayer {
   text-align: center;
   font-size: 22px;
 }
-div#contanct {
+#contanct {
   width: 100%;
   height: 450px;
   display: flex;
@@ -925,7 +953,6 @@ a img {
   --GrayColor: #ebebeb;
 }
 .backgroundVideo {
-  position: absolute;
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -988,7 +1015,7 @@ iframe {
 .mainMenuIcons {
   width: 16px;
 }
-div#User {
+#User {
   width: 40px;
   background-color: var(--MainColor);
   height: 40px;
@@ -1018,6 +1045,7 @@ footer {
   width: 100%;
   max-width: 100% !important;
   padding: 0px 80px;
+  position: relative;
 }
 #innerFotter {
   width: 100%;
@@ -1025,12 +1053,10 @@ footer {
   height: 100%;
   text-align: right;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
-  align-items: center;
 }
 #footerInfo {
-  position: absolute;
+  /* position: absolute; */
   right: 30px;
   direction: rtl;
 }
@@ -1082,7 +1108,7 @@ footer {
   direction: rtl;
   text-align: center;
 }
-div#AbouText {
+#AbouText {
   position: relative;
 }
 section {
@@ -1158,23 +1184,26 @@ section {
   margin: 3vw 0px;
 }
 #headerTextsWrape {
-  position: absolute;
+  position: sticky;
   color: white;
-  min-height: 300px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  /* margin: -350px auto; */
-  top: 100px;
-  right: 30%;
+  margin: -550px auto;
   font-size: 45px;
-  /* z-index: 90; */
 }
 #Welcom {
   display: flex;
   width: 100%;
   /* margin-top: 100px; */
+}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 @media screen and (max-width: 730px) {
   #headerTextsWrape {
@@ -1252,7 +1281,7 @@ section {
     z-index: 1;
     background-color: var(--GrayColor);
   }
-  div#soialMediaHeaderMobile {
+  #soialMediaHeaderMobile {
     display: block;
   }
   #AbouText p {
@@ -1281,6 +1310,39 @@ section {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  #FotterMenu {
+    display: none;
+  }
+  #innerFotter {
+    flex-direction: column;
+    position: absolute;
+    /* width: 70%; */
+  }
+  #share {
+    width: 80%;
+    left: auto;
+    top: 80px;
+  }
+  #leftFotter {
+    width: 100%;
+    bottom: 8px;
+    /* bottom: -37px; */
+    height: 50%;
+    top: 60px;
+    position: absolute;
+    align-items: center;
+  }
+  #footerInfo {
+    width: 87%;
+    top: 20px;
+    max-width: 87%;
+    height: 50%;
+    position: absolute;
+  }
+  footer {
+    height: calc(var(--footerHeight) +200px);
+    padding: 0px;
+  }
   .item {
     width: calc(100% / 4);
   }
@@ -1288,7 +1350,10 @@ section {
     height: auto;
     max-width: 70%;
   }
-
+  #subscribeFotter {
+    /* width: 60%; */
+    left: auto;
+  }
   header #mobileWrap:checked + #menu + aside {
     margin-right: 0vw;
     transition-duration: 0.3s;
@@ -1333,7 +1398,7 @@ section {
     margin: 0 auto;
     position: static;
   }
-  div#FormWrap {
+  #FormWrap {
     width: 90%;
   }
   .doctorImgWrap {
@@ -1364,6 +1429,7 @@ section {
   #HeaderButton {
     font-size: 0.5em;
     left: 40%;
+    bottom: -60px;
   }
 }
 @media screen and (max-width: 576px) {
