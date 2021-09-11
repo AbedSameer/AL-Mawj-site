@@ -25,16 +25,38 @@
 </head>
 
 <body id="body" onload="customNav()">
+    <input type="checkbox" name="showSendEmailPage" id="showSendEmailPage" hidden>
+    <div id="sendEmailPage">
+
+        <label for="showSendEmailPage">
+            <i class="fas fa-times fa-1x"></i></label>
+        <h3>اتصل بنا</h3>
+        <h5>
+            setd to <a href="mailto:info@almawj.net">info@almawj.net</a>
+            <form method="post">
+                <input type="text" name="UserFullName" id="UserFullName">
+                <input type="email" name="UserEmail" id="UserEmail">
+                <textarea name="EmailContant" id="EmailContant" cols="70" rows="5"></textarea>
+                <input type="submit" value="send" id="sendEmail">
+            </form>
+        </h5>
+    </div>
+
+
+
+    <input type="checkbox" name="showCallUsAlirtPage" id="showCallUsAlirtPage" hidden>
+    <div id="callUsAlertPage">
+
+        <label for="showCallUsAlirtPage">
+            <i class="fas fa-times fa-1x"></i></label>
+        <a href="tel:920009125">920009125
+            -
+            للحجز والأستفسار</a>
+    </div>
 
     <header style="z-index: 2; position: relative; height: 664px;">
-        <!--div class=" innerHeader">-->
         <nav id="header">
-            <a href="#body" style="
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-">
+            <a href="#body">
                 <img id="logo" src="https://static1.s123-cdn-static-a.com/uploads/4858436/400_60319e2e9da0e.png"
                     alt=" عيادات الموج ">
             </a>
@@ -92,46 +114,46 @@
                                 </label>
                                 <div id="moreMenu">
                                     <ul id="moreMenuList">
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">الرئيسية</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">حول الموج</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">خدماتنا</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">العروض</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">صفقات الجمال</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">بطاقات الولاء</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">جواز سفر الجمال</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">حجز موعد</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">الصيدلية</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">مركز آساج الرياضي</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">المدونة</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">الاتصال</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">جديد عروضنا</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">جديد العروض</a>
                                         </li>
                                     </ul>
@@ -148,10 +170,14 @@
                         <img class="mainMenuIcons" src="img/share.png" alt="Share">
                     </li>
                     <li>
-                        <img class="mainMenuIcons" src="img/envelope.svg">
+                        <label for="showSendEmailPage">
+                            <img class="mainMenuIcons" src="img/envelope.svg" alt="Share">
+                        </label>
                     </li>
                     <li>
-                        <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                        <label for="showCallUsAlirtPage">
+                            <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                        </label>
                     </li>
                     <li>
                         <div class="mainMenuIcons" id="User"></div>
@@ -626,45 +652,91 @@
 
         <div id="Date">
             <div class="PageTitle">
-                Date
+                حجز موعد
             </div>
             <div id="FormWrap" class="container">
                 <form method="post">
                     <div id="DateNameWrap" class="  customContainer">
-                        <label for="">name <span class="requierd">*</span></label>
-                        <input type="text" name="DateName" id="DateName" required class="DateInput">
+                        <label for="">الأسم <span class="requierd">*</span></label>
+                        <input type="text" name="DateName" id="DateName" required class="DateInput"
+                            placeholder="إجابتك">
                     </div>
                     <div id="DatePhoneWrap" class="container  customContainer">
                         <label for="">رقم الجوال <span class="requierd">*</span></label>
-                        <input type="text" name="DatePhone" id="DatePhone" required class="DateInput">
+                        <input type="text" name="DatePhone" id="DatePhone" required class="DateInput"
+                            placeholder="إجابتك">
                     </div>
                     <div id="DateEmailWrap" class="container  customContainer">
-                        <label for="">Emil <span class="requierd">*</span></label>
-                        <input type="text" name="DateEmail" id="DateEmile" required class="DateInput">
+                        <label for="">البريد الإلكتروني <span class="requierd">*</span></label>
+                        <input type="text" name="DateEmail" id="DateEmile" required class="DateInput"
+                            placeholder="إجابتك">
                     </div>
                     <div id="DateFileWrap" class="container  customContainer">
-                        <label for="">File <span class="requierd">*</span></label>
-                        <input type="text" name="DateFile" id="DateFile" required class="DateInput">
+                        <label for="">هل يوجد لديك ملف في العيادة ؟ <span class="requierd">*</span></label>
+
+
+                        <input type="radio" name="DateFile" value="true" id="true" required class="DateInput">
+                        <label for="true"> نعم </label>
+                        &nbsp;&nbsp;
+                        <input type="radio" name="DateFile" id="False" value="false" class="DateInput">
+                        <label for="False"> لا </label>
+
                     </div>
                     <div id="DateSrcWrap" class="container  customContainer">
-                        <label for="">DateSrcWrap <span class="requierd">*</span></label>
-                        <input type="text" name="DateSrc" id="DateSrc" required class="DateInput">
+                        <label for="">تم الحجز عن طريق ؟ (الصفحة التي تم الضغط على رابط الحجز من خلالها)
+                            <span class="requierd">*</span></label>
+                        <div id="customSelect">
+                            <select name="">
+                                <option value="face"> إختار</option>
+                                <option value="face">الموقع الإلكتروني</option>
+                                <option value="face">إنستقرام</option>
+                                <option value="face">السناب شات</option>
+                                <option value="face">التويتر</option>
+                                <option value="face">الفيسبوك</option>
+                                <option value="face">البريد الإلكتروني</option>
+                            </select>
+                            <div id="custemSelectArow"></div>
+                        </div>
+
+
+
                     </div>
                     <div id="DateTimeWrap" class="container  customContainer">
-                        <label for="">DateTimeWrap <span class="requierd">*</span></label>
-                        <input type="text" name="DateTime" id="DateTime" required class="DateInput">
+                        <label for="">وقت الموعد
+                            <span class="requierd">*</span></label>
+                        <input type="radio" name="DateFile" value="true" id="true" required class="DateInput">
+
+                        <label for="FirstTime"> من 9:00 صباحا إلى 5:00 عصرا</label>
+
+                        <br>
+                        <input type="radio" name="DateFile" id="False" value="false" class="DateInput">
+                        <label for="False"> من 5:00 عصرا إلى 10:00 مساء </label>
                     </div>
                     <div id="DateTimeDateWrap" class="container  customContainer">
-                        <label for="">DateTimeDateWrap <span class="requierd">*</span></label>
-                        <input type="text" name="DateTimeDate" id="DateTimeDate" required class="DateInput">
+                        <label for="">تاريخ الموعد <span class="requierd">*</span></label>
+                        <input type="date" name="DateTimeDate" id="DateTimeDate" required class="DateInput">
                     </div>
                     <div id="DatePartWrap" class="container  customContainer">
-                        <label for="">DatePartWrap <span class="requierd">*</span></label>
-                        <input type="text" name="DatePart" id="DatePart" required class="DateInput">
+                        <label for="">القسم المطلوب <span class="requierd">*</span></label>
+                        <div id="customSelect">
+                            <select name="">
+                                <option value="face"> إختار</option>
+                                <option value="face">الأسنان</option>
+                                <option value="face">التجميل الغير جراحي</option>
+                                <option value="face">السناب شات</option>
+                                <option value="face">الجلدية و الليزر</option>
+                                <option value="face">ليزر إزالة الشعر</option>
+                                <option value="face">العناية بالبشرة</option>
+                                <option value="face">المختبر</option>
+                            </select>
+                            <div id="custemSelectArow"></div>
+                        </div>
                     </div>
                     <div id="DateDescriptionWrap" class="container  customContainer">
-                        <label for="">DateDescriptionWrap <span class="requierd">*</span></label>
-                        <input type="text" name="DateDescription" id="DateDescription" required class="DateInput">
+                        <label for="">تفاصيل الخدمة أو العرض
+                        </label>
+                        <input type="text" name="DateDescription" id="DateDescription" class="DateInput"
+                            placeholder="إجابتك">
                     </div>
                     <input type="submit" value="حجز" class="btn btn-success">
                 </form>
@@ -883,25 +955,135 @@
                 <br>
                 حقوق النشر © 2021 جميع الحقوق محفوظة
             </div>
-            <div id="share">
-                <a href="https://www.twitter.com/" target="_blank">
-                    <img src="img/twitter.png" alt="twitter">
-                </a>
+            <div id="leftFotter">
+                <div id="FotterMenu">
+                    <ul id="MenuListFotter">
+                        <li>
+                            <a class="link" href="index.html">الرئيسية</a>
+                        </li>
 
-                <a href="http://snapchat.com" target="_blank">
-                    <img src="img/snapchat.png" alt="snapchat">
-                </a>
-                <a href="http://instagram.com" target="_blank">
-                    <img src="img/instagram.png" alt="instagram">
-                </a>
+                        <li>
+                            <a class="link" href="index.html">حول موج </a>
+                        </li>
+
+                        <li>
+                            <div id="moreFotter">
+                                <input type="checkbox" id="moreShowServesesFotter" hidden="">
+                                <div id="moreSelectServesesFotter">
+                                    <label for="moreShowServesesFotter" id="moreLableFotter">
+                                        خدماتنا
+                                    </label>
+                                    <div id="moreMenuServesesFotter">
+                                        <ul id="moreMenuList">
+                                            <li><input type="submit" value="تجميل لا جراحي" name="non-surgical"></li>
+                                            <li><input type="submit" value="الجلدية" name="dermatology"></li>
+                                            <li><input type="submit" value="ليزر علاج البشرة" name="skinLaser"></li>
+                                            <li><input type="submit" value="ليزرعلاج الشعر" name="hairLaser"></li>
+                                            <li><input type="submit" value="العناية الدورية" name="regularCare"></li>
+                                            <li><input type="submit" value="طب الاسنان" name="dentist"></li>
+                                            <li><input type="submit" value="المختبر الطبي" name="laboratory"></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">العروض </a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">صفقات الجمال</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">بطاقات الولاء</a>
+                        </li>
+
+                        <li>
+                            <div id="moreFotter">
+                                <input type="checkbox" id="moreShowFotter" hidden="">
+                                <div id="moreSelectFotter">
+                                    <label for="moreShowFotter" id="moreLableFotter">
+                                        المزيد
+                                    </label>
+                                    <div id="moreMenuFotter">
+                                        <ul id="moreMenuList">
+
+
+
+
+
+
+                                            <li>
+                                                <a href="#">جواز سفر الجمال</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">حجز موعد</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">الصيدلية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">مركز آساج الرياضي</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">المدونة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">الاتصال</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="subscribeFotter">
+                    <form method="post">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="subscribeEmail" id="subscribeEmail">
+                        <input type="submit" name="subscribeBtn" id="subscribeBtn" value="إشتراك">
+                    </form>
+                </div>
+                <div id="share">
+
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="img/twitter.png" alt="twitter">
+                    </a>
+
+                    <a href="http://snapchat.com" target="_blank">
+                        <img src="img/snapchat.png" alt="snapchat">
+                    </a>
+                    <a href="http://instagram.com" target="_blank">
+                        <img src="img/instagram.png" alt="instagram">
+                    </a>
+                </div>
             </div>
-
 
         </div>
 
 
 
     </footer>
+
+    <div id="floating">
+        <div id="floatingFirst" onlclick="HidFloating(this)" onclick="showFloating(this)">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div id="floatingSecond" tabindex="1">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div id="floatingTheerd">
+            <i class="fas fa-phone fa-rotate-90"></i>
+        </div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -915,6 +1097,20 @@
     </script>
 
     <script>
+
+
+        function showFloating(ele) {
+            var chOne = ele.parentNode.children[1],
+                chTow = ele.parentNode.children[2];
+            if (window.getComputedStyle(chOne).bottom == '96px' && window.getComputedStyle(chTow).bottom == '145px') {
+                chOne.style.bottom = '42px';
+                chTow.style.bottom = '42px';
+            }
+            else {
+                chOne.style.bottom = '96px';
+                chTow.style.bottom = '145px';
+            }
+        }
 
         function customNav() {
             var memu = document.getElementById("MenuList");
@@ -989,3 +1185,9 @@
 </body>
 
 </html>
+<!--
+
+
+
+
+-->

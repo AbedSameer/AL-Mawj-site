@@ -22,7 +22,21 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
+.dropdown-toggle::after {
+  position: absolute;
+  right: 80px;
+  top: 17px;
+}
+#howComeSelect {
+  direction: rtl;
+  width: 100px;
+  text-align: right;
+  border: 1px solid #bebebe;
+  /* position: relative; */
+}
+dropdown-item {
+  text-align: right;
+}
 .customContainer {
   background-color: white;
   border-radius: 10px;
