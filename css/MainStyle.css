@@ -14,6 +14,9 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+div#moreSelect {
+}
+
 input#sendEmail {
   width: 100%;
   height: 35px;
@@ -61,7 +64,6 @@ input#UserFullName {
   width: 100vw;
   z-index: 108;
   padding: 4.5% 19%;
-  /* font-size: 4em; */
   color: white;
   margin-top: -100vh;
 }
@@ -152,18 +154,6 @@ input#UserFullName {
   font-size: 1.5em;
 }
 
-#floating {
-  /* width: 50px; */
-  /* height: 50px; */
-  /* position: fixed; */
-  /* bottom: 37px; */
-  /* left: 20px; */
-  /* border-radius: 50%; */
-  /* background-color: var(--MainColor); */
-  /* box-shadow: 1px 3px 11px 0px #6f6f6f; */
-  /* padding: 11px; */
-}
-
 #subscribeBtn {
   position: absolute;
   border: none;
@@ -171,7 +161,6 @@ input#UserFullName {
   background-color: var(--MainColor);
   color: white;
   height: 35px;
-  /* margin-right: 39px; */
   left: -17px;
   top: 0px;
   border-top-left-radius: 7px;
@@ -201,8 +190,6 @@ input#subscribeEmail {
 #subscribeFotter form {
   width: 220px;
   background-color: #ebebeb;
-  /* position: absolute; */
-  /* margin-left: 0px; */
   padding: 0px 7px 0px 0px;
   border: 1px solid #cecece;
   border-top-right-radius: 7px;
@@ -219,13 +206,11 @@ input#subscribeEmail {
 
 #moreMenuServesesFotter {
   transition-duration: 0.3s;
-  /* display: none; */
   position: absolute;
   top: 0px;
   right: -72px;
   height: 0px;
   width: 150px;
-  /* background: wheat; */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -256,13 +241,11 @@ ul#MenuListFotter {
 #FotterMenu {
   width: 400px;
   font-size: 13px;
-  /* position: absolute; */
 }
 
 #leftFotter {
   display: flex;
   flex-direction: column;
-  /* padding: 30px; */
   position: relative;
   height: 80%;
   width: 60%;
@@ -351,13 +334,11 @@ header a {
 
 #moreMenuServeses {
   transition-duration: 0.3s;
-  /* display: none; */
   position: absolute;
   top: 53px;
   right: 179px;
   height: 0px;
   width: 150px;
-  /* background: wheat; */
   overflow: hidden;
   border-radius: 10px;
 }
@@ -394,19 +375,16 @@ header a {
 #moreSelect label {
   position: relative;
   height: 31px;
-  /* top: 37px; */
   width: 100%;
-  right: 6px;
+  right: 0px;
   margin: auto 0px;
 }
 
 #moreSelectServeses label {
   position: relative;
   height: 31px;
-  /* top: 37px; */
-  /* text-align: center; */
   width: 100%;
-  right: 6px;
+  right: 0px;
   margin: auto 0px;
 }
 
@@ -443,7 +421,6 @@ header a {
   top: -263px;
 }
 #linerSlider {
-  /* position: absolute; */
   width: 100%;
   height: 130px;
 }
@@ -486,7 +463,6 @@ label#wrap {
   left: 0px;
 }
 .MobileBarItem {
-  /* height: calc(6.66667%); */
   margin: 7px 0px;
   font-size: 25px;
 }
@@ -497,8 +473,6 @@ aside ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* height: 90%; */
-  /* margin: 0 -5px; */
 }
 aside {
   width: 100vw;
@@ -525,7 +499,6 @@ aside {
 }
 #soialMediaMobile {
   border-top: 1px solid var(--GrayColor);
-  /* padding-top: 10px; */
   width: 140%;
   display: flex;
   margin: 0 -40px;
@@ -544,6 +517,12 @@ aside {
   border-radius: 3px;
   padding: 0px 10px;
   outline: none;
+}
+
+textarea#MessageInput {
+  height: 100px;
+  resize: none;
+  padding: 10px;
 }
 .ConnectionInpt[type="submit"] {
   background-color: var(--MainColor);
@@ -594,7 +573,6 @@ aside {
   flex-direction: column;
   place-content: flex-start space-between;
   align-items: flex-start;
-  /* position: relative; */
   justify-content: flex-start;
 }
 .moreLinkBtn {
@@ -617,7 +595,6 @@ a#contanctButton {
   text-decoration: none;
   font-size: 0.9em;
   left: 46%;
-  /* bottom: -140px; */
 }
 a#postLink {
   font-size: 14px;
@@ -644,17 +621,13 @@ img.postImg {
 #silderWrap {
   overflow: hidden;
   height: 165px;
-  /* float: right; */
   text-align: right;
   width: 100vw;
-  /* padding: 0px 27px; */
   margin: 0 auto;
-  /* position: relative; */
 }
 .sliderImg {
   height: 100%;
   max-width: 100px;
-  /* margin: 0px auto; */
 }
 .item {
   width: calc(100% / 6.2);
@@ -680,7 +653,6 @@ img.postImg {
 }
 #Date input[type="radio"].DateInput + label {
   display: inline-block;
-  /* width: 30px; */
 }
 #Date input[type="submit"] {
   width: 100%;
@@ -916,7 +888,6 @@ img.offerImg {
   position: relative;
   direction: rtl;
   text-align: right;
-  /* min-height: 120vh !important; */
 }
 .link {
   color: black;
@@ -940,7 +911,7 @@ a {
 }
 
 #callUsAlertPage a {
-  margin: auto; /* margin-top: 170px; */
+  margin: auto;
 }
 
 a:hover {
@@ -1066,13 +1037,10 @@ footer {
   text-align: right;
   display: flex;
   justify-content: space-between;
-  /* position: absolute; */
   margin: auto;
 }
 #footerInfo {
-  /* position: absolute; */
   right: 30px;
-  /* direction: rtl; */
 }
 #share {
   position: absolute;
@@ -1080,9 +1048,7 @@ footer {
   bottom: -4px;
 }
 #contant {
-  /* position: inherit; */
   max-width: 100%;
-  /* margin-top: 664px; */
 }
 #footerInfo {
   text-align: center;
@@ -1212,7 +1178,6 @@ section {
 #Welcom {
   display: flex;
   width: 100%;
-  /* margin-top: 100px; */
 }
 nav a {
   display: flex;
@@ -1254,7 +1219,6 @@ nav a {
     width: 90%;
   }
   #state {
-    /* display: none; */
     width: 60%;
     height: 130px;
     background-color: var(--GrayColor);
@@ -1338,7 +1302,6 @@ nav a {
 @media screen and (max-width: 769px) {
   #callUsAlertPage {
     font-size: 1.6em;
-    /* padding: 162px 100px; */
     display: flex;
   }
 
@@ -1348,7 +1311,6 @@ nav a {
   #innerFotter {
     flex-direction: column;
     position: absolute;
-    /* width: 70%; */
   }
   #share {
     width: 80%;
@@ -1358,7 +1320,6 @@ nav a {
   #leftFotter {
     width: 100%;
     bottom: 8px;
-    /* bottom: -37px; */
     height: 50%;
     top: 60px;
     position: absolute;
@@ -1385,7 +1346,6 @@ nav a {
     max-width: 70%;
   }
   #subscribeFotter {
-    /* width: 60%; */
     left: auto;
   }
   header #mobileWrap:checked + #menu + aside {

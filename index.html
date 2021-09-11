@@ -12,6 +12,7 @@
 
 
 
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -25,7 +26,6 @@
 </head>
 
 <body id="body">
-
     <header style="z-index: 2; position: relative; height: 664px;">
         <nav id="header">
             <a href="#body">
@@ -117,16 +117,16 @@
                         <img class="mainMenuIcons" src="img/AR.png" alt="AR">
                     </li>
                     <li>
-                        <img class="mainMenuIcons" src="img/share.png" alt="Share">
+                        <i class="fas fa-share-alt mainMenuIcons"></i>
                     </li>
                     <li>
                         <label for="showSendEmailPage">
-                            <img class="mainMenuIcons" src="img/envelope.svg" alt="Share">
+                            <i class="fas fa-envelope mainMenuIcons"></i>
                         </label>
                     </li>
                     <li>
                         <label for="showCallUsAlirtPage">
-                            <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                            <i class="fas fa-phone-alt mainMenuIcons"></i>
                         </label>
                     </li>
                     <li>
@@ -140,10 +140,10 @@
             <!--  </!-div>-->
             <div id="soialMediaHeaderMobile">
                 <label for="showSendEmailPage">
-                    <img class="mainMenuIcons" src="img/envelope.svg" alt="Share">
+                    <i class="fas fa-envelope mainMenuIcons"></i>
                 </label>
                 <label for="showCallUsAlirtPage">
-                    <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                    <i class="fas fa-phone-alt mainMenuIcons"></i>
                 </label>
             </div>
         </nav>
@@ -202,7 +202,6 @@
                     </li>
                 </ul>
                 <div id="soialMediaMobile">
-                    <img src="img/twitter.svg" alt="">
                     <img src="img/twitter.svg" alt="">
                     <img src="img/twitter.svg" alt="">
                     <img src="img/twitter.svg" alt="">
@@ -876,18 +875,17 @@
 
                 </div>
                 <form id="left">
-                    <input type="text" id="NameInpt" class="ConnectionInpt" placeholder="الاسم" placeholder="الاسم">
-                    <input type="text" id="NameInpt" class="ConnectionInpt" placeholder="الاسم" placeholder="الاسم">
-                    <input type="text" id="NameInpt" class="ConnectionInpt" placeholder="الاسم" placeholder="الاسم">
+                    <input type="text" id="NameInpt" class="ConnectionInpt" placeholder="الاسم">
+                    <input type="text" id="NameInpt" class="ConnectionInpt" placeholder="الهاتف">
+                    <input type="text" id="NameInpt" class="ConnectionInpt" placeholder="البريدالإلكتروني">
                     <label for="type" style="width: 90%;"> اختر</label>
-                    <select name="type" id="type" class="ConnectionInpt" placeholder="الاسم" placeholder="الاسم">
+                    <select name="type" id="type" class="ConnectionInpt">
                         <option value="Inquiries">استفسارات</option>
                         <option value="suggestions">شكاوي واقتراحات</option>
                     </select>
 
-                    <input type="text" class="ConnectionInpt" placeholder="الاسم" placeholder="الاسم"
-                        placeholder="الاسم" id="MessageInput">
-                    <input type="submit" class="ConnectionInpt" placeholder="الاسم" placeholder="الاسم" value="راسلنا">
+                    <textarea rows="7" class="ConnectionInpt" placeholder="رسالك" id="MessageInput"></textarea>
+                    <input type="submit" class="ConnectionInpt" value="راسلنا">
                 </form>
             </div>
         </div>
