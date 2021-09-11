@@ -86,48 +86,26 @@
                                 </label>
                                 <div id="moreMenu">
                                     <ul id="moreMenuList">
-                                        <li class="MobileBarItem">
-                                            <a href="#">الرئيسية</a>
-                                        </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">حول الموج</a>
-                                        </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">خدماتنا</a>
-                                        </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">العروض</a>
-                                        </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">صفقات الجمال</a>
-                                        </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">بطاقات الولاء</a>
-                                        </li>
-                                        <li class="MobileBarItem">
+
+                                        <li>
                                             <a href="#">جواز سفر الجمال</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">حجز موعد</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">الصيدلية</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">مركز آساج الرياضي</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">المدونة</a>
                                         </li>
-                                        <li class="MobileBarItem">
+                                        <li>
                                             <a href="#">الاتصال</a>
                                         </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">جديد عروضنا</a>
-                                        </li>
-                                        <li class="MobileBarItem">
-                                            <a href="#">جديد العروض</a>
-                                        </li>
+
                                     </ul>
                                 </div>
 
@@ -142,10 +120,14 @@
                         <img class="mainMenuIcons" src="img/share.png" alt="Share">
                     </li>
                     <li>
-                        <img class="mainMenuIcons" src="img/envelope.svg">
+                        <label for="showSendEmailPage">
+                            <img class="mainMenuIcons" src="img/envelope.svg" alt="Share">
+                        </label>
                     </li>
                     <li>
-                        <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                        <label for="showCallUsAlirtPage">
+                            <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                        </label>
                     </li>
                     <li>
                         <div class="mainMenuIcons" id="User"></div>
@@ -157,8 +139,12 @@
 
             <!--  </!-div>-->
             <div id="soialMediaHeaderMobile">
-                <img src="img/phone-call.svg" alt="" srcset="">
-                <img src="img/envelope.svg" alt="" srcset="">
+                <label for="showSendEmailPage">
+                    <img class="mainMenuIcons" src="img/envelope.svg" alt="Share">
+                </label>
+                <label for="showCallUsAlirtPage">
+                    <img class="mainMenuIcons" src="img/phone-call.svg" alt="Share">
+                </label>
             </div>
         </nav>
         <input type="checkbox" name="mobileWrap" id="mobileWrap" hidden>
@@ -1052,6 +1038,44 @@
             <i class="fas fa-phone fa-rotate-90"></i>
         </div>
     </div>
+
+    <input type="checkbox" name="showSendEmailPage" id="showSendEmailPage" hidden>
+    <div id="sendEmailPage">
+
+        <label for="showSendEmailPage">
+            <i class="fas fa-times fa-1x"></i></label>
+        <h3>اتصل بنا</h3>
+        <h5>
+            setd to <a href="mailto:info@almawj.net">info@almawj.net</a>
+        </h5>
+        <form method="post">
+            <input type="text" name="UserFullName" id="UserFullName">
+            <input type="email" name="UserEmail" id="UserEmail">
+            <textarea name="EmailContant" id="EmailContant" cols="70" rows="5"></textarea>
+            <input type="submit" value="send" id="sendEmail">
+        </form>
+
+    </div>
+
+
+
+    <input type="checkbox" name="showCallUsAlirtPage" id="showCallUsAlirtPage" hidden>
+    <div id="callUsAlertPage">
+
+        <label for="showCallUsAlirtPage">
+            <i class="fas fa-times fa-1x"></i></label>
+        <a href="tel:920009125">920009125
+            -
+            للحجز والأستفسار</a>
+    </div>
+
+
+
+
+
+
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>

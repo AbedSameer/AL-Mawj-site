@@ -20,12 +20,18 @@ input#sendEmail {
   border-radius: 10px;
   background-color: var(--MainColor);
   color: white;
+  margin-top: 20px;
 }
 
 textarea#EmailContant {
   resize: none;
   width: 100%;
   border-radius: 10px;
+}
+
+textarea#EmailContant {
+  z-index: 1111111;
+  height: 120px;
 }
 
 input#UserEmail {
@@ -39,7 +45,7 @@ input#UserEmail {
 }
 
 input#UserFullName {
-  margin: 40px 0px 40px 5%;
+  margin: 40px 0px 40px 4%;
   width: 47%;
   height: 35px;
   border-radius: 7px;
@@ -48,14 +54,14 @@ input#UserFullName {
 #sendEmailPage {
   transition-duration: 0.3s;
   background-color: #000000;
-  height: 99.9vh;
+  height: 100vh;
   position: fixed;
   top: 0px;
   left: 0;
-  width: 98.75vw;
+  width: 100vw;
   z-index: 108;
   padding: 4.5% 19%;
-  font-size: 4em;
+  /* font-size: 4em; */
   color: white;
   margin-top: -100vh;
 }
@@ -63,27 +69,27 @@ input#UserFullName {
 #callUsAlertPage i {
   position: absolute;
   top: 10px;
-  left: 40px;
+  left: 4%;
   cursor: pointer;
+  font-size: 3rem;
 }
 #sendEmailPage i {
   position: absolute;
   top: 10px;
-  left: 40px;
+  left: 3%;
   cursor: pointer;
+  font-size: 3rem;
 }
 
 #callUsAlertPage {
   transition-duration: 0.3s;
   background-color: #000000;
-  height: 99.9vh;
-  position: relative;
-  top: 0px;
-  left: 0;
-  width: 98.75vw;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
   z-index: 108;
-  padding: 21.5%;
   font-size: 4em;
+  display: flex;
   color: white;
   margin-top: -100vh;
 }
@@ -320,8 +326,8 @@ header a {
   border-style: solid;
   border-color: var(--MainColor) transparent transparent transparent;
   position: absolute;
-  bottom: 104px;
-  left: 50px;
+  bottom: 7px;
+  left: 0px;
 }
 
 #moreLableFotter::after {
@@ -346,7 +352,7 @@ header a {
   transition-duration: 0.3s;
   /* display: none; */
   position: absolute;
-  top: 23px;
+  top: 53px;
   right: 179px;
   height: 0px;
   width: 150px;
@@ -360,7 +366,7 @@ header a {
   top: 65px;
   left: 160px;
   height: 0px;
-  width: 164px;
+  width: 167px;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -382,6 +388,7 @@ header a {
 }
 #moreMenuList {
   list-style: none;
+  height: 90%;
 }
 #moreSelect label {
   position: relative;
@@ -404,7 +411,7 @@ header a {
 
 #moreShow:checked + #moreSelect #moreMenu {
   display: block;
-  height: 283px;
+  height: 310px;
   background-color: white;
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
@@ -931,6 +938,10 @@ a {
   color: inherit;
 }
 
+#callUsAlertPage a {
+  margin: auto; /* margin-top: 170px; */
+}
+
 a:hover {
   color: var(--MainColor);
   text-decoration: none;
@@ -1221,6 +1232,17 @@ nav a {
     display: flex;
     flex-direction: column;
   }
+  #sendEmailPage {
+    padding: 12% 30px;
+    font-size: 1em;
+  }
+  input#UserFullName {
+    width: 100%;
+  }
+  input#UserEmail {
+    width: 100%;
+    margin-bottom: 30px;
+  }
   #mainMenu {
     display: none;
   }
@@ -1310,6 +1332,12 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  #callUsAlertPage {
+    font-size: 1.6em;
+    /* padding: 162px 100px; */
+    display: flex;
+  }
+
   #FotterMenu {
     display: none;
   }
