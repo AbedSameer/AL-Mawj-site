@@ -14,6 +14,101 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+#LanguagePage div h2 {
+  display: inline-block;
+}
+
+#LanguagePage div {
+  margin: auto;
+  width: 480px;
+  height: 150px;
+  text-align: center;
+}
+
+#LanguagePage label {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 4%;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+#LanguagePage {
+  transition-duration: 0.3s;
+  background-color: #000000;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 108;
+  font-size: 4em;
+  display: flex;
+  color: white;
+  margin-top: -100vh;
+}
+
+#SharePage a i {
+  width: 100px;
+  height: 100px;
+  padding: 22px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  padding: 15px 15px;
+  margin: 10px;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+#SharePage a i:hover {
+  border-color: var(--MainColor);
+}
+
+i.fas.fa-times.fa-1x {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* left: 4%; */
+  /* cursor: pointer; */
+  /* font-size: 3rem; */
+}
+
+i.fas.fa-times.fa-1x {
+}
+
+i.fas.fa-times.fa-1x {
+}
+
+i.fas.fa-times.fa-1x {
+}
+
+#SharePage label {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 4%;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+#SharePage div {
+  margin: auto;
+  width: 480px;
+  height: 150px;
+}
+
+#SharePage {
+  transition-duration: 0.3s;
+  background-color: #000000;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 108;
+  font-size: 4em;
+  display: flex;
+  color: white;
+  margin-top: -100vh;
+  /* flex-direction: column; */
+}
+
 div#moreSelect {
 }
 
@@ -95,11 +190,19 @@ input#UserFullName {
   color: white;
   margin-top: -100vh;
 }
-
 #showCallUsAlirtPage:checked + #callUsAlertPage {
   top: 100vh;
   transition-duration: 0.3s;
 }
+#showLanguagePage:checked + #LanguagePage {
+  top: 100vh;
+  transition-duration: 0.3s;
+}
+#showSharePage:checked + #SharePage {
+  top: 100vh;
+  transition-duration: 0.3s;
+}
+
 #showSendEmailPage:checked + #sendEmailPage {
   top: 100vh;
   transition-duration: 0.3s;
@@ -908,6 +1011,18 @@ img.offerImg {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+#SharePage a {
+  /* border: 3px solid var(--MainColor); */
+  /* border-radius: 50%; */
+  /* padding: 10px; */
+  /* height: 130px; */
+  /* width: 130px; */
+  /* margin: 10px; */
+  /* min-width: 150px; */
+  /* min-height: 150px; */
+  text-align: center;
 }
 
 #callUsAlertPage a {
