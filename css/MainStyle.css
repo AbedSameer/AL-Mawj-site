@@ -14,6 +14,11 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+#face-art ul {
+  margin: 0 auto;
+  width: 50%;
+}
+
 #accordion .collapsed i.fas.fa-chevron-down {
   position: absolute;
   left: 30px;
@@ -438,6 +443,7 @@ header a {
   position: absolute;
   bottom: 9px;
   left: -2px;
+  transition-duration: 0.3s;
 }
 
 #more {
@@ -457,6 +463,16 @@ header a {
   width: 150px;
   overflow: hidden;
   border-radius: 10px;
+}
+#moreMenuServesesMobile {
+  transition-duration: 0.3s;
+  /* position: absolute; */
+  /* top: 53px; */
+  /* right: 179px; */
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  /* border-radius: 10px; */
 }
 #moreMenu {
   transition-duration: 0.3s;
@@ -486,7 +502,7 @@ header a {
 }
 .moreMenuList {
   list-style: none;
-  height: 90%;
+  height: 100%;
 }
 #moreSelect label {
   position: relative;
@@ -495,7 +511,10 @@ header a {
   right: 0px;
   margin: auto 0px;
 }
-
+#moreSelectServesesMobile label {
+  position: relative;
+  width: 90%;
+}
 #moreSelectServeses label {
   position: relative;
   height: 31px;
@@ -517,6 +536,20 @@ header a {
   background-color: white;
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
+}
+#moreShowServesesMobile:checked + #moreSelectServesesMobile #moreLable::after {
+  transform: rotate(180deg);
+  -o-transition-duration: 0.3s;
+}
+#moreShowServesesMobile:checked
+  + #moreSelectServesesMobile
+  #moreMenuServesesMobile {
+  display: block;
+  height: 110vh;
+  background-color: #e4e4e4;
+  transition-duration: 0.3s;
+  /* border: 1px solid var(--MainColor); */
+  overflow: scroll;
 }
 
 #moreShowFotter:checked + #moreSelectFotter #moreMenuFotter {
@@ -592,7 +625,7 @@ aside ul {
 }
 aside {
   width: 100vw;
-  margin-right: -101vw;
+  margin-right: -111vw;
   position: fixed;
   transition-duration: 0.3s;
   z-index: 9;
@@ -1402,14 +1435,18 @@ nav a {
     display: none;
   }
   .wrap {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   #AbouText {
-    width: 100%;
+    width: 90%;
     margin-left: 0px;
     padding: 90px 0px;
     z-index: 1;
-    background-color: var(--GrayColor);
+    background-color: #ffffff;
+  }
+  #AboutUsImg {
+    width: 90%;
+    margin: 0 auto;
   }
   #soialMediaHeaderMobile {
     display: block;
@@ -1417,6 +1454,9 @@ nav a {
   #AbouText p {
     text-align: center;
     margin: 0px 15px;
+  }
+  #AboutUsTitle {
+    font-size: 1.2em;
   }
   #menu {
     display: block;
