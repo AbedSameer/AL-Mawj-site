@@ -878,10 +878,12 @@ input#Date {
 }
 .offerTitle {
   width: 89%;
-  height: 50px;
+  /* height: 50px; */
   color: var(--MainColor);
   margin: 0px;
   direction: rtl;
+  overflow: hidden;
+  max-height: 120px;
 }
 .offerTitle a {
   font-size: 1.02rem;
@@ -889,13 +891,15 @@ input#Date {
 }
 .offerDetails {
   width: 100%;
-  height: 113px;
+  /* height: 113px; */
   position: absolute;
   bottom: 1px;
   padding: 9px 11px 9px 0px;
   text-align: right;
   direction: rtl;
   background-color: var(--GrayColor);
+  max-height: 50%;
+  /* overflow: hidden; */
 }
 img.offerImg {
   width: 100%;
@@ -909,9 +913,9 @@ img.offerImg {
   position: absolute;
   height: 50px;
   z-index: 1;
-  bottom: 136px;
+  top: -64px;
   left: 60px;
-  background-color: rgba(137, 132, 131, 0.64);
+  background-color: rgb(22 22 22 / 46%);
   border-radius: 7px;
   padding: 7% 0%;
   color: white;
@@ -1057,6 +1061,11 @@ img.offerImg {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.offerDetails a {
+  color: var(--MainColor);
+  text-decoration: underline;
 }
 
 #SharePage a {
