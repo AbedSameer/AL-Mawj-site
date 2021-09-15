@@ -229,97 +229,106 @@
     <div id="contant">
 
 
-
-        <div id="Date">
+        <div id="offers">
             <div class="PageTitle">
-                حجز موعد
+
+                <h2>صفقات الجمال</h2>
             </div>
-            <div id="FormWrap" class="container">
-                <form method="post">
-                    <div id="DateNameWrap" class="  customContainer">
-                        <label for="">الأسم <span class="requierd">*</span></label>
-                        <input type="text" name="DateName" id="DateName" required class="DateInput"
-                            placeholder="إجابتك">
-                    </div>
-                    <div id="DatePhoneWrap" class="container  customContainer">
-                        <label for="">رقم الجوال <span class="requierd">*</span></label>
-                        <input type="text" name="DatePhone" id="DatePhone" required class="DateInput"
-                            placeholder="إجابتك">
-                    </div>
-                    <div id="DateEmailWrap" class="container  customContainer">
-                        <label for="">البريد الإلكتروني <span class="requierd">*</span></label>
-                        <input type="text" name="DateEmail" id="DateEmile" required class="DateInput"
-                            placeholder="إجابتك">
-                    </div>
-                    <div id="DateFileWrap" class="container  customContainer">
-                        <label for="">هل يوجد لديك ملف في العيادة ؟ <span class="requierd">*</span></label>
-
-
-                        <input type="radio" name="DateFile" value="true" id="true" required class="DateInput">
-                        <label for="true"> نعم </label>
-                        &nbsp;&nbsp;
-                        <input type="radio" name="DateFile" id="False" value="false" class="DateInput">
-                        <label for="False"> لا </label>
-
-                    </div>
-                    <div id="DateSrcWrap" class="container  customContainer">
-                        <label for="">تم الحجز عن طريق ؟ (الصفحة التي تم الضغط على رابط الحجز من خلالها)
-                            <span class="requierd">*</span></label>
-                        <div id="customSelect">
-                            <select name="">
-                                <option value="face"> إختار</option>
-                                <option value="face">الموقع الإلكتروني</option>
-                                <option value="face">إنستقرام</option>
-                                <option value="face">السناب شات</option>
-                                <option value="face">التويتر</option>
-                                <option value="face">الفيسبوك</option>
-                                <option value="face">البريد الإلكتروني</option>
-                            </select>
-                            <div id="custemSelectArow"></div>
+            <div id="offersContener">
+                <select size="2" id="state">
+                    <option id="now" selected class="state">
+                        الحالية
+                    </option>
+                    <option id="previous" class="state">
+                        السابقة
+                    </option>
+                </select>
+                <div id="offersWrap">
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#" class="h4" style="font-size:1.02rem;">جلسة ليزر إزالة شعر للجسم كامل " مع
+                                    الرتوش "</a>
+                            </div>
+                            <div class="offerPrice">2523 ر.س</div>
                         </div>
 
-
-
                     </div>
-                    <div id="DateTimeWrap" class="container  customContainer">
-                        <label for="">وقت الموعد
-                            <span class="requierd">*</span></label>
-                        <input type="radio" name="DateFile" value="true" id="true" required class="DateInput">
-
-                        <label for="FirstTime"> من 9:00 صباحا إلى 5:00 عصرا</label>
-
-                        <br>
-                        <input type="radio" name="DateFile" id="False" value="false" class="DateInput">
-                        <label for="False"> من 5:00 عصرا إلى 10:00 مساء </label>
-                    </div>
-                    <div id="DateTimeDateWrap" class="container  customContainer">
-                        <label for="">تاريخ الموعد <span class="requierd">*</span></label>
-                        <input type="date" name="DateTimeDate" id="DateTimeDate" required class="DateInput">
-                    </div>
-                    <div id="DatePartWrap" class="container  customContainer">
-                        <label for="">القسم المطلوب <span class="requierd">*</span></label>
-                        <div id="customSelect">
-                            <select name="">
-                                <option value="face"> إختار</option>
-                                <option value="face">الأسنان</option>
-                                <option value="face">التجميل الغير جراحي</option>
-                                <option value="face">السناب شات</option>
-                                <option value="face">الجلدية و الليزر</option>
-                                <option value="face">ليزر إزالة الشعر</option>
-                                <option value="face">العناية بالبشرة</option>
-                                <option value="face">المختبر</option>
-                            </select>
-                            <div id="custemSelectArow"></div>
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#" class="h4" style="font-size:1.02rem;">جلسة ليزر إزالة شعر للجسم كامل " مع
+                                    الرتوش "</a>
+                            </div>
+                            <div class="offerPrice">2523 ر.س</div>
                         </div>
+
                     </div>
-                    <div id="DateDescriptionWrap" class="container  customContainer">
-                        <label for="">تفاصيل الخدمة أو العرض
-                        </label>
-                        <input type="text" name="DateDescription" id="DateDescription" class="DateInput"
-                            placeholder="إجابتك">
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#" class="h4" style="font-size:1.02rem;">جلسة ليزر إزالة شعر للجسم كامل " مع
+                                    الرتوش "</a>
+                            </div>
+                            <div class="offerPrice">2523 ر.س</div>
+                        </div>
+
                     </div>
-                    <input type="submit" value="حجز" class="btn btn-success">
-                </form>
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#" class="h4" style="font-size:1.02rem;">جلسة ليزر إزالة شعر للجسم كامل " مع
+                                    الرتوش "</a>
+                            </div>
+                            <div class="offerPrice">2523 ر.س</div>
+                        </div>
+
+                    </div>
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#" class="h4" style="font-size:1.02rem;">جلسة ليزر إزالة شعر للجسم كامل " مع
+                                    الرتوش "</a>
+                            </div>
+                            <div class="offerPrice">2523 ر.س</div>
+                        </div>
+
+                    </div>
+                    <div class="OneOfferWrap">
+                        <div class="offerExpDate"> 30 may</div>
+                        <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                            class="offerImg">
+                        <div class="offerDetails">
+                            <div class="offerTitle">
+                                <a href="#" class="h4" style="font-size:1.02rem;">جلسة ليزر إزالة شعر للجسم كامل " مع
+                                    الرتوش "</a>
+                            </div>
+                            <div class="offerPrice">2523 ر.س</div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 

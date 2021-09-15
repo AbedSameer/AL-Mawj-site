@@ -944,6 +944,7 @@ img.offerImg {
   align-items: center;
   margin: 50px auto;
   width: 70%;
+  justify-content: space-between;
 }
 #blackLayer {
   background-color: rgb(23, 130, 221);
