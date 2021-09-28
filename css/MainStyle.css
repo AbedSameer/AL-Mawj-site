@@ -7,12 +7,60 @@ col- :<576        12
 
 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
 */
-
+/*
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');*/
 * {
+ /* font-family: 'Open Sans', sans-serif;*/
   margin: 0px;
   padding: 0px;
   direction: rtl;
 }
+
+img#servesImg {
+    max-width: 110px !important;
+    width: 110px;
+}
+
+#servecTitle {
+    width: 100%;
+    text-align: center;
+}
+
+div#servec {
+    width: 40%;
+    height: 200px;
+    background-color: var(--GrayColor);
+    border-top: 3px solid var(--MainColor);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#pharmacyServeces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#pharmacyText{
+  width: 40%;
+  /* margin-left: -98px; */
+  position: relative;
+  /* padding: 40px; */
+  /* z-index: 1; */
+  /* background-color: white; */
+  height: 266px;
+  direction: rtl;
+  /* text-align: center; */
+}
+#pharmacyImg{
+    width: 400px;
+    height: 266px;
+    margin-left: 5%;
+    object-fit: cover;
+    }
 
 #face-art ul {
   margin: 0 auto;
@@ -1022,6 +1070,7 @@ img.offerImg {
 #welcomImg img {
   max-height: 360px;
   max-width: 100%;
+  min-height: 360px;
   object-fit: cover;
   width: 100% !important;
 }
@@ -1184,6 +1233,10 @@ iframe {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#pharmacyWrap {
+    justify-content: space-around;
 }
 .menuIcon {
   border-radius: 5px;
