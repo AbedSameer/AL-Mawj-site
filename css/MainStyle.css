@@ -16,6 +16,176 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+#CliientZoneLeft form #update {
+    display: inline;
+}
+
+#CliientZoneLeft form input[type="submit"] {
+    background-color: var(--MainColor);
+    color: white;
+    border: none;
+    height: 35px;
+    width: 150px;
+    /* margin: 0 auto; */
+}
+
+.ClientInput {
+    height: 35px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+#CliientZoneLeft form label {
+    font-size: 16px;
+    font-weight: bold;
+    width: 60%;
+    margin-top: 0.5rem;
+}
+
+#CliientZoneLeft form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#CliientZoneLeft {
+    border: 1px solid lightgray;
+    height: 100%;
+    width: 70%;
+    padding: 30px;
+}
+
+#ClientZoneSelect {
+    border: 1px solid lightgray;
+    height: 30%;
+}
+
+#ClientZoneImgWrap {
+    border: 1px solid lightgray;
+    height: 70%;
+    padding: 10px;
+}
+
+#ClientZoneImgWrap img {
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid lightgray;
+    object-fit: cover;
+}
+
+#CliientZoneRight {
+    width: 20%;
+    height: 60%;
+    /* border: 1px solid lightgray; */
+}
+
+div#ClientZone {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 60vh;
+    width: 92vw;
+}
+
+#NonSubsicribeClientZoneForm input[type="submit"] {
+    height: 35px;
+    width: 60%;
+    background-color: var(--MainColor);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+#NonSubsicribeClientZoneForm input[type="text"] {
+    width: 120%;
+    height: 35px;
+    padding: 10px;
+    text-align: left;
+    direction: ltr;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+#NonSubsicribeClientZoneForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 44%;
+    align-items: center;
+    align-content: center;
+}
+
+#NonSubsicribeClientZone {
+    display: flex;
+    /* background-color: gray; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90vh;
+    /* width: 100vw; */
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    flex-direction: column;
+}
+
+h6#beautyPassportDoneMsg1 {
+    margin-top: -33px;
+}
+
+div#beautyPassportDoneLine {
+    width: 70px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--MainColor);
+    margin-top: -25px;
+}
+
+#NonSubsicribeClientZoneLine {
+    width: 70px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--MainColor);
+    margin-top: -85px;
+}
+
+
+#beautyPassportDone{display: flex;background-image: url(../img/about_us.webp);flex-wrap: wrap;justify-content: space-evenly;height: 100vh;width: 100vw;align-items: center;background-repeat: no-repeat;background-size: 100vw 100vh;}
+#beautyPassportDoneCard{
+      width: 30%;
+      height: 250px;
+      background-color: #ffffff;
+      border-top: 3px solid var(--MainColor);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-bottom: 40px;
+      padding: 21px;
+}
+
+#NonSubsicribeClientZoneCard{
+      width: 36%;
+      height: 230px;
+      background-color: #ffffff;
+      border: 1px solid lightgray;
+      border-top: 3px solid var(--MainColor);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 40px;
+      padding: 21px;
+}
+
+
+
 img#servesImg {
     max-width: 110px !important;
     width: 110px;
@@ -1091,6 +1261,7 @@ img.offerImg {
   position: relative;
   direction: rtl;
   text-align: right;
+  /* min-height: 100vh; */
 }
 .link {
   color: black;

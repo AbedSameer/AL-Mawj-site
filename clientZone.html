@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/CustomBootstrap.css">
+    <link rel="stylesheet" href="css/MainStyle.css">
+
+    <title>عيادات الموج | افضل عيادات تجميلية في السعودية</title>
+
+
+</head>
+
+<body id="body">
+    <header style="z-index: 2; position: relative; height: 100px;">
+        <nav id="header">
+            <a href="#body">
+                <img id="logo" src="https://static1.s123-cdn-static-a.com/uploads/4858436/400_60319e2e9da0e.png"
+                    alt=" عيادات الموج ">
+            </a>
+            <div id="mainMenu">
+                <ul id="MenuList">
+                    <li>
+                        <a class="link" href="index.html">الرئيسية</a>
+                    </li>
+
+                    <li>
+                        <a class="link" href="aboutUs.html">حول موج </a>
+                    </li>
+
+                    <li>
+                        <div id="more">
+                            <input type="checkbox" id="moreShowServeses" hidden="">
+                            <div id="moreSelectServeses">
+                                <label for="moreShowServeses" id="moreLable">
+                                    خدماتنا
+                                </label>
+                                <div id="moreMenuServeses">
+                                    <ul class="moreMenuList">
+                                        <li><a href="Services/non-surgical.html">تجميل لا جراحي</a></li>
+                                        <li><a href="Services/Dermatology.html">الجلدية</a></li>
+                                        <li><a href="Services/skinLaser.html">ليزر علاج البشرة</a></li>
+                                        <li><a href="Services/laserHair.html">ليزرعلاج الشعر</a></li>
+                                        <li><a href="Services/regularCare.html">العناية الدورية</a></li>
+                                        <li><a href="Services/dentist.html">طب الاسنان</a></li>
+                                        <li><a href="Services/lab.html">المختبر الطبي</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a class="link" href="offers.html">العروض </a>
+                    </li>
+
+                    <li>
+                        <a class="link" href="beautyDeals.html">صفقات الجمال</a>
+                    </li>
+
+                    <li>
+                        <a class="link" href="loyaltyCard.html">بطاقات الولاء</a>
+                    </li>
+
+                    <li>
+
+                    <li>
+                        <div id="more">
+                            <input type="checkbox" id="moreShow" hidden="">
+                            <div id="moreSelect">
+                                <label for="moreShow" id="moreLable">
+                                    المزيد
+                                </label>
+                                <div id="moreMenu">
+                                    <ul class="moreMenuList" id="moreList">
+
+                                        <li>
+                                            <a href="beautyPassport.html">جواز سفر الجمال</a>
+                                        </li>
+                                        <li>
+                                            <a href="BookDate.html">حجز موعد</a>
+                                        </li>
+                                        <li>
+                                            <a href="pharmacy.html">الصيدلية</a>
+                                        </li>
+                                        <li>
+                                            <a href="Asag.html">مركز آساج الرياضي</a>
+                                        </li>
+                                        <li>
+                                            <a href="Blog.html">المدونة</a>
+                                        </li>
+                                        <li>
+                                            <a href="Contact.html">الاتصال</a>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <label for="showLanguagePage">
+                            <img class="mainMenuIcons" src="/img/AR.png" alt="AR"></label>
+                    </li>
+                    <li>
+                        <label for="showSharePage">
+                            <i class="fas fa-share-alt mainMenuIcons"></i>
+                        </label>
+
+                    </li>
+                    <li>
+                        <label for="showSendEmailPage">
+                            <i class="fas fa-envelope mainMenuIcons"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="showCallUsAlirtPage">
+                            <i class="fas fa-phone-alt mainMenuIcons"></i>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="mainMenuIcons" id="User"></div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+            <!--  </!-div>-->
+            <div id="soialMediaHeaderMobile">
+                <label for="showSendEmailPage">
+                    <i class="fas fa-envelope mainMenuIcons"></i>
+                </label>
+                <label for="showCallUsAlirtPage">
+                    <i class="fas fa-phone-alt mainMenuIcons"></i>
+                </label>
+            </div>
+        </nav>
+        <input type="checkbox" name="mobileWrap" id="mobileWrap" hidden="">
+        <label id="menu" for="mobileWrap">
+            <div class="menuIcon" id="menuIcon1"></div>
+            <div class="menuIcon" id="menuIcon2"></div>
+            <div class="menuIcon" id="menuIcon3"></div>
+        </label>
+
+        <aside>
+            <div id="balckBackgroundMobile"></div>
+            <div id="innerAside">
+                <ul>
+                    <li class="MobileBarItem">
+                        <a href="#">الرئيسية</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">حول الموج</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">خدماتنا</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">العروض</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">صفقات الجمال</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">بطاقات الولاء</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">جواز سفر الجمال</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">حجز موعد</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">الصيدلية</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">مركز آساج الرياضي</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">المدونة</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">الاتصال</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">جديد عروضنا</a>
+                    </li>
+                    <li class="MobileBarItem">
+                        <a href="#">جديد العروض</a>
+                    </li>
+                </ul>
+                <div id="soialMediaMobile">
+                    <img src="/img/twitter.svg" alt="">
+                    <img src="/img/twitter.svg" alt="">
+                    <img src="/img/twitter.svg" alt="">
+                    <img src="/img/twitter.svg" alt="">
+
+
+                </div>
+            </div>
+        </aside>
+
+
+    </header>
+
+    <div id="contant">
+
+
+        <div id="NonSubsicribeClientZone">
+            <h2 id="NonSubsicribeClientZoneTitle"> منطقة العميل</h2>
+            <div id="NonSubsicribeClientZoneLine"></div>
+            <div id="ClientZone">
+                <div id="CliientZoneRight">
+                    <div id="ClientZoneImgWrap">
+                        <img src="" alt="">
+                        <h6>azzazazazazzsa@gmail.com</h6>
+                    </div>
+                    <div id="ClientZoneSelect"></div>
+                </div>
+                <div id="CliientZoneLeft">
+                    <form method="post">
+
+
+                        <label for="ClientFirstName">الاسم الاول</label>
+                        <input type="text" name="ClientFirstName" id="ClientFirstName" class="ClientInput">
+
+
+
+                        <label for="ClientLastName">الاسم الخير</label>
+                        <input type="text" name="ClientLastName" id="ClientLastName" class="ClientInput">
+
+
+                        <label for="ClientPhone">الهاتف</label>
+                        <input type="text" name="ClientPhone" id="ClientPhone" class="ClientInput">
+
+
+                        <label for="ClientContry">الدولة</label>
+                        <input type="text" name="ClientContry" id="ClientContry" class="ClientInput">
+                        <div>
+                            <input type="checkbox" name="update" id="update">
+                            <label name="update" id="update">ابقني على علم بآخر التطورات</label>
+                        </div>
+                        <input type="submit" value="حفظ">
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+
+        <div id="innerFotter">
+            <div id="footerInfo">
+                مجموعة عيادات الموج
+                <br>
+                حقوق النشر © 2021 جميع الحقوق محفوظة
+            </div>
+            <div id="leftFotter">
+                <div id="FotterMenu">
+                    <ul id="MenuListFotter">
+                        <li>
+                            <a class="link" href="index.html">الرئيسية</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">حول موج </a>
+                        </li>
+
+                        <li>
+                            <div id="moreFotter">
+                                <input type="checkbox" id="moreShowServesesFotter" hidden="">
+                                <div id="moreSelectServesesFotter">
+                                    <label for="moreShowServesesFotter" id="moreLableFotter">
+                                        خدماتنا
+                                    </label>
+                                    <div id="moreMenuServesesFotter">
+                                        <ul class="moreMenuList">
+                                            <li><input type="submit" value="تجميل لا جراحي" name="non-surgical"></li>
+                                            <li><input type="submit" value="الجلدية" name="dermatology"></li>
+                                            <li><input type="submit" value="ليزر علاج البشرة" name="skinLaser"></li>
+                                            <li><input type="submit" value="ليزرعلاج الشعر" name="hairLaser"></li>
+                                            <li><input type="submit" value="العناية الدورية" name="regularCare"></li>
+                                            <li><input type="submit" value="طب الاسنان" name="dentist"></li>
+                                            <li><input type="submit" value="المختبر الطبي" name="laboratory"></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">العروض </a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">صفقات الجمال</a>
+                        </li>
+
+                        <li>
+                            <a class="link" href="index.html">بطاقات الولاء</a>
+                        </li>
+
+                        <li>
+                            <div id="moreFotter">
+                                <input type="checkbox" id="moreShowFotter" hidden="">
+                                <div id="moreSelectFotter">
+                                    <label for="moreShowFotter" id="moreLableFotter">
+                                        المزيد
+                                    </label>
+                                    <div id="moreMenuFotter">
+                                        <ul class="moreMenuList">
+
+
+
+
+
+
+                                            <li>
+                                                <a href="#">جواز سفر الجمال</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">حجز موعد</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">الصيدلية</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">مركز آساج الرياضي</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">المدونة</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">الاتصال</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="subscribeFotter">
+                    <form method="post">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="subscribeEmail" id="subscribeEmail">
+                        <input type="submit" name="subscribeBtn" id="subscribeBtn" value="إشتراك">
+                    </form>
+                </div>
+                <div id="share">
+
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="img/twitter.png" alt="twitter">
+                    </a>
+
+                    <a href="http://snapchat.com" target="_blank">
+                        <img src="img/snapchat.png" alt="snapchat">
+                    </a>
+                    <a href="http://instagram.com" target="_blank">
+                        <img src="img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <div id="floating">
+        <div id="floatingFirst" onlclick="HidFloating(this)" onclick="showFloating(this)">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div id="floatingSecond" tabindex="1">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div id="floatingTheerd">
+            <i class="fas fa-phone fa-rotate-90"></i>
+        </div>
+    </div>
+
+    <input type="checkbox" name="showSendEmailPage" id="showSendEmailPage" hidden>
+    <div id="sendEmailPage">
+
+        <label for="showSendEmailPage">
+            <i class="fas fa-times fa-1x"></i></label>
+        <h3>اتصل بنا</h3>
+        <h5>
+            setd to <a href="mailto:info@almawj.net">info@almawj.net</a>
+        </h5>
+        <form method="post">
+            <input type="text" name="UserFullName" id="UserFullName">
+            <input type="email" name="UserEmail" id="UserEmail">
+            <textarea name="EmailContant" id="EmailContant" cols="70" rows="5"></textarea>
+            <input type="submit" value="send" id="sendEmail">
+        </form>
+
+    </div>
+
+
+
+    <input type="checkbox" name="showCallUsAlirtPage" id="showCallUsAlirtPage" hidden>
+    <div id="callUsAlertPage">
+
+        <label for="showCallUsAlirtPage">
+            <i class="fas fa-times fa-1x"></i></label>
+        <a href="tel:920009125">920009125
+            -
+            للحجز والأستفسار</a>
+    </div>
+
+    <input type="checkbox" name="showSharePage" id="showSharePage" hidden>
+    <div id="SharePage">
+
+        <label for="showSharePage">
+            <i class="fas fa-times fa-1x"></i>
+        </label>
+        <div>
+            <a href="instgram.com">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="instgram.com">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="instgram.com">
+                <i class="fab fa-snapchat"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <input type="checkbox" name="showLanguagePage" id="showLanguagePage" hidden>
+    <div id="LanguagePage">
+
+        <label for="showLanguagePage">
+            <i class="fas fa-times fa-1x"></i>
+        </label>
+        <div>
+            <a href="instgram.com">
+                <h2>AR</h2>
+            </a>
+
+            <a href="instgram.com">
+                <h2>EN</h2>
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 2000,
+            pause: false
+        })
+    </script>
+
+    <script>
+
+
+        function showFloating(ele) {
+            var chOne = ele.parentNode.children[1],
+                chTow = ele.parentNode.children[2];
+            if (window.getComputedStyle(chOne).bottom == '96px' && window.getComputedStyle(chTow).bottom == '145px') {
+                chOne.style.bottom = '42px';
+                chTow.style.bottom = '42px';
+            }
+            else {
+                chOne.style.bottom = '96px';
+                chTow.style.bottom = '145px';
+            }
+        }
+
+        (function customNav() {
+            var menu = document.getElementById("MenuList");
+            if (window.innerWidth <= 1120) {
+                var ele1 = menu.children[5];
+                console.log(menu.children);
+                console.log(ele1);
+                menu.appendChild(ele1);
+                document.getElementById("moreList").prepend(ele1);
+            }
+            if (window.innerWidth <= 900) {
+                var ele1 = menu.children[4];
+                console.log(menu.children);
+                console.log(ele1);
+                menu.appendChild(ele1);
+                document.getElementById("moreList").prepend(ele1);
+            }
+        })();
+
+        var ele;
+        const elements = [];
+
+
+        window.onload(setInterval(myfunction, 3000));
+        function getEle() {
+            for (var i = 0; i <= elements.length; i++)
+                elements.splice(0, elements.length);
+
+            ele = document.getElementsByClassName('item');
+
+            for (var i = 0; i < ele.length; i++) {
+                elements.push(ele[i]);
+
+            }
+        }
+        function myfunction() {
+
+            getEle();
+            //console.log(window.innerWidth);
+            elements[0].style.width = '0px';
+            elements[0].style.height = '0px';
+            elements[0].style.padding = '0px';
+
+            if (window.innerWidth >= 769) {
+                elements[7].style.width = '0px';
+                elements[7].style.height = '0px';
+                elements[7].style.padding = '0px';
+                elements[6].style.padding = '30px 30px';
+                elements[6].style.width = 'calc(100% / 6.2)';
+                elements[6].style.height = '160px';
+            }
+
+
+
+            else {
+                for (var i = 0; i < elements.length; i++) {
+                    elements[i].style.width = '0px';
+                    elements[i].style.height = '0px';
+                    elements[i].style.padding = '0px';
+                    elements[i].style.margin = '0px';
+                }
+
+                elements[1].style.padding = '30px 30px';
+                elements[1].style.width = 'calc(100% / 1.2)';
+                elements[1].style.height = '160px';
+                elements[1].style.margin = '0px 20px 0px 0px';
+                ;
+            }
+
+
+            setTimeout(function () {
+                document.getElementById('linerSlider').appendChild(elements[0]);
+
+            }, 1500);
+        }
+    </script>
+</body>
+
+</html>
