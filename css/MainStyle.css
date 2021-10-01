@@ -16,6 +16,71 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+#ServiceDetailsBay div {
+    border-bottom: 1px solid lightgray;
+    min-height: 90px;
+    padding: 7% 0px;
+}
+
+div#AlertBay {
+    border: 1px solid lightgray;
+    height: 90px;
+    text-align: center;
+    padding: 7% 0px;
+}
+
+#PriceBay {
+    font-size: 2em;
+}
+
+#ServiceImgBay {
+    width: 100%;
+}
+
+#ServiceImgWrapBay {
+    width: 50%;
+}
+
+#ServiceDetailsBay {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+#BayWrap {
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.policies.loyaltyCard ul {
+    padding-right: 20px;
+}
+
+.policies.loyaltyCard h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#beautyPassportBackgound+div {
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 33%;
+}
+
 #CliientZoneLeft form #update {
     display: inline;
 }
@@ -89,6 +154,23 @@ div#ClientZone {
     align-items: flex-start;
     height: 60vh;
     width: 92vw;
+}
+.beautyPassportSecontSectionText{
+  margin: 0px;
+  /* text-align: center; */
+  /* padding: 10px; */
+  /* display: block; */
+  /* position: absolute; */
+  /* top: 40%; */
+  color: white;
+}
+
+h1.beautyPassportSecontSectionText {
+    font-size: 52px;
+}
+
+a.beautyPassportSecontSectionText{
+  width: 85px;
 }
 
 #NonSubsicribeClientZoneForm input[type="submit"] {
@@ -169,6 +251,20 @@ div#beautyPassportDoneLine {
       padding: 21px;
 }
 
+
+#beautyPassportBackgound{
+   width: 100%;
+   height: 100vh;
+   height: 100%;
+   position: relative;
+   z-index: -1;
+   background-position: 35% -110px;
+   background-attachment: fixed;
+   background-position: 0px 0px;
+   background-repeat: no-repeat;
+   background-size: 100vw 100vh;
+   background-image: url("../img/beautyPassportBackgound.webp");
+}
 #NonSubsicribeClientZoneCard{
       width: 36%;
       height: 230px;
@@ -281,6 +377,17 @@ div#servec {
   display: flex;
   color: white;
   margin-top: -100vh;
+}
+
+#beautyPassportSecontSection{
+  background-color: #00000087;
+  /* background-repeat: no-repeat; */
+  /* background-size: 100vw 100vh; */
+  height: 100vh;
+  /* height: 100%; */
+  padding: 0;
+  margin-top: -170px;
+  position: relative;
 }
 
 #SharePage a i {
@@ -1009,12 +1116,18 @@ img.postImg {
 #FormWrap {
   width: 50%;
 }
+
+#Date.loyaltyCard #FormWrap {
+    width: 90%;
+}
 #Date {
   background-color: var(--GrayColor);
   width: 100%;
   margin: 130px auto;
   padding: 1px 0px 50px;
 }
+
+#Date.loyaltyCard {width: 50%;}
 #Date label {
   display: block;
 }
@@ -1309,6 +1422,10 @@ a:hover {
   color: var(--MainColor);
   text-decoration: none;
 }
+
+a.btn.btn-light.beautyPassportSecontSectionText {
+    color: black;
+}
 #share a img {
   max-width: 36px;
 }
@@ -1406,6 +1523,10 @@ iframe {
   justify-content: center;
 }
 
+.wrap#beautyPassport{
+  height: 80vh;
+}
+
 #pharmacyWrap {
     justify-content: space-around;
 }
@@ -1466,6 +1587,12 @@ footer {
   margin-left: 5%;
   object-fit: cover;
 }
+#beautyPassportImg {
+  width: 580px;
+  height: 550px;
+  margin-left: 5%;
+  object-fit: cover;
+}
 #AboutUsTitle {
   margin-bottom: 11px;
 }
@@ -1486,7 +1613,17 @@ footer {
   direction: rtl;
   text-align: center;
 }
-#AbouText {
+#beautyPassportText {
+      width: 40%;
+      margin-left: -98px;
+      position: relative;
+      padding: 40px;
+      z-index: 1;
+      background-color: white;
+      height: 360px;
+      direction: rtl;
+      text-align: center;
+      height: 89%;
 }
 section {
   margin-bottom: 170px;
@@ -1499,8 +1636,17 @@ section + section {
   background-color: white;
 }
 
+
+section + section +section + section {
+  background-color: white;
+}
+
 section + section + section {
   background-color: var(--GrayColor);
+}
+
+.policies.loyaltyCard {
+    padding: 80px;
 }
 .section {
   width: 100%;
