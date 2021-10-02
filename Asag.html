@@ -698,6 +698,7 @@
             }
         }
         function RunSlider(ele) {
+            const slider = document.getElementById('linerSlider');
             getEle();
             if (window.innerWidth >= 769) {
                 if (ele.id == 'sliderNext') {
@@ -708,13 +709,22 @@
                     elements[5].style.margin = '0px';
                 }
                 else {
-                    console.log();
-                    document.getElementById('linerSlider').insertBefore(
-                        document.getElementById('linerSlider').lastChild.previousSibling, document.getElementById('linerSlider').firstChild);
+                    var lastChiledInSlider = slider.lastElementChild;
+                    var lastChiledWidth = lastChiledInSlider.scrollWidth;
+                    lastChiledInSlider.style.width = '0px';
+                    slider.removeChild(slider.lastChild.previousSibling);
                     var itemWedth = elements[1].scrollWidth;
                     var itemMargin = ('0px ' + itemWedth + 'px 0px 0px');
-                    elements[1].setAttribute('style', 'margin:' + itemMargin);
-                    elements[0].style.margin = '0px';
+                    slider.insertBefore(lastChiledInSlider, slider.firstChild);
+                    for (var i = 0; i < lastChiledWidth; i++) {
+                        setTimeout(function () {
+                            slider.firstChild.style.width = i + 'px';
+
+
+                        })
+
+                    }
+
                 }
             }
 
