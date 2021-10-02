@@ -687,7 +687,7 @@ input#subscribeEmail {
 }
 
 #subscribeFotter form {
-  width: 220px;
+  width: 230px;
   background-color: #ebebeb;
   padding: 0px 7px 0px 0px;
   border: 1px solid #cecece;
@@ -1155,7 +1155,7 @@ img.postImg {
   padding: 3% 4%;
 }
 #silderWrap {
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 100vh;
   text-align: right;
   width: 100vw;
@@ -1167,6 +1167,8 @@ img.postImg {
     height: 89vh;
     width: 200vw;
     margin-right: -50vw;
+    position: relative;
+    left: -50vw;
 }
 
 .item#welcomImgAsag .sliderImg {
@@ -1917,14 +1919,16 @@ nav a {
   #mainMenu {
     display: none;
   }
-  .wrap {
+  .wrap,.AboutWrap {
     flex-direction: column;
   }
   #AbouText {
     width: 90%;
     margin-left: 0px;
+    height: auto;
     padding: 90px 0px;
     z-index: 1;
+    min-height: 80%;
     background-color: #ffffff;
   }
   #AboutUsImg {

@@ -707,6 +707,11 @@
                     var itemMargin = ('0px -' + itemWedth + 'px 0px 0px');
                     elements[0].setAttribute('style', 'margin:' + itemMargin);
                     elements[5].style.margin = '0px';
+
+                    setTimeout(function () {
+                        document.getElementById('linerSlider').appendChild(elements[0]);
+
+                    }, 1000);
                 }
                 else {
                     var lastChiledInSlider = slider.lastElementChild;
@@ -719,12 +724,8 @@
                     for (var i = 0; i < lastChiledWidth; i++) {
                         setTimeout(function () {
                             slider.firstChild.style.width = i + 'px';
-
-
                         })
-
                     }
-
                 }
             }
 
@@ -739,10 +740,7 @@
                 ;
             }
 
-            setTimeout(function () {
-                //document.getElementById('linerSlider').appendChild(elements[0]);
 
-            }, 1000);
         }
     </script>
 </body>
