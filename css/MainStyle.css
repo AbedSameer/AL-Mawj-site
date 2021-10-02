@@ -16,6 +16,18 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+.AboutWrap {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+}
+
+header {
+    min-height: 80px;
+}
+
 #ServiceDetailsBay div {
     border-bottom: 1px solid lightgray;
     min-height: 90px;
@@ -27,6 +39,20 @@ div#AlertBay {
     height: 90px;
     text-align: center;
     padding: 7% 0px;
+}
+.Alert{
+  transition-duration: 0.3s;
+  background-color: #000000;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  z-index: 108;
+  padding: 4.5% 19%;
+  color: white;
+  display: flex;
+  margin-top: -100vh;
 }
 
 #PriceBay {
@@ -367,16 +393,16 @@ div#servec {
 }
 
 #LanguagePage {
-  transition-duration: 0.3s;
-  background-color: #000000;
-  height: 100vh;
-  position: fixed;
-  width: 100vw;
-  z-index: 108;
+  /* transition-duration: 0.3s; */
+  /* background-color: #000000; */
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* width: 100vw; */
+  /* z-index: 108; */
   font-size: 4em;
-  display: flex;
-  color: white;
-  margin-top: -100vh;
+  /* display: flex; */
+  /* color: white; */
+  /* margin-top: -100vh; */
 }
 
 #beautyPassportSecontSection{
@@ -439,16 +465,16 @@ i.fas.fa-times.fa-1x {
 }
 
 #SharePage {
-  transition-duration: 0.3s;
-  background-color: #000000;
-  height: 100vh;
-  position: fixed;
-  width: 100vw;
-  z-index: 108;
+  /* transition-duration: 0.3s; */
+  /* background-color: #000000; */
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* width: 100vw; */
+  /* z-index: 108; */
   font-size: 4em;
-  display: flex;
-  color: white;
-  margin-top: -100vh;
+  /* display: flex; */
+  /* color: white; */
+  /* margin-top: -100vh; */
   /* flex-direction: column; */
 }
 
@@ -493,18 +519,21 @@ input#UserFullName {
 }
 
 #sendEmailPage {
-  transition-duration: 0.3s;
-  background-color: #000000;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  width: 100vw;
-  z-index: 108;
-  padding: 4.5% 19%;
-  color: white;
-  margin-top: -100vh;
+  /* transition-duration: 0.3s; */
+  /* background-color: #000000; */
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* top: 0px; */
+  /* left: 0; */
+  display: block;
+  /* width: 100vw; */
+  /* z-index: 108; */
+  /* padding: 4.5% 19%; */
+  /* color: white; */
+  /* margin-top: -100vh; */
 }
+
+
 
 #callUsAlertPage i {
   position: absolute;
@@ -522,16 +551,16 @@ input#UserFullName {
 }
 
 #callUsAlertPage {
-  transition-duration: 0.3s;
-  background-color: #000000;
-  height: 100vh;
-  position: fixed;
-  width: 100vw;
-  z-index: 108;
+  /* transition-duration: 0.3s; */
+  /* background-color: #000000; */
+  /* height: 100vh; */
+  /* position: fixed; */
+  /* width: 100vw; */
+  /* z-index: 108; */
   font-size: 4em;
-  display: flex;
-  color: white;
-  margin-top: -100vh;
+  /* display: flex; */
+  /* color: white; */
+  /* margin-top: -100vh; */
 }
 #showCallUsAlirtPage:checked + #callUsAlertPage {
   top: 100vh;
@@ -898,6 +927,15 @@ header a {
   width: 100%;
   height: 130px;
 }
+#linerSlider.Asag {
+  height: 100vh;
+  flex-wrap: wrap;
+  width: 200vw;
+  text-align: center;
+  display: flex;
+  margin: 0px calc(-100% / 3 ) 0px 0px;
+}
+
 #soialMediaHeaderMobile img {
   width: 17px;
   margin: 25px 5px;
@@ -1094,24 +1132,45 @@ img.postImg {
 }
 #silderWrap {
   overflow: hidden;
-  height: 165px;
+  height: 100vh;
   text-align: right;
   width: 100vw;
   margin: 0 auto;
 }
+
+#silderWrap.Asag {
+    padding: 0px;
+}
+
+.item#welcomImgAsag .sliderImg {
+     max-width: 100%;
+}
 .sliderImg {
   height: 100%;
-  max-width: 100px;
+   max-width: 100px; 
 }
 .item {
   width: calc(100% / 6.2);
   height: 160px;
-  transition-duration: 500ms;
+  transition-duration: 1010ms;
   padding: 30px;
   display: inline-block;
-  display: inline-flex;
-  justify-content: center;
-  align-items: baseline;
+  /* display: inline-flex; */
+  /* justify-content: center; */
+  /* align-items: baseline; */
+}
+
+.item#welcomImgAsag {
+
+width: 22.8%;
+
+/* margin: 0px 0% 0px 0px; */
+
+height:100vh;
+
+padding:0px 0px;
+
+/* width: 0px; */
 }
 #FormWrap {
   width: 50%;
@@ -1350,6 +1409,10 @@ img.offerImg {
   width: 50.1%;
   height: 360px;
 }
+
+#Welcom#Asag #welcomImg {
+    width: 100%;
+}
 #welcomImg img {
   max-height: 360px;
   max-width: 100%;
@@ -1566,6 +1629,7 @@ footer {
 }
 #contant {
   max-width: 100%;
+  /* background: lightgray; */
 }
 #footerInfo {
   text-align: center;
@@ -1587,6 +1651,13 @@ footer {
   margin-left: 5%;
   object-fit: cover;
 }
+
+#AsagWelcomeImg {
+  width: 545px;
+  height: 613px;
+  margin-left: 5%;
+  object-fit: cover;
+}
 #beautyPassportImg {
   width: 580px;
   height: 550px;
@@ -1605,11 +1676,11 @@ footer {
 #AbouText {
   width: 40%;
   margin-left: -98px;
-  position: relative;
+  /* position: relative; */
   padding: 40px;
   z-index: 1;
   background-color: white;
-  height: 360px;
+  height: 80%;
   direction: rtl;
   text-align: center;
 }
