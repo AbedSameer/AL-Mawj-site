@@ -16,11 +16,35 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+div#Welcom\ Asag {
+    position: relative;
+}
+
+.sliderArrow:hover {
+  color:white;
+}
+
+.sliderArrow {
+    position: absolute;
+    top: 54%;
+    padding: 0px 30px;
+    font-size: 4em;
+    color: #ffffff59;
+    z-index: 1;
+}
+
+i#sliderNext {
+    left: 0;
+}
+
+i#sliderPrev {}
+
 .AboutWrap {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
     height: 100vh;
+    /* width: 200vw; */
     align-items: center;
 }
 
@@ -928,12 +952,12 @@ header a {
   height: 130px;
 }
 #linerSlider.Asag {
-  height: 100vh;
+  height: 100%;
   flex-wrap: wrap;
   width: 200vw;
   text-align: center;
   display: flex;
-  margin: 0px calc(-100% / 3 ) 0px 0px;
+  margin: 0px -0vw 0px 0px;
 }
 
 #soialMediaHeaderMobile img {
@@ -1131,7 +1155,7 @@ img.postImg {
   padding: 3% 4%;
 }
 #silderWrap {
-  overflow: hidden;
+  /* overflow: hidden; */
   height: 100vh;
   text-align: right;
   width: 100vw;
@@ -1140,10 +1164,16 @@ img.postImg {
 
 #silderWrap.Asag {
     padding: 0px;
+    height: 89vh;
+    width: 200vw;
+    margin-right: -50vw;
 }
 
 .item#welcomImgAsag .sliderImg {
      max-width: 100%;
+     max-width: 49vw;
+     height: 100% !important;
+     object-position: center;
 }
 .sliderImg {
   height: 100%;
@@ -1162,13 +1192,15 @@ img.postImg {
 
 .item#welcomImgAsag {
 
-width: 22.8%;
+width: auto;
 
 /* margin: 0px 0% 0px 0px; */
 
-height:100vh;
+height: 100%;
 
 padding:0px 0px;
+
+max-width: 49vw;
 
 /* width: 0px; */
 }
