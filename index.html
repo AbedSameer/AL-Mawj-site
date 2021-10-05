@@ -25,7 +25,7 @@
 
 </head>
 
-<body id="body">
+<body id="body" onload="test()">
     <header style="height: 100vh;">
         <nav id="header">
             <a href="#body">
@@ -1224,6 +1224,11 @@
                 document.getElementById('linerSlider').appendChild(elements[0]);
 
             }, 1500);
+        }
+    </script>
+    <script type="text/javascript">
+        function test() {
+            alert(window.innerWidth);
         }
     </script>
 </body>
