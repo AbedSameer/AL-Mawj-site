@@ -10,10 +10,14 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
 /*
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');*/
 * {
-  /*font-family: 'Open Sans', sans-serif;*/
+  /* font-family: 'Open Sans', sans-serif; */
   margin: 0px;
   padding: 0px;
   direction: rtl;
+}
+
+#soialMediaMobile label {
+  margin: 0;
 }
 
 #AboutUsWrap {
@@ -130,12 +134,13 @@ div#AlertBay {
 #beautyPassportBackgound + div {
   position: absolute;
   top: 30%;
-  left: 27%;
+  /* left: 27%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 33%;
+  width: 100%;
 }
 
 #CliientZoneLeft form #update {
@@ -220,10 +225,12 @@ div#ClientZone {
   /* position: absolute; */
   /* top: 40%; */
   color: white;
+  font-size: 1.8em;
 }
 
 h1.beautyPassportSecontSectionText {
   font-size: 52px;
+  font-size: 3.3em;
 }
 
 a.beautyPassportSecontSectionText {
@@ -325,10 +332,11 @@ div#beautyPassportDoneLine {
   z-index: -1;
   background-position: 35% -110px;
   background-attachment: fixed;
-  background-position: 0px 0px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
   background-image: url("../img/beautyPassportBackgound.webp");
+  background-size: cover;
 }
 #NonSubsicribeClientZoneCard {
   width: 36%;
@@ -451,6 +459,7 @@ div#servec {
   padding: 0;
   margin-top: -170px;
   position: relative;
+  margin-bottom: 0px;
 }
 
 #SharePage a i {
@@ -988,8 +997,7 @@ header a {
   display: none;
 }
 #soialMediaMobile img {
-  max-width: 12%;
-  margin: 10px;
+  width: 20px;
 }
 label#wrap {
   position: absolute;
@@ -1054,7 +1062,11 @@ aside {
   border-top: 1px solid var(--GrayColor);
   width: 140%;
   display: flex;
+  height: 50px;
   margin: 0 -40px;
+  justify-content: space-evenly;
+  padding: 0px 50px;
+  align-items: center;
 }
 #Connection {
   background-color: var(--GrayColor);
@@ -1426,8 +1438,9 @@ img.offerImg {
   width: 100%;
   height: 450px;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  padding: 60px 0px;
+  padding: 60px 20px;
   align-items: center;
   place-content: space-around space-evenly;
   background-color: rgba(120, 199, 246, 0.52);
@@ -1549,6 +1562,7 @@ a:hover {
 
 a.btn.btn-light.beautyPassportSecontSectionText {
   color: black;
+  font-size: 1rem;
 }
 #share a img {
   max-width: 36px;
@@ -1635,6 +1649,11 @@ iframe {
   background-color: var(--MainColor);
   height: 40px;
   border-radius: 50%;
+}
+
+#soialMediaMobile #User {
+  width: 25px;
+  height: 25px;
 }
 #menu {
   margin-right: 9px;
@@ -1871,18 +1890,51 @@ nav a {
   align-items: center;
   width: 100%;
 }
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 1120px) {
+  #moreShow:checked + #moreSelect #moreMenu {
+    height: 330px;
+  }
+  .wrap#beautyPassport div,
+  .wrap#beautyPassport img {
+    min-width: 455px;
+    max-width: 455px;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 900px) {
+  #moreShow:checked + #moreSelect #moreMenu {
+    height: 370px;
+  }
+  #silderWrap.Asag {
+    width: 100vw;
+  }
+  .wrap#beautyPassport div,
+  .wrap#beautyPassport img {
+    min-width: 400px;
+    max-width: 400px;
+    font-size: 0.84em;
+  }
+}
+@media screen and (max-width: 992px) {
+  #silderWrap.Asag {
+    width: 100vw;
+  }
+}
+
 @media screen and (max-width: 730px) {
   #headerTextsWrape {
     height: 290px;
     margin-top: -510px;
   }
 }
-@media screen and (min-width: 769px) {
+:root {
+  --headerHeight: 100px;
+}
+@media screen and (max-width: 769px) {
   :root {
     --headerHeight: 100px;
   }
-}
-@media screen and (max-width: 769px) {
   #offersContener {
     display: flex;
     flex-direction: column;
@@ -1948,13 +2000,21 @@ nav a {
     display: none;
   }
   .wrap,
-  .AboutWrap {
+  .AboutWrap,
+  .wrap#beautyPassport {
     flex-direction: column;
     /* margin-top: 150px; */
     height: auto;
     /* max-width: 25vw; */
-    max-height: 120vh;
+    justify-content: space-between;
+    height: 100vh;
     /* margin-bottom: 80px; */
+    overflow: hidden;
+  }
+
+  .AboutWrap div,
+  .AboutWrap img {
+    margin-bottom: 50px;
   }
   #AbouText {
     width: 90%;
@@ -1962,7 +2022,7 @@ nav a {
     height: auto;
     padding: 0px 0px;
     z-index: 1;
-    /* min-height: 80%; */
+    min-height: 80%;
     background-color: #ffffff;
   }
   #AboutUsImg {
@@ -2009,6 +2069,13 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  .wrap#beautyPassport div,
+  .wrap#beautyPassport img {
+    width: 90vw;
+    max-width: 90vw;
+    min-width: 80vw;
+    margin: 0;
+  }
   #callUsAlertPage {
     font-size: 1.6em;
     display: flex;
@@ -2151,6 +2218,9 @@ nav a {
   #headerTextsWrape {
     height: 258px;
   }
+  #beautyPassportBackgound + div {
+    font-size: 3vw;
+  }
 }
 @media screen and (max-width: 426px) {
   .item {
@@ -2161,17 +2231,8 @@ nav a {
     font-size: 6.5vw;
     height: 208px;
   }
-}
-@media screen and (max-width: 1120px) {
-  #moreShow:checked + #moreSelect #moreMenu {
-    height: 330px;
-  }
-}
-@media screen and (max-width: 900px) {
-  #moreShow:checked + #moreSelect #moreMenu {
-    height: 370px;
-  }
-  #silderWrap.Asag {
-    width: 100vw;
+  #beautyPassportText {
+    font-size: 0.79em !important;
+    padding: 10px 30px;
   }
 }
