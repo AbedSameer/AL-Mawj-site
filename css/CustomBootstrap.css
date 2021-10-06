@@ -52,6 +52,7 @@ dropdown-item {
   padding: 30px;
   margin: 30px auto;
   border: 1px solid lightgray;
+  max-width: 100%;
 }
 @media screen and (max-width: 769px) {
   .carousel-inner {

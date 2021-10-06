@@ -160,7 +160,7 @@
         <aside>
             <div id="balckBackgroundMobile"></div>
             <div id="innerAside">
-                <ul>
+                <ul id="MainMobileBar">
 
                     <li class="MobileBarItem">
                         <a href="index.html">الرئيسية</a>
@@ -168,8 +168,14 @@
                     <li class="MobileBarItem">
                         <a href="aboutUs.html">حول الموج</a>
                     </li>
-                    <li class="MobileBarItem">
-                        <a href="#">خدماتنا</a>
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
                     </li>
                     <li class="MobileBarItem">
                         <a href="offers.html">العروض</a>
@@ -205,6 +211,27 @@
                         <a href="offers.html">جديد العروض</a>
                     </li>
                 </ul>
+                <input type="checkbox" name="showMobileSeveces" id="showMobileSeveces"
+                    onchange="showMobileBarServeces(this)" hidden>
+                <ul id="showMobileBarServeces">
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
+                    </li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                </ul>
+
                 <div id="soialMediaMobile">
 
 
@@ -465,6 +492,8 @@
                         السابقة
                     </option>
                 </select>
+                <button id="filter" onclick="ShowFilterFoeMobile()">filter</button>
+
                 <div id="offersWrap">
                     <div class="OneOfferWrap">
                         <div class="offerExpDate"> 30 may</div>
@@ -497,7 +526,7 @@
                     <div class="OneOfferWrap">
                         <div class="offerExpDate"> 30 may</div>
                         <div class="offerNameOverImg"> خلي الليزر اختيارك</div>
-                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_610c09b302459.png" alt=""
+                        <img src="https://static1.s123-cdn-static-a.com/uploads/4858436/800_615c125f5cd9a.jpg" alt=""
                             class="offerImg">
                         <div class="offerDetails">
                             <div class="offerTitle">
@@ -1228,10 +1257,42 @@
         function test() {
             alert("\nwidth: " + window.innerWidth + " \n\nHeight: " + window.innerHeight);
         }
-        console.log(" 55555 " + window.innerWidth);
-        if (window.innerWidth <= 769) {
-            console.log(" 55555 ");
-            document.getElementById('state').setAttribute('size', '1');
+        function ShowFilterFoeMobile(ele) {
+            var state = document.getElementById('state');
+            console.log(state.style.height);
+
+            if (state.style.height == 0 || state.style.height == '0px') {
+                //console.log(state.style.height);
+                state.style.height = '130px';
+                //  state.style.padding = '10px';
+            }
+
+            else if (state.style.height >= "130px") {
+                //console.log(state.style.height);
+
+                console.log(state.style.height + "      2222 ");
+                state.style.height = '0px';
+                //  state.style.padding = '0px 10px';
+            }
+        }
+
+        function showMobileBarServeces(ele) {
+            const check = document.getElementById("showMobileSeveces");
+            const more = document.getElementById("showMobileBarServeces");
+            const main = document.getElementById("MainMobileBar");
+            if (check.checked == false) {
+                more.style.margin = "0px 60vw 0px 0px";
+                main.style.margin = "0px 0vw 0px 0px";
+
+            }
+            else if (check.checked == true) {
+                more.style.margin = "0px 0vw 0px 0px";
+                main.style.margin = "0px -50vw 0px 0px";
+
+            }
+
+
+
         }
     </script>
 </body>

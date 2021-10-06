@@ -16,6 +16,25 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+#showMobileBarServeces label {
+  color: var(--MainColor);
+}
+
+.offerPrice {
+  margin-top: 25px;
+}
+#filter {
+  display: none;
+  width: 90%;
+  margin: 20px auto;
+  height: 40px;
+  border: 1px solid var(--MainColor);
+  background-color: white;
+  color: var(--MainColor);
+  font-weight: bold;
+  /* font-size: 21px; */
+}
+
 #soialMediaMobile label {
   margin: 0;
 }
@@ -528,9 +547,6 @@ i.fas.fa-times.fa-1x {
   /* flex-direction: column; */
 }
 
-div#moreSelect {
-}
-
 input#sendEmail {
   width: 100%;
   height: 35px;
@@ -702,6 +718,7 @@ input#subscribeEmail {
   border: none;
   margin: 0px;
   padding: 0px;
+  width: 80%;
 }
 
 #subscribeFotter {
@@ -1013,6 +1030,7 @@ label#wrap {
   height: 100vh;
   min-width: 255px;
   padding: 30px 50px;
+  overflow: hidden;
 }
 #balckBackgroundMobile {
   width: 50vw;
@@ -1027,6 +1045,27 @@ label#wrap {
   margin: 7px 0px;
   font-size: 25px;
 }
+
+#showMobileBarServeces #MobileBarServeces::before {
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--MainColor);
+  position: absolute;
+  top: 22px;
+  right: 0px;
+}
+#showMobileBarServeces {
+  margin-right: 60vw;
+  transition-duration: 0.3s;
+  /* overflow: hidden; */
+  position: absolute;
+  top: 50px;
+  height: 64%;
+  width: 100%;
+  font-size: 25px;
+  padding: 0px 19px;
+}
 aside ul {
   list-style: none;
   height: 90%;
@@ -1034,6 +1073,9 @@ aside ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* margin-right: -50vw; */
+  overflow-x: hidden;
+  transition-duration: 0.3s;
 }
 aside {
   width: 100vw;
@@ -1061,13 +1103,15 @@ aside {
 }
 #soialMediaMobile {
   border-top: 1px solid var(--GrayColor);
-  width: 140%;
+  width: 52vw;
   display: flex;
   height: 50px;
-  margin: 0 -40px;
+  margin: 0 -60px;
   justify-content: space-evenly;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
   align-items: center;
+  max-width: 380px;
+  min-width: 255px;
 }
 #Connection {
   background-color: var(--GrayColor);
@@ -1314,8 +1358,9 @@ input#Date {
   text-align: right;
 }
 .state {
-  height: 44%;
+  height: 50px;
   padding: 13px 27px;
+  margin: 10px;
 }
 .state:hover {
   border: 1px solid var(--MainColor);
@@ -1354,8 +1399,8 @@ input#Date {
 }
 .offerDetails {
   width: 100%;
-  /* height: 113px; */
-  position: absolute;
+  min-height: 113px;
+  position: relative;
   bottom: 1px;
   padding: 9px 11px 9px 0px;
   text-align: right;
@@ -1366,17 +1411,18 @@ input#Date {
 }
 img.offerImg {
   width: 100%;
-  height: 253px;
-  position: absolute;
+  min-height: 277px;
+  /* position: absolute; */
   z-index: -1;
   border-radius: 10px 10px 0px 0px;
 }
 .offerNameOverImg {
   width: 55%;
+  /* width: 225px; */
   position: absolute;
   height: 50px;
   z-index: 1;
-  top: -64px;
+  /* top: 205px; */
   left: 60px;
   background-color: rgb(22 22 22 / 46%);
   border-radius: 7px;
@@ -1384,13 +1430,15 @@ img.offerImg {
   color: white;
   font-size: 1em;
   text-align: center;
+  display: none;
 }
 .offerExpDate {
   width: 60px;
   height: 65px;
   background-color: rgba(0, 0, 0, 0.53);
   border-radius: 10px;
-  margin-left: 190px;
+  margin-right: 10px;
+  right: 10px;
   margin-top: 7px;
   position: absolute;
   color: white;
@@ -1418,10 +1466,11 @@ img.offerImg {
 .OneOfferWrap {
   position: relative;
   width: 260px;
-  height: 370px;
+  height: auto;
   border-bottom: 5px solid var(--MainColor);
   border-radius: 10px;
   margin: 10px 10px 20px;
+  overflow: hidden;
 }
 #contactFixedBackgound {
   width: 100%;
@@ -1582,6 +1631,7 @@ a img {
   --footerHeight: 186px;
   --GrayColor: #ebebeb;
 }
+
 .backgroundVideo {
   width: 100%;
   max-width: 100%;
@@ -1891,6 +1941,7 @@ nav a {
   align-items: center;
   width: 100%;
 }
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 1120px) {
   #moreShow:checked + #moreSelect #moreMenu {
@@ -1960,18 +2011,19 @@ nav a {
   }
   #state {
     width: 60%;
-    height: 130px;
+    height: 0;
     background-color: var(--GrayColor);
     margin: 0px auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0;
     border: none;
     outline: none;
+    transition-duration: 0.6s;
     overflow: hidden;
   }
   #offersWrap {
-    width: 80%;
+    width: 90%;
   }
   #Welcom {
     flex-direction: column;
@@ -2071,6 +2123,22 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  #DoctorCarousel {
+    width: 100%;
+  }
+  .offerNameOverImg {
+    /* top: auto; */
+    /* bottom: 180px; */
+    bottom: 35%;
+    left: 23%;
+    /* margin: auto 0; */
+  }
+  .OneOfferWrap {
+    width: 90vw;
+  }
+  #filter {
+    display: block;
+  }
   .postInfo {
     padding: 0px;
     text-align: center;
@@ -2129,6 +2197,10 @@ nav a {
   }
   #subscribeFotter {
     left: auto;
+    width: 80%;
+  }
+  #subscribeFotter form {
+    width: 100%;
   }
   header #mobileWrap:checked + #menu + aside {
     display: block;
@@ -2166,6 +2238,7 @@ nav a {
   }
   #ConnectionWrap {
     flex-direction: column;
+    padding: 10px 0px;
   }
   .post {
     flex-direction: column;
@@ -2178,6 +2251,7 @@ nav a {
   }
   #FormWrap {
     width: 90%;
+    max-width: 90%;
   }
   .doctorImgWrap {
     width: 100% !important;
