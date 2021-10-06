@@ -712,7 +712,7 @@ input#subscribeEmail {
 }
 
 #subscribeFotter form {
-  width: 230px;
+  width: 255px;
   background-color: #ebebeb;
   padding: 0px 7px 0px 0px;
   border: 1px solid #cecece;
@@ -975,6 +975,7 @@ header a {
 #linerSlider {
   width: 100%;
   height: 130px;
+  overflow: hidden;
 }
 #linerSlider.Asag {
   height: 100%;
@@ -1954,7 +1955,8 @@ nav a {
     display: none;
   }
   #servecContener {
-    width: 90%;
+    width: 100%;
+    padding: 17px 10px;
   }
   #state {
     width: 60%;
@@ -2069,6 +2071,10 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  .postInfo {
+    padding: 0px;
+    text-align: center;
+  }
   .wrap#beautyPassport div,
   .wrap#beautyPassport img {
     width: 90vw;
