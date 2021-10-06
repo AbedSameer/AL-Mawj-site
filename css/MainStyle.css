@@ -538,6 +538,7 @@ input#sendEmail {
   background-color: var(--MainColor);
   color: white;
   margin-top: 20px;
+  border: none;
 }
 
 textarea#EmailContant {
@@ -1337,6 +1338,7 @@ input#Date {
   padding: 10px;
   border: none;
   outline: none;
+  scrollbar-width: none;
   overflow: hidden;
 }
 .offerTitle {
@@ -1960,7 +1962,7 @@ nav a {
   }
   #state {
     width: 60%;
-    height: 130px;
+    height: 40px;
     background-color: var(--GrayColor);
     margin: 0px auto;
     display: flex;
