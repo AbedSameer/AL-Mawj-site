@@ -87,7 +87,7 @@ div#AlertBay {
   padding: 4.5% 19%;
   color: white;
   display: flex;
-  margin-top: -100vh;
+  margin-top: -200vh;
 }
 
 #PriceBay {
@@ -624,7 +624,7 @@ input#UserFullName {
 }
 
 #showSendEmailPage:checked + #sendEmailPage {
-  top: 100vh;
+  top: 200vh;
   transition-duration: 0.3s;
 }
 
@@ -1877,7 +1877,7 @@ section + section + section {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: -550px auto;
+  margin: -470px auto;
   font-size: 45px;
 }
 #Welcom {
@@ -2056,7 +2056,7 @@ nav a {
   }
   #headerTextsWrape {
     height: 360px;
-    margin-top: -540px;
+    margin-top: -400px;
     font-size: 5vw;
   }
 }
