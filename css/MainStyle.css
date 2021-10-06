@@ -736,7 +736,7 @@ input#subscribeEmail {
   height: 0px;
   width: 150px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #moreSelectServesesFotter {
@@ -865,7 +865,7 @@ header a {
   height: 0px;
   width: 160px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 #moreMenuServesesMobile {
   transition-duration: 0.3s;
@@ -885,7 +885,7 @@ header a {
   height: 0px;
   width: 190px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #moreMenuFotter {
@@ -896,7 +896,7 @@ header a {
   height: 0px;
   width: 164px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: black;
 }
 .moreMenuList input {
@@ -929,14 +929,14 @@ header a {
 #moreShow:checked + #moreSelect #moreMenu {
   display: block;
   height: 290px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
 #moreShowServeses:checked + #moreSelectServeses #moreMenuServeses {
   display: block;
   height: 330px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
@@ -958,7 +958,7 @@ header a {
 #moreShowFotter:checked + #moreSelectFotter #moreMenuFotter {
   display: block;
   height: 223px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
@@ -967,7 +967,7 @@ header a {
   #moreMenuServesesFotter {
   display: block;
   height: 254px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
   top: -263px;
@@ -1862,7 +1862,7 @@ section + section + section {
 #HeaderTitle {
   color: white;
   margin-bottom: -20px;
-  font-size: 2.6em;
+  font-size: 2.5em;
 }
 #HeaderText {
   text-align: center;
