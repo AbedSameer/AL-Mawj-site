@@ -1841,10 +1841,10 @@ footer {
   padding: 40px;
   z-index: 1;
   background-color: white;
-  height: 360px;
+  height: 400px;
   direction: rtl;
   text-align: center;
-  height: 89%;
+  /* height: 89%; */
 }
 section {
   margin-bottom: 170px;
