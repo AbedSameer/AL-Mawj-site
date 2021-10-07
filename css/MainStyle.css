@@ -2079,6 +2079,9 @@ nav a {
     min-height: 80%;
     background-color: #ffffff;
   }
+  #AboutUsWrap {
+    flex-direction: column;
+  }
   #AboutUsImg {
     width: 90%;
     margin: 0 auto;
@@ -2090,7 +2093,7 @@ nav a {
     text-align: center;
     margin: 0px auto;
     /* max-width: 545px; */
-    font-size: 13.3px;
+    font-size: 23px;
     /* min-width: 430px; */
     /* font-size: 2.4vw; */
   }
