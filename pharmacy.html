@@ -26,7 +26,7 @@
         <nav id="header">
             <a href="#body">
                 <img id="logo" src="https://static1.s123-cdn-static-a.com/uploads/4858436/400_60319e2e9da0e.png"
-                    alt=" عيادات الموج " />
+                    alt=" عيادات الموج ">
             </a>
             <div id="mainMenu">
                 <ul id="MenuList">
@@ -40,28 +40,23 @@
 
                     <li>
                         <div id="more">
-                            <input type="checkbox" id="moreShowServeses" hidden="" />
+                            <input type="checkbox" id="moreShowServeses" hidden="">
                             <div id="moreSelectServeses">
-                                <label for="moreShowServeses" id="moreLable"> خدماتنا </label>
+                                <label for="moreShowServeses" id="moreLable">
+                                    خدماتنا
+                                </label>
                                 <div id="moreMenuServeses">
                                     <ul class="moreMenuList">
-                                        <li>
-                                            <a href="Services/non-surgical.html">تجميل لا جراحي</a>
-                                        </li>
+                                        <li><a href="Services/non-surgical.html">تجميل لا جراحي</a></li>
                                         <li><a href="Services/Dermatology.html">الجلدية</a></li>
-                                        <li>
-                                            <a href="Services/skinLaser.html">ليزر علاج البشرة</a>
-                                        </li>
-                                        <li>
-                                            <a href="Services/laserHair.html">ليزرعلاج الشعر</a>
-                                        </li>
-                                        <li>
-                                            <a href="Services/regularCare.html">العناية الدورية</a>
-                                        </li>
+                                        <li><a href="Services/skinLaser.html">ليزر علاج البشرة</a></li>
+                                        <li><a href="Services/laserHair.html">ليزرعلاج الشعر</a></li>
+                                        <li><a href="Services/regularCare.html">العناية الدورية</a></li>
                                         <li><a href="Services/dentist.html">طب الاسنان</a></li>
                                         <li><a href="Services/lab.html">المختبر الطبي</a></li>
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
@@ -72,13 +67,15 @@
 
                     <li>
                         <a class="link" href="beautyDeals.html">صفقات الجمال</a>
-                    </li>
+
 
                     <li>
                         <div id="more">
-                            <input type="checkbox" id="moreShow" hidden="" />
+                            <input type="checkbox" id="moreShow" hidden="">
                             <div id="moreSelect">
-                                <label for="moreShow" id="moreLable"> المزيد </label>
+                                <label for="moreShow" id="moreLable">
+                                    المزيد
+                                </label>
                                 <div id="moreMenu">
                                     <ul class="moreMenuList" id="moreList">
                                         <li>
@@ -102,20 +99,24 @@
                                         <li>
                                             <a href="Contact.html">الاتصال</a>
                                         </li>
+
+
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </li>
 
                     <li>
                         <label for="showLanguagePage">
-                            <img class="mainMenuIcons" src="/img/AR.png" alt="AR" /></label>
+                            <img class="mainMenuIcons" src="/img/AR.png" alt="AR"></label>
                     </li>
                     <li>
                         <label for="showSharePage">
                             <i class="fas fa-share-alt mainMenuIcons"></i>
                         </label>
+
                     </li>
                     <li>
                         <label for="showSendEmailPage">
@@ -130,6 +131,8 @@
                     <li>
                         <a href="clientZone.html" class="mainMenuIcons" id="User"></a>
                     </li>
+
+
                 </ul>
             </div>
 
@@ -143,7 +146,7 @@
                 </label>
             </div>
         </nav>
-        <input type="checkbox" name="mobileWrap" id="mobileWrap" hidden="" />
+        <input type="checkbox" name="mobileWrap" id="mobileWrap" hidden="">
         <label id="menu" for="mobileWrap">
             <div class="menuIcon" id="menuIcon1"></div>
             <div class="menuIcon" id="menuIcon2"></div>
@@ -153,15 +156,22 @@
         <aside>
             <div id="balckBackgroundMobile"></div>
             <div id="innerAside">
-                <ul>
+                <ul id="MainMobileBar">
+
                     <li class="MobileBarItem">
                         <a href="index.html">الرئيسية</a>
                     </li>
                     <li class="MobileBarItem">
                         <a href="aboutUs.html">حول الموج</a>
                     </li>
-                    <li class="MobileBarItem">
-                        <a href="#">خدماتنا</a>
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
                     </li>
                     <li class="MobileBarItem">
                         <a href="offers.html">العروض</a>
@@ -197,9 +207,32 @@
                         <a href="offers.html">جديد العروض</a>
                     </li>
                 </ul>
+                <input type="checkbox" name="showMobileSeveces" id="showMobileSeveces"
+                    onchange="showMobileBarServeces(this)" hidden>
+                <ul id="showMobileBarServeces">
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
+                    </li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                </ul>
+
                 <div id="soialMediaMobile">
+
+
                     <label for="showLanguagePage">
-                        <img class="mainMenuIcons" src="/img/AR.png" alt="AR" /></label>
+                        <img class="mainMenuIcons" src="/img/AR.png" alt="AR"></label>
                     <label for="showSharePage">
                         <i class="fas fa-share-alt mainMenuIcons"></i>
                     </label>
@@ -212,14 +245,32 @@
                     </label>
                     <a href="clientZone.html" class="mainMenuIcons" id="User"></a>
                     <!--
+                                <img src="/img/twitter.svg" alt="">
                             <img src="/img/twitter.svg" alt="">
-                        <img src="/img/twitter.svg" alt="">
-                        <img src="/img/twitter.svg" alt="">
-                        <img src="/img/twitter.svg" alt="">-->
+                            <img src="/img/twitter.svg" alt="">
+                            <img src="/img/twitter.svg" alt="">-->
+
+
                 </div>
             </div>
         </aside>
+
+        <div style="background-color: black; height:100%; position: relative;">
+            <video class="backgroundVideo" autoplay="" loop="" muted="" playsinline=""
+                poster="https://static.s123-cdn-static-d.com/uploads/4858436/normal_611cd814bdcee-thumbnail.jpg">
+                <source type="video/mp4" src="https://cdn-media.f-static.net/uploads/4858436/normal_611cd814bdcee.mp4">
+            </video>
+        </div>
+        <div id="headerTextsWrape">
+            <h1 id="HeaderTitle">خلي جمالك علينا
+            </h1>
+            <h1 id="HeaderText"> أكتشف الكثير من العروض المميزة</h1>
+            <a href="#" id="HeaderButton" class="moreLinkBtn"> الإطلاع على المزيد</a>
+        </div>
+
+
     </header>
+
 
     <div id="contant">
         <section>
@@ -330,7 +381,7 @@
                             <a class="link" href="beautyDeals.html">صفقات الجمال</a>
                         </li>
 
-                         
+
 
                         <li>
                             <div id="moreFotter">

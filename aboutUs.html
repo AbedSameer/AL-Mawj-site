@@ -26,7 +26,6 @@
 </head>
 
 <body id="body">
-
     <header>
         <nav id="header">
             <a href="#body">
@@ -161,7 +160,7 @@
         <aside>
             <div id="balckBackgroundMobile"></div>
             <div id="innerAside">
-                <ul>
+                <ul id="MainMobileBar">
 
                     <li class="MobileBarItem">
                         <a href="index.html">الرئيسية</a>
@@ -169,8 +168,14 @@
                     <li class="MobileBarItem">
                         <a href="aboutUs.html">حول الموج</a>
                     </li>
-                    <li class="MobileBarItem">
-                        <a href="#">خدماتنا</a>
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
                     </li>
                     <li class="MobileBarItem">
                         <a href="offers.html">العروض</a>
@@ -206,6 +211,27 @@
                         <a href="offers.html">جديد العروض</a>
                     </li>
                 </ul>
+                <input type="checkbox" name="showMobileSeveces" id="showMobileSeveces"
+                    onchange="showMobileBarServeces(this)" hidden>
+                <ul id="showMobileBarServeces">
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
+                    </li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                    <li>تجميل لا جرحي</li>
+                </ul>
+
                 <div id="soialMediaMobile">
 
 
@@ -233,7 +259,18 @@
             </div>
         </aside>
 
-
+        <div style="background-color: black; height:100%; position: relative;">
+            <video class="backgroundVideo" autoplay="" loop="" muted="" playsinline=""
+                poster="https://static.s123-cdn-static-d.com/uploads/4858436/normal_611cd814bdcee-thumbnail.jpg">
+                <source type="video/mp4" src="https://cdn-media.f-static.net/uploads/4858436/normal_611cd814bdcee.mp4">
+            </video>
+        </div>
+        <div id="headerTextsWrape">
+            <h1 id="HeaderTitle">خلي جمالك علينا
+            </h1>
+            <h1 id="HeaderText"> أكتشف الكثير من العروض المميزة</h1>
+            <a href="#" id="HeaderButton" class="moreLinkBtn"> الإطلاع على المزيد</a>
+        </div>
 
 
     </header>
@@ -343,7 +380,7 @@
                             <a class="link" href="beautyDeals.html">صفقات الجمال</a>
                         </li>
 
-                             
+
 
                         <li>
                             <div id="moreFotter">
