@@ -412,6 +412,17 @@ div#servec {
   direction: rtl;
   /* text-align: center; */
 }
+#loyaltyCardText {
+  width: 40%;
+  /* margin-left: -98px; */
+  position: relative;
+  /* padding: 40px; */
+  /* z-index: 1; */
+  /* background-color: white; */
+  height: 266px;
+  direction: rtl;
+  /* text-align: center; */
+}
 #pharmacyImg {
   width: 400px;
   height: 266px;
@@ -2127,6 +2138,12 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  #loyaltyCardText {
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    margin: -130px 0px -130px 0px;
+  }
   .policies.loyaltyCard {
     padding: 20px;
   }
