@@ -16,6 +16,11 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+.servecDescription {
+  width: 80%;
+  margin: 0 auto;
+}
+
 #showMobileBarServeces label {
   color: var(--MainColor);
 }
@@ -382,7 +387,7 @@ img#servesImg {
   text-align: center;
 }
 
-div#servec {
+#servec {
   width: 45%;
   height: 250px;
   padding: 10px;
@@ -2138,6 +2143,15 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  #pharmacyServeces {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  #servec {
+    width: 100%;
+  }
   #loyaltyCardText {
     width: 90%;
     height: auto;

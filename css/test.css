@@ -16,6 +16,34 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+.servecDescription {
+  text-align: center;
+  width: 100%;
+}
+
+.servecDescription ul {
+  width: 80% !important;
+}
+
+#showMobileBarServeces label {
+  color: var(--MainColor);
+}
+
+.offerPrice {
+  margin-top: 25px;
+}
+#filter {
+  display: none;
+  width: 90%;
+  margin: 20px auto;
+  height: 40px;
+  border: 1px solid var(--MainColor);
+  background-color: white;
+  color: var(--MainColor);
+  font-weight: bold;
+  /* font-size: 21px; */
+}
+
 #soialMediaMobile label {
   margin: 0;
 }
@@ -87,7 +115,7 @@ div#AlertBay {
   padding: 4.5% 19%;
   color: white;
   display: flex;
-  margin-top: -100vh;
+  margin-top: -200vh;
 }
 
 #PriceBay {
@@ -364,8 +392,9 @@ img#servesImg {
 }
 
 div#servec {
-  width: 40%;
-  height: 200px;
+  width: 45%;
+  height: 250px;
+  padding: 10px;
   background-color: var(--GrayColor);
   border-top: 3px solid var(--MainColor);
   border-radius: 5px;
@@ -382,6 +411,17 @@ div#servec {
   justify-content: space-evenly;
 }
 #pharmacyText {
+  width: 40%;
+  /* margin-left: -98px; */
+  position: relative;
+  /* padding: 40px; */
+  /* z-index: 1; */
+  /* background-color: white; */
+  height: 266px;
+  direction: rtl;
+  /* text-align: center; */
+}
+#loyaltyCardText {
   width: 40%;
   /* margin-left: -98px; */
   position: relative;
@@ -528,9 +568,6 @@ i.fas.fa-times.fa-1x {
   /* flex-direction: column; */
 }
 
-div#moreSelect {
-}
-
 input#sendEmail {
   width: 100%;
   height: 35px;
@@ -624,7 +661,7 @@ input#UserFullName {
 }
 
 #showSendEmailPage:checked + #sendEmailPage {
-  top: 100vh;
+  top: 200vh;
   transition-duration: 0.3s;
 }
 
@@ -702,6 +739,7 @@ input#subscribeEmail {
   border: none;
   margin: 0px;
   padding: 0px;
+  width: 80%;
 }
 
 #subscribeFotter {
@@ -712,7 +750,7 @@ input#subscribeEmail {
 }
 
 #subscribeFotter form {
-  width: 230px;
+  width: 255px;
   background-color: #ebebeb;
   padding: 0px 7px 0px 0px;
   border: 1px solid #cecece;
@@ -736,7 +774,7 @@ input#subscribeEmail {
   height: 0px;
   width: 150px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #moreSelectServesesFotter {
@@ -865,7 +903,7 @@ header a {
   height: 0px;
   width: 160px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 #moreMenuServesesMobile {
   transition-duration: 0.3s;
@@ -885,7 +923,7 @@ header a {
   height: 0px;
   width: 190px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 #moreMenuFotter {
@@ -896,7 +934,7 @@ header a {
   height: 0px;
   width: 164px;
   overflow: hidden;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   color: black;
 }
 .moreMenuList input {
@@ -929,14 +967,14 @@ header a {
 #moreShow:checked + #moreSelect #moreMenu {
   display: block;
   height: 290px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
 #moreShowServeses:checked + #moreSelectServeses #moreMenuServeses {
   display: block;
   height: 330px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
@@ -958,7 +996,7 @@ header a {
 #moreShowFotter:checked + #moreSelectFotter #moreMenuFotter {
   display: block;
   height: 223px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
@@ -967,7 +1005,7 @@ header a {
   #moreMenuServesesFotter {
   display: block;
   height: 254px;
-  background-color: white;
+  background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
   top: -263px;
@@ -975,6 +1013,7 @@ header a {
 #linerSlider {
   width: 100%;
   height: 130px;
+  overflow: hidden;
 }
 #linerSlider.Asag {
   height: 100%;
@@ -1012,6 +1051,7 @@ label#wrap {
   height: 100vh;
   min-width: 255px;
   padding: 30px 50px;
+  overflow: hidden;
 }
 #balckBackgroundMobile {
   width: 50vw;
@@ -1026,6 +1066,27 @@ label#wrap {
   margin: 7px 0px;
   font-size: 25px;
 }
+
+#showMobileBarServeces #MobileBarServeces::before {
+  content: "";
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--MainColor);
+  position: absolute;
+  top: 22px;
+  right: 0px;
+}
+#showMobileBarServeces {
+  margin-right: 60vw;
+  transition-duration: 0.3s;
+  /* overflow: hidden; */
+  position: absolute;
+  top: 50px;
+  height: 64%;
+  width: 100%;
+  font-size: 25px;
+  padding: 0px 19px;
+}
 aside ul {
   list-style: none;
   height: 90%;
@@ -1033,6 +1094,9 @@ aside ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* margin-right: -50vw; */
+  overflow-x: hidden;
+  transition-duration: 0.3s;
 }
 aside {
   width: 100vw;
@@ -1060,13 +1124,15 @@ aside {
 }
 #soialMediaMobile {
   border-top: 1px solid var(--GrayColor);
-  width: 140%;
+  width: 52vw;
   display: flex;
   height: 50px;
-  margin: 0 -40px;
+  margin: 0 -60px;
   justify-content: space-evenly;
-  padding: 0px 50px;
+  /* padding: 0px 50px; */
   align-items: center;
+  max-width: 380px;
+  min-width: 255px;
 }
 #Connection {
   background-color: var(--GrayColor);
@@ -1313,8 +1379,9 @@ input#Date {
   text-align: right;
 }
 .state {
-  height: 44%;
+  height: 50px;
   padding: 13px 27px;
+  margin: 10px;
 }
 .state:hover {
   border: 1px solid var(--MainColor);
@@ -1353,8 +1420,8 @@ input#Date {
 }
 .offerDetails {
   width: 100%;
-  /* height: 113px; */
-  position: absolute;
+  min-height: 113px;
+  position: relative;
   bottom: 1px;
   padding: 9px 11px 9px 0px;
   text-align: right;
@@ -1365,17 +1432,18 @@ input#Date {
 }
 img.offerImg {
   width: 100%;
-  height: 253px;
-  position: absolute;
+  min-height: 277px;
+  /* position: absolute; */
   z-index: -1;
   border-radius: 10px 10px 0px 0px;
 }
 .offerNameOverImg {
   width: 55%;
+  /* width: 225px; */
   position: absolute;
   height: 50px;
   z-index: 1;
-  top: -64px;
+  /* top: 205px; */
   left: 60px;
   background-color: rgb(22 22 22 / 46%);
   border-radius: 7px;
@@ -1383,13 +1451,15 @@ img.offerImg {
   color: white;
   font-size: 1em;
   text-align: center;
+  display: none;
 }
 .offerExpDate {
   width: 60px;
   height: 65px;
   background-color: rgba(0, 0, 0, 0.53);
   border-radius: 10px;
-  margin-left: 190px;
+  margin-right: 10px;
+  right: 10px;
   margin-top: 7px;
   position: absolute;
   color: white;
@@ -1417,10 +1487,11 @@ img.offerImg {
 .OneOfferWrap {
   position: relative;
   width: 260px;
-  height: 370px;
+  height: auto;
   border-bottom: 5px solid var(--MainColor);
   border-radius: 10px;
   margin: 10px 10px 20px;
+  overflow: hidden;
 }
 #contactFixedBackgound {
   width: 100%;
@@ -1581,6 +1652,7 @@ a img {
   --footerHeight: 186px;
   --GrayColor: #ebebeb;
 }
+
 .backgroundVideo {
   width: 100%;
   max-width: 100%;
@@ -1606,7 +1678,6 @@ iframe {
   border: none;
   width: 100%;
 }
-
 #logo {
   transition-duration: calc(var(--transitionDuration) - 0.2s);
   position: absolute;
@@ -1863,7 +1934,7 @@ section + section + section {
 #HeaderTitle {
   color: white;
   margin-bottom: -20px;
-  font-size: 2.6em;
+  font-size: 2.5em;
 }
 #HeaderText {
   text-align: center;
@@ -1878,7 +1949,7 @@ section + section + section {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: -550px auto;
+  margin: -470px auto;
   font-size: 45px;
 }
 #Welcom {
@@ -1891,6 +1962,7 @@ nav a {
   align-items: center;
   width: 100%;
 }
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (max-width: 1120px) {
   #moreShow:checked + #moreSelect #moreMenu {
@@ -1929,9 +2001,13 @@ nav a {
     margin-top: -510px;
   }
 }
-@media screen and (max-width: 769px) {
+:root {
+  --headerHeight: 100px;
 }
 @media screen and (max-width: 769px) {
+  :root {
+    --headerHeight: 100px;
+  }
   #offersContener {
     display: flex;
     flex-direction: column;
@@ -1951,30 +2027,32 @@ nav a {
     display: none;
   }
   #servecContener {
-    width: 90%;
+    width: 100%;
+    padding: 17px 10px;
   }
   #state {
     width: 60%;
-    height: 130px;
+    height: 0;
     background-color: var(--GrayColor);
     margin: 0px auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0;
     border: none;
     outline: none;
+    transition-duration: 0.6s;
     overflow: hidden;
   }
   #offersWrap {
-    width: 80%;
+    width: 90%;
   }
   #Welcom {
     flex-direction: column;
-    margin-top: -110px;
+    /* margin-top: -110px; */
   }
   #WelcomeTextWrap {
     width: 100%;
-    margin-top: 16.5vh;
+    /* margin-top: 16.5vh; */
   }
   #welcomImg {
     width: 100%;
@@ -1985,12 +2063,14 @@ nav a {
     right: 11px;
     top: 30%;
   }
+  #logo {
+    width: 200px;
+    margin: -7px auto;
+    position: static;
+  }
   :root {
     --headerHeight: 80px;
   }
-  #logo {
-  }
-
   #mainMenu {
     display: none;
   }
@@ -2020,6 +2100,9 @@ nav a {
     min-height: 80%;
     background-color: #ffffff;
   }
+  #AboutUsWrap {
+    flex-direction: column;
+  }
   #AboutUsImg {
     width: 90%;
     margin: 0 auto;
@@ -2029,9 +2112,9 @@ nav a {
   }
   #AbouText p {
     text-align: center;
-    margin: 0px auto;
+    margin: 60px auto;
     /* max-width: 545px; */
-    font-size: 13.3px;
+    font-size: 23px;
     /* min-width: 430px; */
     /* font-size: 2.4vw; */
   }
@@ -2051,7 +2134,7 @@ nav a {
   }
   #headerTextsWrape {
     height: 360px;
-    margin-top: -540px;
+    margin-top: -400px;
     font-size: 5vw;
   }
 }
@@ -2064,6 +2147,43 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  .servecDescription {
+    font-size: 17px;
+    font-size: 3vw;
+  }
+  #loyaltyCardText {
+    width: 90%;
+    height: auto;
+    min-height: 100px;
+    margin: -130px 0px -130px 0px;
+  }
+  .policies.loyaltyCard {
+    padding: 20px;
+  }
+  #Date.loyaltyCard {
+    margin: 0 auto;
+    width: 90%;
+  }
+  #DoctorCarousel {
+    width: 100%;
+  }
+  .offerNameOverImg {
+    /* top: auto; */
+    /* bottom: 180px; */
+    bottom: 35%;
+    left: 23%;
+    /* margin: auto 0; */
+  }
+  .OneOfferWrap {
+    width: 90vw;
+  }
+  #filter {
+    display: block;
+  }
+  .postInfo {
+    padding: 0px;
+    text-align: center;
+  }
   .wrap#beautyPassport div,
   .wrap#beautyPassport img {
     width: 90vw;
@@ -2118,6 +2238,10 @@ nav a {
   }
   #subscribeFotter {
     left: auto;
+    width: 80%;
+  }
+  #subscribeFotter form {
+    width: 100%;
   }
   header #mobileWrap:checked + #menu + aside {
     display: block;
@@ -2155,6 +2279,7 @@ nav a {
   }
   #ConnectionWrap {
     flex-direction: column;
+    padding: 10px 0px;
   }
   .post {
     flex-direction: column;
@@ -2167,6 +2292,7 @@ nav a {
   }
   #FormWrap {
     width: 90%;
+    max-width: 90%;
   }
   .doctorImgWrap {
     width: 100% !important;
@@ -2200,6 +2326,9 @@ nav a {
   }
 }
 @media screen and (max-width: 576px) {
+  .servecDescription {
+    font-size: 18px;
+  }
   #contanctUs_p {
     width: 80%;
   }
