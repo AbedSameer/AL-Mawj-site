@@ -420,12 +420,12 @@ img#servesImg {
 #loyaltyCardText {
   width: 40%;
   /* margin-left: -98px; */
-  position: relative;
+  /* position: relative; */
   /* padding: 40px; */
   /* z-index: 1; */
   /* background-color: white; */
   height: 266px;
-  direction: rtl;
+  /* direction: rtl; */
   /* text-align: center; */
 }
 #pharmacyImg {
@@ -2156,7 +2156,7 @@ nav a {
     width: 90%;
     height: auto;
     min-height: 100px;
-    margin: -130px 0px -130px 0px;
+    margin: -100px 0px -130px 0px;
   }
   .policies.loyaltyCard {
     padding: 20px;
