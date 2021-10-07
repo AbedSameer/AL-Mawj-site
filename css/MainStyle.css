@@ -383,8 +383,9 @@ img#servesImg {
 }
 
 div#servec {
-  width: 40%;
-  height: 200px;
+  width: 45%;
+  height: 250px;
+  padding: 10px;
   background-color: var(--GrayColor);
   border-top: 3px solid var(--MainColor);
   border-radius: 5px;
@@ -2126,6 +2127,13 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  .policies.loyaltyCard {
+    padding: 20px;
+  }
+  #Date.loyaltyCard {
+    margin: 0 auto;
+    width: 90%;
+  }
   #DoctorCarousel {
     width: 100%;
   }
