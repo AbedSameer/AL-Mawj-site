@@ -202,43 +202,50 @@ div#AlertBay {
 
 #CliientZoneLeft {
   border: 1px solid lightgray;
-  height: 100%;
+  height: 90%;
   width: 70%;
+  min-height: 430px;
   padding: 30px;
 }
 
 #ClientZoneSelect {
   border: 1px solid lightgray;
-  height: 30%;
+  height: 110px;
+  margin-top: 20px;
 }
 
 #ClientZoneImgWrap {
   border: 1px solid lightgray;
-  height: 70%;
+  height: 150px;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #ClientZoneImgWrap img {
   width: 100px;
   height: 100px;
-  margin-right: 30px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-right: 0px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
   border: 1px solid lightgray;
   object-fit: cover;
 }
 
 #CliientZoneRight {
-  width: 20%;
-  height: 60%;
+  width: 230px;
+  height: 340px;
   /* border: 1px solid lightgray; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 
-div#ClientZone {
+#ClientZone {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  height: 60vh;
+  height: 80vh;
   width: 92vw;
 }
 .beautyPassportSecontSectionText {
@@ -295,7 +302,7 @@ a.beautyPassportSecontSectionText {
   /* background-color: gray; */
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 90vh;
+  height: 120vh;
   /* width: 100vw; */
   align-items: center;
   background-repeat: no-repeat;
@@ -318,9 +325,10 @@ div#beautyPassportDoneLine {
 #NonSubsicribeClientZoneLine {
   width: 70px;
   height: 3px;
+  margin: 0 auto;
   border-radius: 5px;
   background-color: var(--MainColor);
-  margin-top: -85px;
+  margin-top: 5px;
 }
 
 #beautyPassportDone {
@@ -2180,6 +2188,29 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  #ClientZone {
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+  }
+  #CliientZoneRight {
+    width: 100%;
+  }
+  .ClientInput {
+    width: 100%;
+  }
+  #CliientZoneLeft form {
+    width: 100%;
+  }
+  #CliientZoneLeft {
+    width: 100%;
+  }
+  #ClientZoneSelect {
+    height: 30px;
+  }
+  #NonSubsicribeClientZone {
+    height: 150vh;
+  }
   .PageTitle {
     margin-bottom: 30px;
   }
@@ -2374,6 +2405,9 @@ nav a {
     font-size: 0.5em;
     left: 40%;
     bottom: -60px;
+  }
+  #NonSubsicribeClientZoneCard {
+    width: 90%;
   }
 }
 @media screen and (max-width: 576px) {
