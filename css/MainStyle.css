@@ -1025,10 +1025,10 @@ header a {
   margin: 25px 5px;
 }
 #soialMediaHeaderMobile {
-  width: 59px;
+  width: 64px;
   position: absolute;
   z-index: 11;
-  left: 0px;
+  left: 10px;
   display: none;
 }
 #soialMediaMobile img {
@@ -2127,7 +2127,9 @@ nav a {
     margin: 0 auto;
   }
   #soialMediaHeaderMobile {
-    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   #AbouText p {
     text-align: center;
