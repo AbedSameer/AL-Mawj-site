@@ -2421,3 +2421,9 @@ nav a {
     padding: 10px 30px;
   }
 }
+
+@media screen and (min-height: 650px) {
+  #headerTextsWrape {
+    margin-top: -450px;
+  }
+}
