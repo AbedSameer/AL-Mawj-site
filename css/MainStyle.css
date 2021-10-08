@@ -1085,7 +1085,7 @@ label#wrap {
 }
 aside ul {
   list-style: none;
-  height: 90%;
+  height: 96%;
   overflow: scroll;
   display: flex;
   flex-direction: column;
@@ -1122,7 +1122,7 @@ aside {
   border-top: 1px solid var(--GrayColor);
   width: 52vw;
   display: flex;
-  height: 50px;
+  height: 7%;
   margin: 0 -60px;
   justify-content: space-evenly;
   /* padding: 0px 50px; */
@@ -2095,7 +2095,7 @@ nav a {
     height: auto;
     /* max-width: 25vw; */
     justify-content: space-between;
-    /* height: 100vh; */
+    height: 100vh;
     /* margin-bottom: 80px; */
     overflow: hidden;
   }
@@ -2194,9 +2194,9 @@ nav a {
   }
   #loyaltyCardText {
     width: 90%;
-    height: auto;
+    height: 10%;
     min-height: 100px;
-    margin: -100px 0px -130px 0px;
+    margin: -150px 0px -130px 0px;
   }
   .policies.loyaltyCard {
     padding: 20px;

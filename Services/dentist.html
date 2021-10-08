@@ -158,34 +158,21 @@
         <aside>
             <div id="balckBackgroundMobile"></div>
             <div id="innerAside">
-                <ul>
+                <ul id="MainMobileBar">
                     <li class="MobileBarItem">
                         <a href="../index.html">الرئيسية</a>
                     </li>
                     <li class="MobileBarItem">
                         <a href="../aboutUs.html">حول الموج</a>
                     </li>
-                    <li class="MobileBarItem">
-                        <div>
-                            <input type="checkbox" id="moreShowServesesMobile" hidden="">
-                            <div id="moreSelectServesesMobile">
-                                <label for="moreShowServesesMobile" id="moreLable">
-                                    خدماتنا
-                                </label>
-                                <div id="moreMenuServesesMobile">
-                                    <ul class="moreMenuList">
-                                        <li><a href="non-surgical.html">تجميل لا جراحي</a></li>
-                                        <li><a href="Dermatology.html">الجلدية</a></li>
-                                        <li><a href="skinLaser.html">ليزر علاج البشرة</a></li>
-                                        <li><a href="laserHair.html">ليزرعلاج الشعر</a></li>
-                                        <li><a href="regularCare.html">العناية الدورية</a></li>
-                                        <li><a href="dentist.html">طب الاسنان</a></li>
-                                        <li><a href="lab.html">المختبر الطبي</a></li>
-                                    </ul>
-                                </div>
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
 
-                            </div>
-                        </div>
+                            <label for="showMobileSeveces">
+                                خدماتنا
+                            </label>
+
+                        </a>
                     </li>
                     <li class="MobileBarItem">
                         <a href="../offers.html">العروض</a>
@@ -220,6 +207,23 @@
                     <li class="MobileBarItem">
                         <a href="../offers.html">جديد العروض</a>
                     </li>
+                </ul>
+
+                <input type="checkbox" name="showMobileSeveces" id="showMobileSeveces"
+                    onchange="showMobileBarServeces(this)" hidden>
+                <ul id="showMobileBarServeces">
+                    <li class="MobileBarItem" id="MobileBarServeces">
+                        <a href="#">
+                            <label for="showMobileSeveces">خدماتنا</label>
+                        </a>
+                    </li>
+                    <li><a href="non-surgical.html">تجميل لا جراحي</a></li>
+                    <li><a href="Dermatology.html">الجلدية</a></li>
+                    <li><a href="skinLaser.html">ليزر علاج البشرة</a></li>
+                    <li><a href="laserHair.html">ليزرعلاج الشعر</a></li>
+                    <li><a href="regularCare.html">العناية الدورية</a></li>
+                    <li><a href="dentist.html">طب الاسنان</a></li>
+                    <li><a href="lab.html">المختبر الطبي</a></li>
                 </ul>
                 <div id="soialMediaMobile">
 
