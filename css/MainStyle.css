@@ -2266,6 +2266,9 @@ nav a {
   #linerSlider.Asag {
     height: 50vh;
   }
+  div#Welcom\ Asag {
+    height: 70vh;
+  }
   .sliderImg {
     height: auto;
     max-width: 70%;
@@ -2374,7 +2377,7 @@ nav a {
     height: 40vh;
   }
   div#Welcom\ Asag {
-    height: 50vh;
+    height: 60vh;
   }
   .item#welcomImgAsag .sliderImg {
     max-height: 130px;
