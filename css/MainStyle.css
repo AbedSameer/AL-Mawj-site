@@ -1816,14 +1816,16 @@ footer {
   object-fit: cover;
 }
 #AboutUsTitle {
-  margin-bottom: 11px;
+  /* margin: 0px; */
   /* font-weight: bold; */
+  margin-bottom: 11px;
 }
 .PageTitle {
   width: max-content;
   border-bottom: 3px solid rgb(0, 145, 158);
   margin: 70px auto;
   font-size: 30px;
+  max-width: 80%;
 }
 #AbouText {
   width: 40%;
@@ -2085,7 +2087,16 @@ nav a {
     /* margin-bottom: 80px; */
     overflow: hidden;
   }
-
+  .wrap div,
+  .wrap img {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .wrap div {
+    padding: 20px;
+    text-align: center;
+    /* height: auto; */
+  }
   .AboutWrap div,
   .AboutWrap img {
     margin-bottom: 50px;
@@ -2123,6 +2134,10 @@ nav a {
   }
   #AboutUsTitle {
     font-size: 1.2em;
+    /* font-size: 5.3vw; */
+    /* max-width: 80%; */
+    text-align: center;
+    /* margin: 0 auto; */
   }
   #menu {
     display: block;
@@ -2146,6 +2161,10 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  /*.AboutWrap div,
+  .AboutWrap img {
+    width: 90%;
+  }*/
   #pharmacyServeces {
     flex-direction: column;
     width: 90%;
