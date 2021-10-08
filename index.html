@@ -1181,13 +1181,13 @@
         (function customNav() {
             var menu = document.getElementById("MenuList");
             if (window.innerWidth <= 1120) {
-                var ele1 = menu.children[5];
+                var ele1 = menu.children[4];
                 console.log(menu.children);
                 console.log(ele1);
                 menu.appendChild(ele1);
                 document.getElementById("moreList").prepend(ele1);
             }
-            if (window.innerWidth <= 900) {
+            else if (window.innerWidth <= 900) {
                 var ele1 = menu.children[4];
                 console.log(menu.children);
                 console.log(ele1);
