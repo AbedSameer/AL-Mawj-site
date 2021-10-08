@@ -579,6 +579,7 @@ input#sendEmail {
   background-color: var(--MainColor);
   color: white;
   margin-top: 20px;
+  border: none;
 }
 
 textarea#EmailContant {
@@ -652,15 +653,15 @@ input#UserFullName {
   /* margin-top: -100vh; */
 }
 #showCallUsAlirtPage:checked + #callUsAlertPage {
-  top: 100vh;
+  top: 200vh;
   transition-duration: 0.3s;
 }
 #showLanguagePage:checked + #LanguagePage {
-  top: 100vh;
+  top: 200vh;
   transition-duration: 0.3s;
 }
 #showSharePage:checked + #SharePage {
-  top: 100vh;
+  top: 200vh;
   transition-duration: 0.3s;
 }
 
@@ -1081,7 +1082,7 @@ label#wrap {
   right: 0px;
 }
 #showMobileBarServeces {
-  margin-right: 60vw;
+  margin-right: 70vw;
   transition-duration: 0.3s;
   /* overflow: hidden; */
   position: absolute;
@@ -1093,7 +1094,7 @@ label#wrap {
 }
 aside ul {
   list-style: none;
-  height: 96%;
+  height: 90%;
   overflow: scroll;
   display: flex;
   flex-direction: column;
@@ -1130,7 +1131,7 @@ aside {
   border-top: 1px solid var(--GrayColor);
   width: 52vw;
   display: flex;
-  height: 7%;
+  height: 10%;
   margin: 0 -60px;
   justify-content: space-evenly;
   /* padding: 0px 50px; */
