@@ -825,7 +825,7 @@ input[type="date"]#DateTimeDate {
   position: absolute;
   right: 90px;
   top: 0px;
-  border-radius: 7px;
+  border-radius: 7px 0px 0px 7px;
   border-left: 1px solid lightgray;
   outline: none;
   border-top: 1px solid lightgray;
