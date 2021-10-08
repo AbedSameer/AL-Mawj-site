@@ -54,6 +54,11 @@ dropdown-item {
   border: 1px solid lightgray;
   max-width: 100%;
 }
+#AsagSliderWrap {
+  max-width: 50%;
+  height: 100vh;
+  margin-right: -60px;
+}
 .card {
   width: 60%;
   margin: 0px auto;

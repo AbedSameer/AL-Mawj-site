@@ -16,6 +16,12 @@ col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
   direction: rtl;
 }
 
+#AsagSliderImg {
+  /* max-width: 500px; */
+  max-height: 100vh;
+  height: 100vh;
+}
+
 .servecDescription {
   width: 80%;
   margin: 0 auto;
@@ -1849,7 +1855,7 @@ footer {
   margin: 8px auto;
 }
 #AbouText {
-  width: 40%;
+  width: 50%;
   margin-left: -98px;
   /* position: relative; */
   padding: 40px;
