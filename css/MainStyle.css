@@ -2263,6 +2263,9 @@ nav a {
   .item {
     width: calc(100% / 4);
   }
+  #linerSlider.Asag {
+    height: 50vh;
+  }
   .sliderImg {
     height: auto;
     max-width: 70%;
@@ -2360,11 +2363,24 @@ nav a {
   #contanctUs_p {
     width: 80%;
   }
-  .item {
-    width: calc(100% / 1.2);
+  .item#welcomImgAsag {
+    width: 100vw;
+    /* height: auto !important; */
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100%;
   }
-  .sliderImg {
+  #linerSlider.Asag {
+    height: 40vh;
+  }
+  div#Welcom\ Asag {
+    height: 50vh;
+  }
+  .item#welcomImgAsag .sliderImg {
     max-height: 130px;
+    max-height: 100%;
+    height: 100%;
+    max-width: 100%;
   }
 
   #headerTextsWrape {
@@ -2377,6 +2393,7 @@ nav a {
 @media screen and (max-width: 426px) {
   .item {
     width: calc(100% / 1.2);
+    max-width: 100vw;
   }
 
   #headerTextsWrape {
