@@ -2087,7 +2087,7 @@ nav a {
     height: auto;
     /* max-width: 25vw; */
     justify-content: space-between;
-    height: 100vh;
+    /* height: 100vh; */
     /* margin-bottom: 80px; */
     overflow: hidden;
   }
@@ -2111,7 +2111,7 @@ nav a {
     height: auto;
     padding: 0px 0px;
     z-index: 1;
-    min-height: 80%;
+    min-height: 60%;
     background-color: #ffffff;
   }
   #AboutUsWrap {
@@ -2134,7 +2134,7 @@ nav a {
   }
 
   #AbouText.Asag p {
-    font-size: 16px;
+    font-size: 18px;
   }
   #AsagWelcomeImg {
     margin: 0px;
