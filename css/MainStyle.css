@@ -1839,6 +1839,10 @@ footer {
   text-align: center;
   min-height: 350px;
 }
+
+#AbouText.Asag {
+  font-size: 18px;
+}
 #beautyPassportText {
   width: 40%;
   margin-left: -98px;
@@ -2127,6 +2131,10 @@ nav a {
     font-size: 23px;
     /* min-width: 430px; */
     /* font-size: 2.4vw; */
+  }
+
+  #AbouText.Asag p {
+    font-size: 16px;
   }
   #AsagWelcomeImg {
     margin: 0px;
