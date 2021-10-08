@@ -1386,6 +1386,7 @@ input#Date {
   height: 50px;
   padding: 13px 27px;
   margin: 10px;
+  font-size: 18px;
 }
 .state:hover {
   border: 1px solid var(--MainColor);
@@ -2370,6 +2371,9 @@ nav a {
   }
 }
 @media screen and (max-width: 576px) {
+  #state {
+    width: 90%;
+  }
   #contanctUs_p {
     width: 80%;
   }
