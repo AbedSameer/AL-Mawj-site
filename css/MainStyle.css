@@ -2108,6 +2108,7 @@ nav a {
     padding: 20px;
     text-align: center;
     /* height: auto; */
+    margin-bottom: 30px;
   }
   .AboutWrap div,
   .AboutWrap img {
@@ -2179,6 +2180,9 @@ nav a {
   object-position: center bottom;
 }
 @media screen and (max-width: 769px) {
+  .PageTitle {
+    margin-bottom: 30px;
+  }
   /*.AboutWrap div,
   .AboutWrap img {
     width: 90%;
