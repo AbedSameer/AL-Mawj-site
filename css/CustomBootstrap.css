@@ -54,12 +54,20 @@ dropdown-item {
   border: 1px solid lightgray;
   max-width: 100%;
 }
+.card {
+  width: 60%;
+  margin: 0px auto;
+  direction: rtl;
+}
 @media screen and (max-width: 769px) {
   .carousel-inner {
     height: 100vh;
   }
   .DoctorCarousel .carousel-item {
     flex-direction: column;
+  }
+  .card {
+    width: 90%;
   }
 }
 

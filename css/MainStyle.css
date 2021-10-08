@@ -1927,11 +1927,7 @@ section + section + section {
 #collapseTwo {
   background-color: var(--GrayColor);
 }
-.card {
-  width: 60%;
-  margin: 0px auto;
-  direction: rtl;
-}
+
 #contanct #HeaderButton {
   font-size: 1em;
 }
