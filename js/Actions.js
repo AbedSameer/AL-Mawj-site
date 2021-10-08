@@ -20,11 +20,11 @@ function showMobileBarServeces(ele) {
   const more = document.getElementById("showMobileBarServeces");
   const main = document.getElementById("MainMobileBar");
   if (check.checked == false) {
-    more.style.margin = "0px 60vw 0px 0px";
+    more.style.margin = "0px 70vw 0px 0px";
     main.style.margin = "0px 0vw 0px 0px";
   } else if (check.checked == true) {
     more.style.margin = "0px 0vw 0px 0px";
-    main.style.margin = "0px -50vw 0px 0px";
+    main.style.margin = "0px -60vw 0px 0px";
   }
 }
 

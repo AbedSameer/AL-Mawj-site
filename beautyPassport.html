@@ -599,41 +599,7 @@
         })
     </script>
 
-    <script>
 
-
-        function showFloating(ele) {
-            var chOne = ele.parentNode.children[1],
-                chTow = ele.parentNode.children[2];
-            if (window.getComputedStyle(chOne).bottom == '96px' && window.getComputedStyle(chTow).bottom == '145px') {
-                chOne.style.bottom = '42px';
-                chTow.style.bottom = '42px';
-            }
-            else {
-                chOne.style.bottom = '96px';
-                chTow.style.bottom = '145px';
-            }
-        }
-
-        (function customNav() {
-            var menu = document.getElementById("MenuList");
-            if (window.innerWidth <= 1120) {
-                var ele1 = menu.children[5];
-                console.log(menu.children);
-                console.log(ele1);
-                menu.appendChild(ele1);
-                document.getElementById("moreList").prepend(ele1);
-            }
-            if (window.innerWidth <= 900) {
-                var ele1 = menu.children[4];
-                console.log(menu.children);
-                console.log(ele1);
-                menu.appendChild(ele1);
-                document.getElementById("moreList").prepend(ele1);
-            }
-        })();
-
-    </script>
 
 
 </body>

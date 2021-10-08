@@ -1060,7 +1060,7 @@ label#wrap {
 }
 .MobileBarItem {
   margin: 7px 0px;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 #showMobileBarServeces #MobileBarServeces::before {
@@ -2132,7 +2132,7 @@ nav a {
   #AbouText p {
     text-align: center;
     margin: 60px auto;
-    /* max-width: 545px; */
+    max-width: 90%;
     font-size: 23px;
     /* min-width: 430px; */
     /* font-size: 2.4vw; */
