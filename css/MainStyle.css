@@ -1133,6 +1133,11 @@ aside {
 #Connection {
   background-color: var(--GrayColor);
 }
+
+#Connection.ConnectionPage {
+  padding: 20px;
+  /* margin: 20px; */
+}
 .ConnectionInpt:focus {
   box-shadow: 0px 0px 7px 0px var(--MainColor);
 }
@@ -1826,6 +1831,10 @@ footer {
   margin: 70px auto;
   font-size: 30px;
   max-width: 80%;
+}
+
+.ConnectionPage .PageTitle {
+  margin: 8px auto;
 }
 #AbouText {
   width: 40%;
