@@ -825,7 +825,7 @@ input[type="date"]#DateTimeDate {
   position: absolute;
   right: 90px;
   top: 0px;
-  border-radius: 7px 0px 0px 7px;
+  border-radius: 7px;
   border-left: 1px solid lightgray;
   outline: none;
   border-top: 1px solid lightgray;
@@ -1384,9 +1384,11 @@ input#Date {
 }
 .state {
   height: 50px;
-  padding: 13px 27px;
+  padding: 0px 27px;
+  display: flex;
   margin: 10px;
   font-size: 18px;
+  align-items: center;
 }
 .state:hover {
   border: 1px solid var(--MainColor);
@@ -2343,10 +2345,10 @@ nav a {
     width: 100% !important;
   }
   #right {
-    padding: 0px;
+    padding: 0px 15px;
     height: auto;
     width: 100%;
-    font-size: 26px;
+    font-size: 25px;
   }
   #left {
     padding: 0px;
