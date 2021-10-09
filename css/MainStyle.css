@@ -2527,7 +2527,7 @@ nav a {
 }
 @media screen and (max-width: 426px) {
   #logo {
-    width: 80%;
+    width: 65%;
   }
   .item {
     width: calc(100% / 1.2);
