@@ -2566,3 +2566,9 @@ nav a {
     margin-top: -450px;
   }
 }
+
+@media screen and (max-height: 420px) {
+  #BayWrap {
+    margin-top: 110px;
+  }
+}
