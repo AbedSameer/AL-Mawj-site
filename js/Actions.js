@@ -51,8 +51,9 @@ function showFloating(ele) {
     console.log(ele1);
     menu.appendChild(ele1);
     document.getElementById("moreList").prepend(ele1);
-  } else if (window.innerWidth <= 900) {
-    var ele1 = menu.children[4];
+  }
+  if (window.innerWidth <= 900) {
+    var ele1 = menu.children[3];
     console.log(menu.children);
     console.log(ele1);
     menu.appendChild(ele1);
