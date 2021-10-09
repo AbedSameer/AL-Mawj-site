@@ -2420,6 +2420,40 @@ nav a {
   }
 }
 @media screen and (max-width: 576px) {
+  #SharePage {
+    padding: 0px;
+    width: 100vw;
+  }
+  #SharePage div {
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+  #SharePage a i {
+    width: auto;
+    height: auto;
+    padding: 22px;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0;
+    min-width: 0;
+    font-size: 11vw;
+    min-height: 0;
+  }
+  #SharePage a {
+    /* border: 3px solid var(--MainColor); */
+    /* border-radius: 50%; */
+    /* padding: 10px; */
+    /* height: 130px; */
+    /* width: 20vw; */
+    /* margin: 10px; */
+    /* min-width: 150px; */
+    /* min-height: 150px; */
+    text-align: center;
+  }
+
   #state {
     width: 90%;
   }
