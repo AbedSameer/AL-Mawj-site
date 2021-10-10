@@ -16,7 +16,7 @@
             <a href="http://instagram.com" target="_blank">
              <img src="img/instagram.png" alt="instagram" >
             </a>
-        </div>
+        </div>  
       
     </footer>
     

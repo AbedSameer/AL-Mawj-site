@@ -9,11 +9,13 @@
 
 </head>
 <body>
-  
+
     @include('Layout.header')
-    
+
     @include('Pages.الرئيسية')
     @include('Layout.footer')
+    echo "hello"
+
 
 
        <script type="text/javascript" src="{{ asset("js/index.js") }}"></script>
