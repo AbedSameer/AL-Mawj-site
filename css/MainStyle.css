@@ -865,7 +865,7 @@ input[type="date"]#DateTimeDate {
 }
 
 #custemSelectArow {
-  background-color: #f3f3f361;
+  background-color: transparent;
   width: 30px;
   height: 30px;
   display: inline-block;
@@ -1897,7 +1897,7 @@ footer {
   margin: 8px auto;
 }
 #AbouText {
-  width: 50%;
+  width: 40%;
   margin-left: -98px;
   /* position: relative; */
   padding: 40px;
@@ -1918,9 +1918,10 @@ footer {
   margin-left: -98px;
   position: relative;
   padding: 40px;
+  font-size: clamp(15px, 1.2vw, 22px);
   z-index: 1;
   background-color: white;
-  height: 400px;
+  height: 500px;
   direction: rtl;
   text-align: center;
   /* height: 89%; */
@@ -2044,7 +2045,7 @@ nav a {
   .wrap#beautyPassport img {
     min-width: 455px;
     max-width: 455px;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
   }
 }
 @media screen and (max-width: 900px) {
@@ -2162,6 +2163,11 @@ nav a {
   .wrap img {
     width: 100% !important;
     margin: 0 auto;
+  }
+
+  #pharmacyImg {
+    height: 550px;
+    object-fit: contain;
   }
   .wrap div {
     padding: 20px;
@@ -2327,6 +2333,7 @@ nav a {
   #callUsAlertPage {
     font-size: 1.6em;
     display: flex;
+    padding: 30px;
   }
 
   #FotterMenu {
@@ -2339,7 +2346,8 @@ nav a {
   #share {
     width: 80%;
     left: auto;
-    top: 80px;
+    top: 120px;
+    /* position: static; */
   }
   #leftFotter {
     width: 100%;
@@ -2359,7 +2367,7 @@ nav a {
     margin: 0;
   }
   footer {
-    height: calc(var(--footerHeight) +200px);
+    height: calc(var(--footerHeight) +300px);
     padding: 0px;
   }
   .item {
