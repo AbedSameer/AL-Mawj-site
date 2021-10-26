@@ -26,7 +26,6 @@
 </head>
 
 <body id="body">
-{{"121212121"}}
     <header style="height: 100vh;">
         <nav id="header">
             <a href="#">
