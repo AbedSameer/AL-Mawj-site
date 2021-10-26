@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers;
+use \App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,55 +15,132 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'front\NormalUsers@getIndex')->name('main');
+Route::get('/',function(){
+    return PagesController::getPage('index');
+})->name('index');
+
+
+Route::get('/Aboutus',function(){
+    return PagesController::getPage('Aboutus');
+})->name('Aboutus');
+
+
+Route::get('/Asag',function(){
+    return PagesController::getPage('Asag');
+})->name('Asag');
+
+
+Route::get('/BayService',function(){
+    return PagesController::getPage('BayService');
+})->name('BayService');
 
 
 
 
-Route::get('/الصيدلية', function () {
-    return view('Pages/الصيدلية');
-})->name('pharmace');
-
-Route::get('/الاتصال', function () {
-    return view('Pages/الاتصال');
-})->name('contact');
+Route::get('/BeautyDeals',function(){
+    return PagesController::getPage('BeautyDeals');
+})->name('BeautyDeals');
 
 
-Route::get('/العروض-الشهرية', function () {
-    return view('Pages/العروض-الشهرية');
-})->name('monthly');
+
+Route::get('/BeautyPassport',function(){
+    return PagesController::getPage('BeautyPassport');
+})->name('BeautyPassport');
 
 
-Route::get('/المدونة', function () {
-    return view('Pages/المدونة');
-})->name('blog');
-
-Route::get('/بطاقات-الولاء', function () {
-    return view('Pages/بطاقات-الولاء');
-})->name('loyalty');
-
-Route::get('/جواز-سفر-الجمال', function () {
-    return view('Pages/جواز-سفر-الجمال');
-})->name('passport');
-
-Route::get('/حجز-موعد', function () {
-    return view('Pages/حجز-موعد');
-})->name('Booking');
-
-Route::get('/حول-موج', function () {
-    return view('Pages/حول-موج');
-})->name('about');
-
-Route::get('/خدماتنا', function () {
-    return view('Pages/خدماتنا');
-})->name('serveses');
+Route::get('/BeautyPassportDone',function(){
+    return PagesController::getPage('BeautyPassportDone');
+})->name('BeautyPassportDone');
 
 
-Route::get('/صفقات-الجمال', function () {
-    return view('Pages/صفقات-الجمال');
-})->name('deals');
+Route::get('/Blog',function(){
+    return PagesController::getPage('Blog');
+})->name('Blog');
+
+Route::get('/BookDate',function(){
+    return PagesController::getPage('BookDate');
+})->name(' BookDate');
+
+Route::get('/ClientZone',function(){
+    return PagesController::getPage('ClientZone');
+})->name('ClientZone');
 
 
-Route::get('/مركز-آساج', function () {
-    return view('Pages/مركز-آساج');
-})->name('asag-center');
+Route::get('/Contact',function(){
+    return PagesController::getPage('Contact');
+})->name('Contact');
+
+
+Route::get('/LoyaltyCard',function(){
+    return PagesController::getPage('LoyaltyCard');
+})->name('LoyaltyCard');
+
+Route::get('/NonSubsicribeClientZone',function(){
+    return PagesController::getPage('NonSubsicribeClientZone');
+})->name('NonSubsicribeClientZone');
+
+Route::get('/Offers',function(){
+    return PagesController::getPage('Offers');
+})->name('Offers');
+
+Route::get('/Pharmacy',function(){
+    return PagesController::getPage('Pharmacy');
+})->name('Pharmacy');
+
+Route::get('/PostForm',function(){
+    return PagesController::getPage('PostForm');
+})->name('PostForm ');
+
+Route::prefix('Services')->group(function(){
+
+
+    Route::get('/Dentist',function(){
+        return PagesController::getServicePage('Dentist');
+    })->name('Dentist');
+
+
+
+    Route::get('/Dermatology',function(){
+        return PagesController::getServicePage('Dermatology');
+    })->name('Dermatology');
+
+
+
+    Route::get('/Lab',function(){
+        return PagesController::getServicePage('Lab');
+    })->name('Lab');
+
+
+
+    Route::get('/LaserHair',function(){
+        return PagesController::getServicePage('LaserHair');
+    })->name('LaserHair');
+
+
+    Route::get('/Non-surgical',function(){
+        return PagesController::getServicePage('Non-surgical');
+    })->name('Non-surgical');
+
+
+
+    Route::get('/RegularCare',function(){
+        return PagesController::getServicePage('RegularCare');
+    })->name('RegularCare');
+
+
+
+    Route::get('/SkinLaser',function(){
+        return PagesController::getServicePage('SkinLaser');
+    })->name('SkinLaser');
+
+
+});
+
+
+Route::get('Admin/AllOffers/{from}>{to}','offersController@GetOffers' )->name('AllOffers');
+/*
+function (){
+
+    offersController=>GetOffers();
+  offersController=>GetOffers();
+}*/

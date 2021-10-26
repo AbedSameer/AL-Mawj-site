@@ -16,10 +16,12 @@ class CreatMothlyOffersTable extends Migration
         Schema::create('MothlyOffers', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('title');
-            $table->string('excrept');
+            //table->string('excrept');
             $table->string('discription');
             $table->integer('price');
-            $table->string('image');
+            $table->string('img_url');
+            $table->string('sales');
+
         });
     }
 

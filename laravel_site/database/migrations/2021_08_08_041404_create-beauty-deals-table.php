@@ -16,11 +16,16 @@ class CreateBeautyDealsTable extends Migration
         Schema::create('BeautyDeals', function (Blueprint $table) {
             $table->id()->unique();
             $table->string('title');
-            $table->string('excerpt');
-            $table->string('img');
-            $table->date('exc-date');
+            $table->string('description');
+            $table->string('note');
+            $table->string('img_link');
             $table->double('prise');
-            $table->string('decription');
+            $table->date('exc-date');
+            $table->string('special_text');
+            $table->string('sales');
+            $table->string('type');
+
+
         });
     }
 

@@ -17,11 +17,15 @@ class CreatUsersTable extends Migration
             $table->id()->unique();
             $table->string('Fname');
             $table->string('Lname');
-            $table->date('BOD');
-            $table->integer('phone');
             $table->string('email');
+            $table->integer('phone');
+            $table->date('BOD');
             $table->string('nation');
+            $table->string('contre');
+            $table->string('ID_number');
             $table->string('type');
+            $table->string('address');
+
         });
     }
 
