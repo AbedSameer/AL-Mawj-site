@@ -59,7 +59,7 @@ Route::get('/Blog',function(){
 
 Route::get('/BookDate',function(){
     return PagesController::getPage('BookDate');
-})->name(' BookDate');
+})->name('BookDate');
 
 Route::get('/ClientZone',function(){
     return PagesController::getPage('ClientZone');

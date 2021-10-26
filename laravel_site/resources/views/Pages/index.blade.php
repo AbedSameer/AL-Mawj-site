@@ -26,6 +26,7 @@
 </head>
 
 <body id="body">
+{{"121212121"}}
     <header style="height: 100vh;">
         <nav id="header">
             <a href="#">
@@ -57,7 +58,7 @@
                                         <li><a href={{route('LaserHair')}}>ليزرعلاج الشعر</a></li>
                                         <li><a href={{route('RegularCare')}}>العناية الدورية</a></li>
                                         <li><a href={{route('Dermatology')}}>طب الاسنان</a></li>
-                                        <li><a href={{route('Lap')}}>المختبر الطبي</a></li>
+                                        <li><a href={{route('Lab')}}>المختبر الطبي</a></li>
                                     </ul>
                                 </div>
 
