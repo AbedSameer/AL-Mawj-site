@@ -35,7 +35,7 @@
             <div id="mainMenu">
                 <ul id="MenuList">
                     <li>
-                        <a class="link" href="{{route('index').'22'}}">الرئيسية</a>
+                        <a class="link" href="{{route('index')}}">الرئيسية</a>
                     </li>
 
                     <li>
