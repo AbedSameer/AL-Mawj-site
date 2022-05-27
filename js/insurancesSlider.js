@@ -42,5 +42,5 @@ function myfunction() {
 
   setTimeout(function () {
     document.getElementById("linerSlider").appendChild(elements[0]);
-  }, 1500);
+  }, 240);
 }

@@ -1,19 +1,26 @@
-/* 
-col-xl:>=1200,    2
-col-lg:>=992,     3
-col-md:>=768,     4
-col-sm:>=576,     6
-col- :<576        12
-
-col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12
-*/
-/*
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');*/
 * {
   /* font-family: 'Open Sans', sans-serif; */
   margin: 0px;
   padding: 0px;
   direction: rtl;
+}
+
+:root {
+  --fontFamly: Open Sans, Arial, sans-serif;
+  --transitionDuration: 0.5s;
+  --MainColor: #2f90a8;
+  --headerColor: #fff;
+  --footerHeight: 186px;
+  --GrayColor: #ebebeb;
+}
+
+#indexVideo {
+  height: 100vh;
+  overflow: hidden;
+}
+
+option#now:selected {
+  background: var(--MainColor);
 }
 
 .offerDetails #price {
@@ -920,7 +927,7 @@ header a {
   border-style: solid;
   border-color: var(--MainColor) transparent transparent transparent;
   position: absolute;
-  bottom: 7px;
+  bottom: 9px;
   left: 0px;
 }
 
@@ -935,6 +942,15 @@ header a {
   transition-duration: 0.3s;
 }
 
+#moreLable:hover + #moreMenuServeses,
+#moreMenuServeses:hover {
+  display: block;
+  height: 330px;
+  background-color: var(--GrayColor);
+  transition-duration: 0.3s;
+  border: 1px solid var(--MainColor);
+}
+
 #more {
   width: 57px;
 }
@@ -946,9 +962,9 @@ header a {
 #moreMenuServeses {
   transition-duration: 0.3s;
   position: absolute;
-  top: 70px;
+  top: 73px;
   right: 179px;
-  height: 0px;
+  height: 0;
   width: 160px;
   overflow: hidden;
   /* border-radius: 10px; */
@@ -966,9 +982,9 @@ header a {
 #moreMenu {
   transition-duration: 0.3s;
   position: absolute;
-  top: 70px;
-  left: 160px;
-  height: 0px;
+  top: 73px;
+  left: 290px;
+  height: 0;
   width: 190px;
   overflow: hidden;
   /* border-radius: 10px; */
@@ -977,7 +993,7 @@ header a {
 #moreMenuFotter {
   transition-duration: 0.3s;
   position: absolute;
-  bottom: 38px;
+  bottom: 19px;
   left: -20px;
   height: 0px;
   width: 164px;
@@ -995,10 +1011,20 @@ header a {
 }
 #moreSelect label {
   position: relative;
-  height: 31px;
+  height: 43px;
   width: 100%;
+  padding-top: 9px;
   right: 0px;
   margin: auto 0px;
+}
+
+#moreSelect #moreLable:hover + #moreMenu,
+#moreMenu:hover {
+  display: block;
+  height: 290px;
+  background-color: var(--GrayColor);
+  transition-duration: 0.3s;
+  border: 1px solid var(--MainColor);
 }
 #moreSelectServesesMobile label {
   position: relative;
@@ -1006,8 +1032,9 @@ header a {
 }
 #moreSelectServeses label {
   position: relative;
-  height: 31px;
+  height: 41px;
   width: 100%;
+  padding-top: 9px;
   right: 0px;
   margin: auto 0px;
 }
@@ -1041,22 +1068,23 @@ header a {
   overflow: scroll;
 }
 
-#moreShowFotter:checked + #moreSelectFotter #moreMenuFotter {
+#moreSelectFotter:hover #moreMenuFotter,
+#moreMenuFotter:hover {
   display: block;
   height: 223px;
   background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
 }
-#moreShowServesesFotter:checked
-  + #moreSelectServesesFotter
-  #moreMenuServesesFotter {
+
+#moreSelectServesesFotter:hover #moreMenuServesesFotter,
+#moreMenuServesesFotter:hover {
   display: block;
   height: 254px;
   background-color: var(--GrayColor);
   transition-duration: 0.3s;
   border: 1px solid var(--MainColor);
-  top: -263px;
+  top: -254px;
 }
 #linerSlider {
   width: 100%;
@@ -1716,14 +1744,6 @@ a img {
 #h {
   z-index: 2;
 }
-:root {
-  --fontFamly: Open Sans, Arial, sans-serif;
-  --transitionDuration: 0.5s;
-  --MainColor: #2f90a8;
-  --headerColor: #fff;
-  --footerHeight: 186px;
-  --GrayColor: #ebebeb;
-}
 
 .backgroundVideo {
   width: 100%;
@@ -2035,6 +2055,7 @@ section + section + section {
 #Welcom {
   display: flex;
   width: 100%;
+  /* margin-top: 106vh; */
 }
 nav a {
   display: flex;
@@ -2088,6 +2109,12 @@ nav a {
 @media screen and (max-width: 769px) {
   :root {
     --headerHeight: 100px;
+  }
+  #linerSlider {
+    height: inherit;
+    text-align: center;
+    /* margin-left: 20px; */
+    padding-left: 20px;
   }
   #offersContener {
     display: flex;
